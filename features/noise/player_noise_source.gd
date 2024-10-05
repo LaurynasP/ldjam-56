@@ -3,10 +3,10 @@ extends Node
 
 @onready var character: Player = $".."
 
-@export var default_noise_level: float = 1
-@export var sprint_noise_level_multiplier: float = 1.3
+@export var default_noise_level: float = 0.4
+@export var sprint_noise_level_multiplier: float = 2.3
 
-@export var noise_interval: float = 0.6
+@export var noise_interval: float = 0.3
 @export var sprint_noise_interval_multiplier: float = 1.5
 
 var current_timer: float = 0.6

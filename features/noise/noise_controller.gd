@@ -16,3 +16,5 @@ func _process(delta):
 	
 	if noise_level < 0:
 		noise_level = 0
+	else: if noise_level > 100:
+		noise_level = 100

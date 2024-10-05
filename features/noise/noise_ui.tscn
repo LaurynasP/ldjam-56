@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://bympvy66qj25h"]
+
+[ext_resource type="Script" path="res://features/noise/noise_ui_controller.gd" id="1_f24rl"]
+
+[sub_resource type="Gradient" id="Gradient_pfvyf"]
+colors = PackedColorArray(0, 0.813116, 0, 1, 0.933326, 4.81308e-06, 9.62615e-07, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vgv01"]
+gradient = SubResource("Gradient_pfvyf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ev0h"]
+texture = SubResource("GradientTexture1D_vgv01")
+
+[sub_resource type="Gradient" id="Gradient_0lasq"]
+offsets = PackedFloat32Array(0, 0.971795, 0.974359, 1)
+colors = PackedColorArray(1, 1, 1, 0, 0.4, 0.4, 0.4, 0, 0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_woek8"]
+gradient = SubResource("Gradient_0lasq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cfvy1"]
+texture = SubResource("GradientTexture1D_woek8")
+texture_margin_right = 5.0
+expand_margin_top = 25.0
+expand_margin_bottom = 25.0
+
+[node name="noise_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f24rl")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.5)
+theme_override_styles/background = SubResource("StyleBoxTexture_5ev0h")
+theme_override_styles/fill = SubResource("StyleBoxTexture_cfvy1")
+value = 50.0
+show_percentage = false

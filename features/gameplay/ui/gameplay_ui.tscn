@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://lw76gxv4071l"]
+[gd_scene load_steps=3 format=3 uid="uid://lw76gxv4071l"]
 
 [ext_resource type="Script" path="res://features/gameplay/ui/gameplay_ui_controller.gd" id="1_t7h7g"]
+[ext_resource type="PackedScene" uid="uid://bympvy66qj25h" path="res://features/noise/noise_ui.tscn" id="2_pgjf1"]
 
 [node name="gameplay_ui" type="Control"]
 layout_mode = 3
@@ -28,6 +29,7 @@ size_flags_vertical = 0
 
 [node name="vertical" type="VBoxContainer" parent="margin/center"]
 layout_mode = 2
+theme_override_constants/separation = 20
 
 [node name="score" type="HBoxContainer" parent="margin/center/vertical"]
 layout_mode = 2
@@ -60,3 +62,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 text = "444"
+
+[node name="noise_ui" parent="margin/center/vertical" instance=ExtResource("2_pgjf1")]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2

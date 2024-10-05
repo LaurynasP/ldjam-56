@@ -72,7 +72,7 @@ func add_uis():
 	add_child(pause_ui.instantiate())
 	add_child(gameplay_ui.instantiate())
 	
-func make_noise(amount: int, noise_type: NoiseController.NoiseTypes):
+func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 	noise.noise_level += amount
 
 	
