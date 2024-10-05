@@ -14,6 +14,7 @@ sky_material = SubResource("ProceduralSkyMaterial_54ocs")
 [sub_resource type="Environment" id="Environment_15etx"]
 background_mode = 2
 sky = SubResource("Sky_3lhbi")
+ambient_light_sky_contribution = 0.38
 tonemap_mode = 2
 glow_enabled = true
 
@@ -30,4 +31,5 @@ environment = SubResource("Environment_15etx")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5.97856, 0)
+visible = false
 shadow_enabled = true

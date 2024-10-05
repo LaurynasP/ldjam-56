@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bu437dxmadth2"]
+
+[ext_resource type="Texture2D" uid="uid://m8n4kxns53k" path="res://imports/models/kitchen/restaurantbits_texture.png" id="1_f1dba"]
+
+[resource]
+albedo_texture = ExtResource("1_f1dba")
+metallic_specular = 0.0
+roughness = 0.0
