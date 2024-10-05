@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://lw76gxv4071l"]
+
+[ext_resource type="Script" path="res://features/gameplay/ui/gameplay_ui_controller.gd" id="1_t7h7g"]
+
+[node name="gameplay_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t7h7g")
+
+[node name="margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+
+[node name="center" type="CenterContainer" parent="margin"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="vertical" type="VBoxContainer" parent="margin/center"]
+layout_mode = 2
+
+[node name="score" type="HBoxContainer" parent="margin/center/vertical"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="title" type="Label" parent="margin/center/vertical/score"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Score"
+
+[node name="value" type="Label" parent="margin/center/vertical/score"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "444"

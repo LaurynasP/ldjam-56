@@ -1,7 +1,7 @@
 class_name InteractionSourceController
 extends Node
 
-@onready var ray_cast_3d: RayCast3D = $ray
+@onready var ray_cast_3d: RayCast3D = $"../camera_controller/camera/ray"
 
 signal on_interactable_hovered(interactable)
 
@@ -24,9 +24,7 @@ func _physics_process(delta):
 				else:
 					parent = parent.get_parent_node_3d()
 			
-			if interactable:
-				if !GameManager.current_gameplay.hovered_interactable:
-					on_interactable_hovered.emit(interactable)
+			on_interactable_hovered.emit(interactable)
 	else:
 		if GameManager.current_gameplay.hovered_interactable:
 			on_interactable_unhovered.emit()

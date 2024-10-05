@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dqfml1busilvy"]
+[gd_scene load_steps=13 format=3 uid="uid://dqfml1busilvy"]
 
 [ext_resource type="Script" path="res://features/level/level_controller.gd" id="1_5jv3p"]
 [ext_resource type="PackedScene" uid="uid://y2ao6g0aklo3" path="res://features/house/house.tscn" id="1_rn0et"]
 [ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="2_k3518"]
 [ext_resource type="Script" path="res://features/object_interacting/interactable_object_controller.gd" id="3_5you7"]
+[ext_resource type="PackedScene" uid="uid://bqdo58wy3ucb" path="res://assets/models/collectables/food_ingredient_cheese.tscn" id="5_s8g1d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jjb7d"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -62,3 +63,8 @@ mesh = SubResource("BoxMesh_pdnjq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="test_interactable/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_tfycf")
+
+[node name="food_ingredient_cheese2" parent="." instance=ExtResource("5_s8g1d")]
+transform = Transform3D(0.784235, 0, -0.620464, 0, 1, 0, 0.620464, 0, 0.784235, 4.12307, 1.49773, -3.18502)
+score = 5
+interactable_name = "Big 'Ol Cheese"

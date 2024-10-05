@@ -43,13 +43,13 @@ script = ExtResource("2_qc2vy")
 
 [node name="camera" type="Camera3D" parent="camera_controller"]
 
+[node name="ray" type="RayCast3D" parent="camera_controller/camera"]
+target_position = Vector3(0, 0, -1.5)
+collide_with_areas = true
+
 [node name="interaction_controller" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.493487, 0)
 script = ExtResource("4_ru8gi")
-
-[node name="ray" type="RayCast3D" parent="interaction_controller"]
-target_position = Vector3(0, 0, -1.5)
-collide_with_areas = true
 
 [connection signal="on_interactable_hovered" from="interaction_controller" to="." method="_on_interaction_controller_on_interactable_hovered"]
 [connection signal="on_interactable_unhovered" from="interaction_controller" to="." method="_on_interaction_controller_on_interactable_unhovered"]

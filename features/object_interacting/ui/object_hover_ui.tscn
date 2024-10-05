@@ -26,6 +26,7 @@ theme_override_constants/margin_left = 100
 theme_override_constants/margin_top = 200
 
 [node name="panel" type="PanelContainer" parent="center_container/margin"]
+visible = false
 layout_mode = 2
 
 [node name="margin" type="MarginContainer" parent="center_container/margin/panel"]
