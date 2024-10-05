@@ -5,6 +5,8 @@ extends Node
 
 signal on_interactable_hovered(interactable)
 
+signal on_interactable_unhovered
+
 func _ready():
 	pass
 
@@ -15,4 +17,8 @@ func _physics_process(delta):
 			var object = (collider as StaticBody3D).get_parent_node_3d().get_parent_node_3d()
 			
 			if object and object is InteractableObject:
-				on_interactable_hovered.emit(object as InteractableObject)
+				if !GameManager.hovered_interactable:
+					on_interactable_hovered.emit(object as InteractableObject)
+	else:
+		if GameManager.hovered_interactable:
+			on_interactable_unhovered.emit()

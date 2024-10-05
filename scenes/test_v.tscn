@@ -45,7 +45,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_o6gbd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="player" parent="." instance=ExtResource("2_k3518")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.57543, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.57543, 0)
 
 [node name="test_interactable" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30906, 1.09076, -2.67031)

@@ -13,11 +13,13 @@ func _ready():
 
 func _process(delta):
 	pass
-
-func disable_input():
-	camera_controller.on_rotation_changed(false)
 	
-
-
+func toggle_input(enabled: bool):
+	camera_controller.on_rotation_changed(enabled)
+	
 func _on_interaction_controller_on_interactable_hovered(interactable):
-	print(interactable.interactable_name)
+	GameManager.set_hovered_interactable(interactable)
+
+
+func _on_interaction_controller_on_interactable_unhovered():
+	GameManager.set_hovered_interactable(null)

@@ -4,11 +4,13 @@ extends Node
 @export var speed: float = 5
 @export var sprint_speed: float = 8
 @export var lerp_speed: float = 5
+@export var gravity_multiplier = 20
 
+const JUMP_VELOCITY = 50
+
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var parent: CharacterBody3D
-
 var movement_enabled: bool
-
 var current_speed: float = speed
 
 func initialize(enabled: bool) -> void:
@@ -32,5 +34,13 @@ func _physics_process(delta):
 	velocity *= delta
 	velocity *= current_speed * 10
 	
-	parent.velocity = parent.transform.basis * Vector3(velocity.x, 0, velocity.y)
+	var fall_speed = 0
+	
+	if not parent.is_on_floor():
+		fall_speed -= gravity * delta * gravity_multiplier
+
+	if Input.is_action_just_pressed("ui_accept") and parent.is_on_floor():
+		fall_speed = JUMP_VELOCITY
+	
+	parent.velocity = parent.transform.basis * Vector3(velocity.x, fall_speed, velocity.y)
 	parent.move_and_slide()
