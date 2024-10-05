@@ -3,7 +3,7 @@ extends Node
 
 @export var speed: float = 5
 
-var parent: Node3D
+var parent: CharacterBody3D
 
 var movement_enabled: bool
 
@@ -35,6 +35,6 @@ func _physics_process(delta):
 		velocity.x += 1
 		
 	velocity *= delta
-	velocity *= speed
+	velocity *= speed * 10
 	
-	parent.translate(Vector3(velocity.x, 0, velocity.y))
+	parent.velocity = Vector3(velocity.x, 0, velocity.y)
