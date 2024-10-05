@@ -9,8 +9,9 @@
 radius = 0.25
 height = 0.5
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_dvjq8"]
-radius = 0.1
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ia2av"]
+radius = 0.0783843
+height = 0.462498
 
 [node name="player" type="CharacterBody3D" node_paths=PackedStringArray("camera_controller", "movement_controller", "interactions_controller")]
 script = ExtResource("1_2kqo7")
@@ -20,6 +21,7 @@ interactions_controller = NodePath("interaction_controller")
 
 [node name="model" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.493487, 0)
+visible = false
 
 [node name="body" type="MeshInstance3D" parent="model"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.255676, 0)
@@ -27,8 +29,8 @@ mesh = SubResource("CapsuleMesh_w7usd")
 skeleton = NodePath("../..")
 
 [node name="collider" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.335823, 0)
-shape = SubResource("SphereShape3D_dvjq8")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.227031, 0)
+shape = SubResource("CapsuleShape3D_ia2av")
 
 [node name="movement_controller" type="Node" parent="."]
 script = ExtResource("3_rj1s6")
