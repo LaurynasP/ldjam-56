@@ -5,12 +5,9 @@ var is_open: bool = false;
 var closed_rotation = Vector3()  
 var open_rotation = Vector3()
 var open_angle = 90
-<<<<<<< HEAD
-var tween_duration = 1.0  # Time it takes to animate the door
-=======
+
 var tween_duration = 0.5  # Time it takes to animate the door
 @export var switch_open_direction = true;
->>>>>>> 5c817f672314eef83963ec6510e33c7d2276104a
 
 
 var tween
@@ -23,13 +20,9 @@ func _ready() -> void:
 
 
 func interact():
-<<<<<<< HEAD
-	print("Hodor")
-	toggle_door()
-=======
+
 	toggle_open()
->>>>>>> 5c817f672314eef83963ec6510e33c7d2276104a
-	
+
 func toggle_open():
 	if is_open:
 		close()
