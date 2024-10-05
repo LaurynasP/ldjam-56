@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" path="res://features/object_interacting/ui/object_hover_ui_controller.gd" id="1_33u8t"]
 
-[node name="object_hover_ui" type="CenterContainer"]
+[node name="object_hover_ui" type="Control"]
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -11,13 +12,21 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_33u8t")
-metadata/_edit_use_anchors_ = true
 
-[node name="container" type="MarginContainer" parent="."]
+[node name="center_container" type="CenterContainer" parent="."]
+layout_mode = 1
+offset_right = 172.0
+offset_bottom = 23.0
+
+[node name="margin" type="MarginContainer" parent="center_container"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_constants/margin_bottom = 200
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 200
 
-[node name="hoverable_name" type="Label" parent="container"]
+[node name="hoverable_name" type="Label" parent="center_container/margin"]
 layout_mode = 2
+text = "dawdwadwadawdwad"
+horizontal_alignment = 1
+vertical_alignment = 1

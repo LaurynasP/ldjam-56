@@ -15,9 +15,9 @@ func initialize(enabled: bool) -> void:
 	set_process(enabled)
 	set_process_input(enabled)
 	set_physics_process(enabled)
-	parent = get_parent()
 
 func _ready() -> void:
+	parent = get_parent()
 	current_speed = speed
 
 func _physics_process(delta: float) -> void:

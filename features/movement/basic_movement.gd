@@ -21,15 +21,15 @@ func initialize(enabled: bool) -> void:
 	set_process(enabled)
 	set_process_input(enabled)
 	set_physics_process(enabled)
-	
+
+func _ready():
 	jump_velocity = 2 * jump_height / jump_time_to_peak
 	jump_gravity = (-2 * jump_height) / pow(jump_time_to_peak, 2)
 	fall_gravity = (-2 * jump_height) / pow(jump_time_to_descend, 2)
 	
 	parent = get_parent()
-
-func _ready():
-	initialize(true)
+	
+	initialize(!GameManager.game_paused)
 
 func _input(event):
 	if Input.is_action_pressed("sprint"):

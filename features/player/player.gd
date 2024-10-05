@@ -16,6 +16,7 @@ func _process(delta):
 	
 func toggle_input(enabled: bool):
 	camera_controller.on_rotation_changed(enabled)
+	movement_controller.initialize(enabled)
 	
 func _on_interaction_controller_on_interactable_hovered(interactable):
 	GameManager.set_hovered_interactable(interactable)

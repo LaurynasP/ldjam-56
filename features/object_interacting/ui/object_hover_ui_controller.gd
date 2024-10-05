@@ -1,6 +1,6 @@
 extends Node
 
-@onready var label: Label = $container/hoverable_name
+@onready var label: Label = $center_container/margin/hoverable_name
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

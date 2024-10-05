@@ -14,11 +14,19 @@ func _physics_process(delta):
 	if ray_cast_3d.is_colliding():
 		var collider = ray_cast_3d.get_collider()
 		if collider is StaticBody3D:
-			var object = (collider as StaticBody3D).get_parent_node_3d().get_parent_node_3d()
+			var interactable: InteractableObject = null
 			
-			if object and object is InteractableObject:
+			var parent = collider.get_parent_node_3d()
+			while parent:
+				if parent is InteractableObject:
+					interactable = parent as InteractableObject
+					break
+				else:
+					parent = parent.get_parent_node_3d()
+			
+			if interactable:
 				if !GameManager.hovered_interactable:
-					on_interactable_hovered.emit(object as InteractableObject)
+					on_interactable_hovered.emit(interactable)
 	else:
 		if GameManager.hovered_interactable:
 			on_interactable_unhovered.emit()
