@@ -6,6 +6,9 @@ func _ready():
 func _input(event):
 	if Input.is_action_just_pressed("ui_cancel"):
 		GameManager.pause_game_toggle()
+		
+	if Input.is_action_just_pressed("interact"):
+		GameManager.interact()
 
 func on_game_pause_toggled(is_game_paused: bool):
 	if GameManager.player:

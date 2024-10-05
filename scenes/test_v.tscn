@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://dqfml1busilvy"]
+[gd_scene load_steps=12 format=3 uid="uid://dqfml1busilvy"]
 
+[ext_resource type="PackedScene" uid="uid://djly5gwe533ce" path="res://features/object_interacting/ui/object_hover_ui.tscn" id="1_1d32w"]
 [ext_resource type="PackedScene" uid="uid://y2ao6g0aklo3" path="res://features/house/house.tscn" id="1_rn0et"]
 [ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="2_k3518"]
 [ext_resource type="Script" path="res://features/object_interacting/interactable_object_controller.gd" id="3_5you7"]
@@ -30,6 +31,8 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [node name="test_v" type="Node3D"]
 
+[node name="object_hover_ui" parent="." instance=ExtResource("1_1d32w")]
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_6l5c6")
 
@@ -48,12 +51,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.57543, 0)
 
 [node name="test_interactable" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30906, 1.09076, -2.67031)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30906, 0.533986, -3.12677)
 script = ExtResource("3_5you7")
 interactable_name = "kebybis"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="test_interactable"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0996875, 0.44548, -0.705992)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0996875, 0.44548, -0.467165)
 mesh = SubResource("BoxMesh_pdnjq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="test_interactable/MeshInstance3D"]

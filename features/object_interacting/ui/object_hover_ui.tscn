@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://djly5gwe533ce"]
+
+[ext_resource type="Script" path="res://features/object_interacting/ui/object_hover_ui_controller.gd" id="1_33u8t"]
+
+[node name="object_hover_ui" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_33u8t")
+metadata/_edit_use_anchors_ = true
+
+[node name="container" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_bottom = 200
+
+[node name="hoverable_name" type="Label" parent="container"]
+layout_mode = 2

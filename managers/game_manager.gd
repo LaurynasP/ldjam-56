@@ -10,6 +10,10 @@ signal on_game_paused(game_state: bool)
 
 signal on_interactable_hovered(object: InteractableObject)
 
+func interact():
+	if hovered_interactable:
+		pass #TODO 
+
 func set_hovered_interactable(object: InteractableObject):
 	hovered_interactable = object
 	
