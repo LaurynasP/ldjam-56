@@ -17,6 +17,10 @@ signal on_interactable_hovered(object: InteractableObject)
 
 signal on_food_consumed(food: Food)
 
+signal on_item_added(item: String)
+
+signal on_item_removed(item: String)
+
 func _enter_tree():
 	var pause_ui = ResourceLoader.load("res://features/pause/ui.tscn")
 	var hover_ui = ResourceLoader.load("res://features/object_interacting/ui/object_hover_ui.tscn")
@@ -59,3 +63,11 @@ func eat_food(food: Food):
 	inventory.add_item(food.interactable_name)
 	
 	on_food_consumed.emit(food)
+	
+func add_item(item: String):
+	inventory.add_item(item)
+	on_item_added.emit(item)
+	
+func remove_item(item: String):
+	inventory.remove_item(item)
+	on_item_removed.emit(item)

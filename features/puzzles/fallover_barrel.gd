@@ -31,7 +31,6 @@ func push_over():
 	await tween.finished
 	await tween2.finished
 	setState(State.FALLEN_OVER)
-	print("Pushing over")
 	
 	
 func roll():
