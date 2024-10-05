@@ -9,7 +9,7 @@ extends Node
 @export var jump_time_to_peak: float = 0.2
 @export var jump_time_to_descend: float = 0.3
 
-var parent: CharacterBody3D
+var parent: Player
 var movement_enabled: bool
 var current_speed: float = speed
 
@@ -29,15 +29,14 @@ func _ready():
 	
 	parent = get_parent()
 
-func _input(event):
-	if Input.is_action_pressed("sprint"):
+func _physics_process(delta):
+	var velocity = Input.get_vector("move_left", "move_right", "move_backwards", "move_forwards")
+	
+	if parent.sprinting:
 		current_speed = sprint_speed
 	else:
 		current_speed = speed
-
-func _physics_process(delta):
-	var velocity = Input.get_vector("move_left", "move_right", "move_backwards", "move_forwards")
-		
+	
 	velocity *= delta
 	velocity *= current_speed * 15
 	

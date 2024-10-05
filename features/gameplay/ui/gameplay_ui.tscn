@@ -44,3 +44,19 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 text = "444"
+
+[node name="noise" type="HBoxContainer" parent="margin/center/vertical"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="title" type="Label" parent="margin/center/vertical/noise"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Noise"
+
+[node name="value" type="Label" parent="margin/center/vertical/noise"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "444"
