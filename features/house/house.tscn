@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://y2ao6g0aklo3"]
+[gd_scene load_steps=46 format=3 uid="uid://y2ao6g0aklo3"]
 
 [ext_resource type="PackedScene" uid="uid://cml61e2u2a42t" path="res://assets/models/structures/kitchen_floor.tscn" id="1_wvf8y"]
 [ext_resource type="PackedScene" uid="uid://cmu4equvfautq" path="res://assets/models/structures/kitchen_wall.tscn" id="2_rvvft"]
@@ -43,6 +43,8 @@
 [ext_resource type="PackedScene" uid="uid://rse0p6tldaxm" path="res://assets/models/furniture/pictureframe_standing_b_2.tscn" id="40_yulyx"]
 [ext_resource type="PackedScene" uid="uid://iqj4hil660m" path="res://assets/models/furniture/cactus_medium_a_2.tscn" id="41_7fjpk"]
 [ext_resource type="PackedScene" uid="uid://btjw1cltxpvdl" path="res://assets/models/furniture/shelf_b_large_decorated_2.tscn" id="42_okqqp"]
+[ext_resource type="PackedScene" uid="uid://b1wokerg5b5dr" path="res://assets/models/doors/door_a_2.tscn" id="44_65bxy"]
+[ext_resource type="Script" path="res://features/door/door.gd" id="45_dyx0g"]
 
 [node name="House" type="Node3D"]
 
@@ -1073,3 +1075,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -3.7)
 
 [node name="shelf_B_large_decorated3" parent="Items/Office" instance=ExtResource("42_okqqp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, -3.7)
+
+[node name="Door_A2" parent="." instance=ExtResource("44_65bxy")]
+transform = Transform3D(-5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, 12, 0, -2.2)
+script = ExtResource("45_dyx0g")
+interactable_name = "Door"

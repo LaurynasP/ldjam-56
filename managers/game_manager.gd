@@ -12,7 +12,7 @@ signal on_interactable_hovered(object: InteractableObject)
 
 func interact():
 	if hovered_interactable:
-		pass #TODO 
+		hovered_interactable.interact()
 
 func set_hovered_interactable(object: InteractableObject):
 	hovered_interactable = object
