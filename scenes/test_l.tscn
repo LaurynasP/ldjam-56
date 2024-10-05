@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://y2ao6g0aklo3" path="res://features/house/house.tscn" id="1_25fta"]
 [ext_resource type="PackedScene" uid="uid://djly5gwe533ce" path="res://features/object_interacting/ui/object_hover_ui.tscn" id="3_aspws"]
-[ext_resource type="PackedScene" uid="uid://cc88popy3cvhk" path="res://features/player/player.tscn" id="3_fluii"]
+[ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="3_fluii"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_54ocs"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
