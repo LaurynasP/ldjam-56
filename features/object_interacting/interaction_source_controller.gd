@@ -25,8 +25,8 @@ func _physics_process(delta):
 					parent = parent.get_parent_node_3d()
 			
 			if interactable:
-				if !GameManager.hovered_interactable:
+				if !GameManager.current_gameplay.hovered_interactable:
 					on_interactable_hovered.emit(interactable)
 	else:
-		if GameManager.hovered_interactable:
+		if GameManager.current_gameplay.hovered_interactable:
 			on_interactable_unhovered.emit()

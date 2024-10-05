@@ -28,8 +28,6 @@ func _ready():
 	fall_gravity = (-2 * jump_height) / pow(jump_time_to_descend, 2)
 	
 	parent = get_parent()
-	
-	initialize(!GameManager.game_paused)
 
 func _input(event):
 	if Input.is_action_pressed("sprint"):

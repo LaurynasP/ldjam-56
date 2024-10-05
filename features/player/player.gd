@@ -6,7 +6,6 @@ extends Node
 @export var interactions_controller: InteractionSourceController
 
 func _ready():
-	GameManager.player = self
 	camera_controller.initialize(true)
 	camera_controller.on_rotation_changed(true)
 	pass
@@ -19,8 +18,8 @@ func toggle_input(enabled: bool):
 	movement_controller.initialize(enabled)
 	
 func _on_interaction_controller_on_interactable_hovered(interactable):
-	GameManager.set_hovered_interactable(interactable)
+	GameManager.current_gameplay.set_hovered_interactable(interactable)
 
 
 func _on_interaction_controller_on_interactable_unhovered():
-	GameManager.set_hovered_interactable(null)
+	GameManager.current_gameplay.set_hovered_interactable(null)
