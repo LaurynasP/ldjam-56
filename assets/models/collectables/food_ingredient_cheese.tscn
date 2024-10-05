@@ -55,4 +55,5 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="food_ingredient_cheese"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="food_ingredient_cheese/StaticBody3D"]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_h3uxr")

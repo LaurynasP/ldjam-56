@@ -62,6 +62,9 @@ func add_item(item: String):
 func remove_item(item: String):
 	inventory.remove_item(item)
 	on_item_removed.emit(item)
+	
+func has_item(item: String) -> bool:
+	return inventory.has_item(item)
 
 func add_uis():
 	var pause_ui = ResourceLoader.load("res://features/pause/ui.tscn")

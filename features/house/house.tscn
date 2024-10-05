@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://y2ao6g0aklo3"]
+[gd_scene load_steps=68 format=3 uid="uid://y2ao6g0aklo3"]
 
 [ext_resource type="PackedScene" uid="uid://cmu4equvfautq" path="res://assets/models/structures/kitchen_wall.tscn" id="1_sxks5"]
 [ext_resource type="PackedScene" uid="uid://c00wk1p04k8p4" path="res://assets/models/structures/kitchen_wall_window_closed.tscn" id="2_cdjv7"]
@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://c6hmsh785mrht" path="res://assets/models/kitchen/kitchencounter_straight_decorated_2.tscn" id="14_e4jyf"]
 [ext_resource type="PackedScene" uid="uid://c0gicxi0qdyx6" path="res://assets/models/structures/wall.tscn" id="14_o3arn"]
 [ext_resource type="PackedScene" uid="uid://dj761k2cv27jy" path="res://assets/models/furniture/book_set_2.tscn" id="14_smiv0"]
+[ext_resource type="PackedScene" uid="uid://ddxbnnlpycn87" path="res://assets/models/doors/drill_door.tscn" id="14_sullh"]
 [ext_resource type="PackedScene" uid="uid://d2fupld4fw5p7" path="res://assets/models/kitchen/fridge_a_decorated_2.tscn" id="15_6dfww"]
 [ext_resource type="PackedScene" uid="uid://cxsf4vt3y07eo" path="res://assets/models/structures/wallDoorway.tscn" id="15_wuck8"]
 [ext_resource type="PackedScene" uid="uid://dbngyarotg63a" path="res://assets/models/structures/wall_toilet.tscn" id="16_y002a"]
@@ -63,6 +64,9 @@
 [ext_resource type="PackedScene" uid="uid://1rl0b0m4pk67" path="res://assets/models/toilet/shower.tscn" id="61_a61aw"]
 [ext_resource type="PackedScene" uid="uid://efl18f3tydux" path="res://assets/models/toilet/washerDryerStacked.tscn" id="62_sieb6"]
 [ext_resource type="PackedScene" uid="uid://b7s6kgq5eoe0w" path="res://assets/models/toilet/kitchenCabinetDrawer.tscn" id="63_lm2mh"]
+[ext_resource type="PackedScene" uid="uid://cnlksaooo3u75" path="res://assets/models/collectables/pot_B_stew.tscn" id="64_r38ut"]
+[ext_resource type="PackedScene" uid="uid://bsyfh0h44sfrm" path="res://assets/models/tools/sm_electric_drill.tscn" id="65_cw7py"]
+[ext_resource type="PackedScene" uid="uid://b1bp4fdoe7aef" path="res://assets/models/tools/sm_shovel.tscn" id="65_dh0vl"]
 
 [node name="House" type="Node3D"]
 
@@ -931,6 +935,9 @@ transform = Transform3D(-1, 0, 9.68575e-08, 0, 1, 0, -9.68575e-08, 0, -1, 2.3, 0
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -13.3)
 script = null
 
+[node name="ToiletDoor" parent="Structures/Doors" instance=ExtResource("14_sullh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, 2.2)
+
 [node name="Roof" type="Node3D" parent="Structures"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 70)
 
@@ -1269,6 +1276,29 @@ transform = Transform3D(-0.0871558, 0, -0.996195, 0, 1, 0, 0.996195, 0, -0.08715
 
 [node name="Toilet" type="Node3D" parent="Items"]
 
+[node name="washer" parent="Items/Toilet" instance=ExtResource("60_xgocs")]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, 27.1, 0, 7.7)
+
+[node name="shower" parent="Items/Toilet" instance=ExtResource("61_a61aw")]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, 30, 0, 7)
+
+[node name="washerDryerStacked" parent="Items/Toilet" instance=ExtResource("62_sieb6")]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, 25.8, 0, 7.7)
+
+[node name="kitchenCabinetDrawer" parent="Items/Toilet" instance=ExtResource("63_lm2mh")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 26, 0, 2.5)
+
+[node name="Collectibles" type="Node3D" parent="Items"]
+
+[node name="SM_Shovel" parent="Items/Collectibles" instance=ExtResource("65_dh0vl")]
+transform = Transform3D(3.82137e-15, -2, 0, 2, 3.82137e-15, -8.74228e-08, 8.74228e-08, 0, 2, 6.1, 3.3, -15.5)
+
+[node name="pot_B_stew2" parent="Items/Collectibles" instance=ExtResource("64_r38ut")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 1.2, 3.5)
+
+[node name="SM_ELECTRIC_DRILL" parent="Items/Collectibles" instance=ExtResource("65_cw7py")]
+transform = Transform3D(1.41421, -1.41421, 6.18172e-08, 0, -8.74228e-08, -2, 1.41421, 1.41421, -6.18172e-08, 11.8, 3.1, -25.2)
+
 [node name="Lights" type="Node3D" parent="."]
 
 [node name="ceilingFan" parent="Lights" instance=ExtResource("47_coajb")]
@@ -1279,15 +1309,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7, 4, -4)
 
 [node name="ceilingFan3" parent="Lights" instance=ExtResource("47_coajb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7, 4, 10)
-
-[node name="washer" parent="." instance=ExtResource("60_xgocs")]
-transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, 27.1, 0, 7.7)
-
-[node name="shower" parent="." instance=ExtResource("61_a61aw")]
-transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, 30, 0, 7)
-
-[node name="washerDryerStacked" parent="." instance=ExtResource("62_sieb6")]
-transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, 25.8, 0, 7.7)
-
-[node name="kitchenCabinetDrawer" parent="." instance=ExtResource("63_lm2mh")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 26, 0, 3)

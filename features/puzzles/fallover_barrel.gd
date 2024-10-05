@@ -6,7 +6,8 @@ var state: State = State.STANDING
 func interact():
 	match state:
 		State.STANDING:
-			push_over()
+			if(GameManager.current_gameplay.has_item(ItemsManager.Items.SHOVEL)):
+				push_over()
 			pass
 		State.FALLING_OVER:
 			pass
@@ -22,6 +23,7 @@ func _ready() -> void:
 	updateName()
 
 func push_over():
+	GameManager.current_gameplay.remove_item(ItemsManager.Items.SHOVEL)
 	setState(State.FALLING_OVER)
 	var tween = create_tween()
 	var tween2 = create_tween()
