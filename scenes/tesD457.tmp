@@ -1,8 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://dqfml1busilvy"]
+[gd_scene load_steps=8 format=3 uid="uid://dqfml1busilvy"]
 
 [ext_resource type="Script" path="res://features/camera_free_look/camera_free_look.gd" id="1_kyodi"]
-[ext_resource type="Script" path="res://features/player/player.gd" id="1_x78so"]
-[ext_resource type="Script" path="res://features/movement/basic_movement.gd" id="3_l1s4u"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jjb7d"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -40,28 +38,14 @@ shadow_enabled = true
 mesh = SubResource("PlaneMesh_w72sm")
 surface_material_override/0 = SubResource("StandardMaterial3D_o6gbd")
 
-[node name="player" type="Node3D" parent="." node_paths=PackedStringArray("camera_controller", "movement_controller")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.129, 0.5, 4.025)
-script = ExtResource("1_x78so")
-camera_controller = NodePath("camera_controller")
-movement_controller = NodePath("movement_controller")
+[node name="player" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1286, 0.549319, 4.02509)
 
-[node name="camera_controller" type="Node3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+[node name="camera" type="Camera3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.521062, 0)
+
+[node name="model" type="MeshInstance3D" parent="player"]
+mesh = SubResource("CapsuleMesh_w7usd")
+
+[node name="camera_free_look" type="Node" parent="player"]
 script = ExtResource("1_kyodi")
-
-[node name="camera" type="Camera3D" parent="player/camera_controller"]
-
-[node name="model" type="Node3D" parent="player"]
-
-[node name="body" type="MeshInstance3D" parent="player/model"]
-mesh = SubResource("CapsuleMesh_w7usd")
-skeleton = NodePath("../..")
-
-[node name="body2" type="MeshInstance3D" parent="player/model"]
-transform = Transform3D(0.574421, 0, 0, 0, 0.247496, 0, 0, 0, 0.305032, 0.00527382, 0.182849, -0.233788)
-mesh = SubResource("CapsuleMesh_w7usd")
-skeleton = NodePath("../..")
-
-[node name="movement_controller" type="Node" parent="player"]
-script = ExtResource("3_l1s4u")
