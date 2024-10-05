@@ -56,4 +56,5 @@ func rotate_mouse(delta: float):
 	var y = -offset.y
 
 	rotate_x(deg_to_rad(y * delta * mouse_sensitivity))
+	rotation.x = clamp(rotation.x, deg_to_rad(-89), deg_to_rad(89))
 	parent.rotate_y(deg_to_rad(x * delta * mouse_sensitivity))

@@ -50,7 +50,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.57543, 0)
 [node name="test_interactable" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30906, 1.09076, -2.67031)
 script = ExtResource("3_5you7")
-interactable_name = "kebybis"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="test_interactable"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0996875, 0.44548, -0.705992)

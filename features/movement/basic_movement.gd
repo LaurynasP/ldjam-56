@@ -2,10 +2,14 @@ class_name BasicMovement
 extends Node
 
 @export var speed: float = 5
+@export var sprint_speed: float = 8
+@export var lerp_speed: float = 5
 
 var parent: CharacterBody3D
 
 var movement_enabled: bool
+
+var current_speed: float = speed
 
 func initialize(enabled: bool) -> void:
 	set_process(enabled)
@@ -16,25 +20,17 @@ func initialize(enabled: bool) -> void:
 func _ready():
 	initialize(true)
 
-func _process(delta):
-	pass
+func _input(event):
+	if Input.is_action_pressed("sprint"):
+		current_speed = sprint_speed
+	else:
+		current_speed = speed
 
 func _physics_process(delta):
-	var velocity: Vector2 = Vector2.ZERO
-	
-	if Input.is_action_pressed("ui_up"):
-		velocity.y -= 1
-	
-	if Input.is_action_pressed("ui_down"):
-		velocity.y += 1
-	
-	if Input.is_action_pressed("ui_left"):
-		velocity.x -= 1
-	
-	if Input.is_action_pressed("ui_right"):
-		velocity.x += 1
+	var velocity = Input.get_vector("move_left", "move_right", "move_backwards", "move_forwards")
 		
 	velocity *= delta
-	velocity *= speed * 10
+	velocity *= current_speed * 10
 	
-	parent.velocity = Vector3(velocity.x, 0, velocity.y)
+	parent.velocity = parent.transform.basis * Vector3(velocity.x, 0, velocity.y)
+	parent.move_and_slide()
