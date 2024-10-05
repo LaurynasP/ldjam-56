@@ -5,4 +5,5 @@ extends InteractableObject
 
 func interact():
 	GameManager.current_gameplay.eat_food(self)
+	GameManager.current_gameplay.make_noise(2, NoiseController.NoiseTypes.EATING)
 	queue_free()
