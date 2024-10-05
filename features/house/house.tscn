@@ -920,7 +920,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -26)
 
 [node name="KitchenDoor" parent="Structures/Doors" instance=ExtResource("12_4k2kh")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12, 0, -2.2)
-interactable_name = "Door"
 
 [node name="BedroomDoor" parent="Structures/Doors" instance=ExtResource("12_4k2kh")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12, 0, 6.8)
