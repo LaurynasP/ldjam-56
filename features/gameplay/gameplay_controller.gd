@@ -13,6 +13,8 @@ var noise: NoiseController
 
 var food_score: int = 0
 
+var level_total_score: int = 0
+
 signal on_game_paused(game_state: bool)
 
 signal on_interactable_hovered(object: InteractableObject)
@@ -53,7 +55,10 @@ func eat_food(food: Food):
 	food_score += food.score
 	inventory.add_item(food.interactable_name)
 	
-	on_food_consumed.emit(food)
+	if level_completed():
+		handle_level_completed()
+	else:
+		on_food_consumed.emit(food)
 	
 func add_item(item: String):
 	inventory.add_item(item)
@@ -74,7 +79,9 @@ func add_uis():
 	
 func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 	noise.noise_level += amount
-
+	
+	if level_failed():
+		handle_level_failed()
 	
 func add_noise_controller():
 	var noise_controller = new()
@@ -90,3 +97,27 @@ func add_inventory_controller():
 	add_child(inventory_controller)
 	
 	inventory = inventory_controller as Inventory
+
+func level_completed() -> bool:
+	return level_total_score == food_score
+
+func level_failed() -> bool:
+	return noise.noise_level >= 100
+
+func handle_level_completed(): 
+	player.toggle_input(false)
+	noise.set_process(false)
+	InputManager.set_process_input(false)
+	for child in get_children():
+		remove_child(child)
+	var victory_ui = ResourceLoader.load("res://features/victory/victory_ui.tscn")
+	add_child(victory_ui.instantiate())
+	
+func handle_level_failed():
+	player.toggle_input(false)
+	noise.set_process(false)
+	InputManager.set_process_input(false)
+	for child in get_children():
+		remove_child(child)
+	var failure_ui = ResourceLoader.load("res://features/level_failed/level_failed_ui.tscn")
+	add_child(failure_ui.instantiate())

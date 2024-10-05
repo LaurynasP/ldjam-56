@@ -21,8 +21,8 @@ gradient = SubResource("Gradient_0lasq")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cfvy1"]
 texture = SubResource("GradientTexture1D_woek8")
 texture_margin_right = 5.0
-expand_margin_top = 25.0
-expand_margin_bottom = 25.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
 [node name="noise_ui" type="Control"]
 layout_mode = 3
@@ -40,7 +40,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1, 0.5)
 theme_override_styles/background = SubResource("StyleBoxTexture_5ev0h")
 theme_override_styles/fill = SubResource("StyleBoxTexture_cfvy1")
 value = 50.0

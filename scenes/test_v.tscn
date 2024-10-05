@@ -69,3 +69,13 @@ shape = SubResource("ConcavePolygonShape3D_tfycf")
 transform = Transform3D(0.784235, 0, -0.620464, 0, 1, 0, 0.620464, 0, 0.784235, 4.12307, 1.49773, -3.18502)
 score = 5
 interactable_name = "Big 'Ol Cheese"
+
+[node name="food_ingredient_cheese3" parent="." instance=ExtResource("5_s8g1d")]
+transform = Transform3D(-0.900213, 0, -0.435451, 0, 1, 0, 0.435451, 0, -0.900213, 5.76853, 1.49773, -3.05242)
+score = 5
+interactable_name = "Big 'Ol Cheese"
+
+[node name="food_ingredient_cheese4" parent="." instance=ExtResource("5_s8g1d")]
+transform = Transform3D(-0.0624068, 0, 0.998051, 0, 1, 0, -0.998051, 0, -0.0624068, 4.9938, 1.49773, -2.45266)
+score = 5
+interactable_name = "Big 'Ol Cheese"
