@@ -1,25 +1,25 @@
-[gd_scene load_steps=6 format=3 uid="uid://c1ysa53k7batc"]
+[gd_scene load_steps=6 format=3 uid="uid://drlw3k4lampnh"]
 
-[ext_resource type="Script" path="res://features/player/player.gd" id="1_vw1jn"]
-[ext_resource type="Script" path="res://features/camera_free_look/camera_free_look.gd" id="2_po85o"]
-[ext_resource type="Script" path="res://features/movement/basic_movement.gd" id="3_6gbag"]
+[ext_resource type="Script" path="res://features/player/player.gd" id="1_2kqo7"]
+[ext_resource type="Script" path="res://features/camera_free_look/camera_free_look.gd" id="2_qc2vy"]
+[ext_resource type="Script" path="res://features/movement/basic_movement.gd" id="3_rj1s6"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_w7usd"]
 radius = 0.25
 height = 0.5
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0ehws"]
-points = PackedVector3Array(-0.0988522, -0.228099, -0.015197, 0.045782, 0.244107, 0.0228432, 0.0457827, 0.244111, -0.0228436, 0.236644, -0.0762829, 0.0152566, -0.045894, -0.00762502, 0.24496, -0.174441, 0.0379199, -0.174441, 0.0911749, -0.0455636, -0.227961, -0.219933, 0.0834016, 0.0834016, 0.106521, -0.220718, 0.0456312, 0.174441, 0.0379199, 0.174441, 0.150746, 0.158302, -0.120616, -0.0906167, 0.188805, -0.135949, -0.189557, -0.128889, 0.098579, -0.060539, 0.189155, 0.151324, 0.0607704, -0.159516, 0.182311, 0.0303509, -0.189812, -0.159461, -0.219933, -0.0834016, -0.0834016, 0.182341, 0.159495, 0.0607328, -0.045894, 0.00762502, -0.24496, 0.197011, -0.0833142, -0.128793, -0.151853, 0.197427, -0.00756409, -0.0912493, -0.121697, -0.197746, 0.06077, 0.159515, 0.18231, 0.244781, 0.0458605, -0.0152868, -0.0605403, -0.189159, 0.151327, 0.0379256, 0.136542, -0.204789, -0.151874, 0.00756516, 0.197455, -0.219478, 0.0908168, -0.0756886, 0.158644, -0.083061, 0.173742, 0.174441, 0.0379199, -0.174441, 0.113252, -0.211414, -0.0679324, -0.244955, -0.00762487, 0.0458931)
+[sub_resource type="SphereShape3D" id="SphereShape3D_dvjq8"]
+radius = 0.379671
 
-[node name="player" type="Node3D" node_paths=PackedStringArray("camera_controller", "movement_controller")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-script = ExtResource("1_vw1jn")
+[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("camera_controller", "movement_controller")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03561, 0)
+script = ExtResource("1_2kqo7")
 camera_controller = NodePath("camera_controller")
 movement_controller = NodePath("movement_controller")
 
 [node name="camera_controller" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10673, 0)
-script = ExtResource("2_po85o")
+script = ExtResource("2_qc2vy")
 
 [node name="camera" type="Camera3D" parent="camera_controller"]
 
@@ -30,10 +30,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.255676, 0)
 mesh = SubResource("CapsuleMesh_w7usd")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="model/body"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="model/body/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_0ehws")
-
 [node name="movement_controller" type="Node" parent="."]
-script = ExtResource("3_6gbag")
+script = ExtResource("3_rj1s6")
+
+[node name="collider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.157664, 0)
+shape = SubResource("SphereShape3D_dvjq8")
