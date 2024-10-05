@@ -11,3 +11,10 @@ data = PackedVector3Array(0, 1.9877, -0.0649, 0.0794, 2.0351, -0.0794, 0, 2.0351
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="lamp_standing/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_yyis3")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+light_color = Color(0.971242, 0.95137, 1.54018e-06, 1)
+light_energy = 2.016
+light_indirect_energy = 1.155
+shadow_enabled = true

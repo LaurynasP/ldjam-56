@@ -11,3 +11,13 @@ data = PackedVector3Array(0, 0.0744, -0.231, 0.125, 0.164, -0.2165, 0, 0.164, -0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="lamp_table/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_rltl8")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.960512, 0)
+light_energy = 0.877
+light_indirect_energy = 9.705
+light_volumetric_fog_energy = 1.088
+light_size = 0.114
+light_specular = 0.587
+shadow_enabled = true
+shadow_bias = 1.093
