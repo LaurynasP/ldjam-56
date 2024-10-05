@@ -25,17 +25,17 @@ size_flags_vertical = 3
 theme_override_constants/margin_left = 100
 theme_override_constants/margin_top = 200
 
-[node name="panel" type="PanelContainer" parent="center_container/margin"]
+[node name="PanelContainer" type="PanelContainer" parent="center_container/margin"]
 layout_mode = 2
 
-[node name="margin" type="MarginContainer" parent="center_container/margin/panel"]
+[node name="MarginContainer" type="MarginContainer" parent="center_container/margin/PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 5
+theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 5
+theme_override_constants/margin_bottom = 20
 
-[node name="hoverable_name" type="Label" parent="center_container/margin/panel/margin"]
+[node name="hoverable_name" type="Label" parent="center_container/margin/PanelContainer/MarginContainer"]
 layout_mode = 2
 text = "awdwadwadwadawdwadwadwda"
 uppercase = true
