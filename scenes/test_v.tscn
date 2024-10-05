@@ -1,18 +1,18 @@
 [gd_scene load_steps=8 format=3 uid="uid://dqfml1busilvy"]
 
 [ext_resource type="PackedScene" uid="uid://y2ao6g0aklo3" path="res://features/house/house.tscn" id="1_rn0et"]
-[ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="2_k3518"]
+[ext_resource type="PackedScene" uid="uid://cc88popy3cvhk" path="res://features/player/player.tscn" id="2_k3518"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jjb7d"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 
-[sub_resource type="Sky" id="Sky_3lhbi"]
+[sub_resource type="Sky" id="Sky_xdnms"]
 sky_material = SubResource("ProceduralSkyMaterial_jjb7d")
 
 [sub_resource type="Environment" id="Environment_6l5c6"]
 background_mode = 2
-sky = SubResource("Sky_3lhbi")
+sky = SubResource("Sky_xdnms")
 tonemap_mode = 2
 glow_enabled = true
 
