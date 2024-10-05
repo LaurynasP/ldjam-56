@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://drlw3k4lampnh"]
+[gd_scene load_steps=7 format=3 uid="uid://drlw3k4lampnh"]
 
 [ext_resource type="Script" path="res://features/player/player.gd" id="1_2kqo7"]
 [ext_resource type="Script" path="res://features/camera_free_look/camera_free_look.gd" id="2_qc2vy"]
 [ext_resource type="Script" path="res://features/movement/basic_movement.gd" id="3_rj1s6"]
+[ext_resource type="Script" path="res://features/object_interacting/interaction_source_controller.gd" id="4_ru8gi"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_w7usd"]
 radius = 0.25
@@ -11,28 +12,41 @@ height = 0.5
 [sub_resource type="SphereShape3D" id="SphereShape3D_dvjq8"]
 radius = 0.379671
 
-[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("camera_controller", "movement_controller")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03561, 0)
+[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("camera_controller", "movement_controller", "interactions_controller")]
 script = ExtResource("1_2kqo7")
 camera_controller = NodePath("camera_controller")
 movement_controller = NodePath("movement_controller")
-
-[node name="camera_controller" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10673, 0)
-script = ExtResource("2_qc2vy")
-
-[node name="camera" type="Camera3D" parent="camera_controller"]
+interactions_controller = NodePath("interaction_controller")
 
 [node name="model" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.493487, 0)
 
 [node name="body" type="MeshInstance3D" parent="model"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.255676, 0)
 mesh = SubResource("CapsuleMesh_w7usd")
 skeleton = NodePath("../..")
 
+[node name="collider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.335823, 0)
+shape = SubResource("SphereShape3D_dvjq8")
+
 [node name="movement_controller" type="Node" parent="."]
 script = ExtResource("3_rj1s6")
+speed = 10.0
+sprint_speed = 16.0
 
-[node name="collider" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.157664, 0)
-shape = SubResource("SphereShape3D_dvjq8")
+[node name="camera_controller" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.493487, 0)
+script = ExtResource("2_qc2vy")
+
+[node name="camera" type="Camera3D" parent="camera_controller"]
+
+[node name="interaction_controller" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.493487, 0)
+script = ExtResource("4_ru8gi")
+
+[node name="ray" type="RayCast3D" parent="interaction_controller"]
+target_position = Vector3(0, 0, -1.5)
+collide_with_areas = true
+
+[connection signal="on_interactable_hovered" from="interaction_controller" to="." method="_on_interaction_controller_on_interactable_hovered"]

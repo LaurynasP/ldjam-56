@@ -3,6 +3,7 @@ extends Node
 
 @export var camera_controller: CameraFreeLook
 @export var movement_controller: BasicMovement
+@export var interactions_controller: InteractionSourceController
 
 func _ready():
 	GameManager.player = self
@@ -16,3 +17,7 @@ func _process(delta):
 func disable_input():
 	camera_controller.on_rotation_changed(false)
 	
+
+
+func _on_interaction_controller_on_interactable_hovered(interactable):
+	print(interactable.interactable_name)
