@@ -9,6 +9,8 @@ var game_paused: bool = false
 
 var inventory: Inventory
 
+var noise: NoiseController
+
 var food_score: int = 0
 
 signal on_game_paused(game_state: bool)
@@ -17,21 +19,14 @@ signal on_interactable_hovered(object: InteractableObject)
 
 signal on_food_consumed(food: Food)
 
+signal on_item_added(item: String)
+
+signal on_item_removed(item: String)
+
 func _enter_tree():
-	var pause_ui = ResourceLoader.load("res://features/pause/ui.tscn")
-	var hover_ui = ResourceLoader.load("res://features/object_interacting/ui/object_hover_ui.tscn")
-	var gameplay_ui = ResourceLoader.load("res://features/gameplay/ui/gameplay_ui.tscn")
-	
-	add_child(hover_ui.instantiate())
-	add_child(pause_ui.instantiate())
-	add_child(gameplay_ui.instantiate())
-	
-	var inventory_controller = new()
-	inventory_controller.name = "inventory_controller"
-	inventory_controller.set_script(ResourceLoader.load("res://features/inventory/inventory_controller.gd"))
-	add_child(inventory_controller)
-	
-	inventory = inventory_controller as Inventory
+	add_uis()	
+	add_inventory_controller()
+	add_noise_controller()
 	
 	GameManager.current_gameplay = self
 
@@ -59,3 +54,39 @@ func eat_food(food: Food):
 	inventory.add_item(food.interactable_name)
 	
 	on_food_consumed.emit(food)
+	
+func add_item(item: String):
+	inventory.add_item(item)
+	on_item_added.emit(item)
+	
+func remove_item(item: String):
+	inventory.remove_item(item)
+	on_item_removed.emit(item)
+
+func add_uis():
+	var pause_ui = ResourceLoader.load("res://features/pause/ui.tscn")
+	var hover_ui = ResourceLoader.load("res://features/object_interacting/ui/object_hover_ui.tscn")
+	var gameplay_ui = ResourceLoader.load("res://features/gameplay/ui/gameplay_ui.tscn")
+	
+	add_child(hover_ui.instantiate())
+	add_child(pause_ui.instantiate())
+	add_child(gameplay_ui.instantiate())
+	
+func make_noise(amount: int, noise_type: NoiseController.NoiseTypes):
+	noise.noise_level += amount
+
+	
+func add_noise_controller():
+	var noise_controller = new()
+	noise_controller.name = "noise_controller"
+	noise_controller.set_script(ResourceLoader.load("res://features/noise/noise_controller.gd"))
+	add_child(noise_controller)
+	
+	noise = noise_controller as NoiseController
+func add_inventory_controller():
+	var inventory_controller = new()
+	inventory_controller.name = "inventory_controller"
+	inventory_controller.set_script(ResourceLoader.load("res://features/inventory/inventory_controller.gd"))
+	add_child(inventory_controller)
+	
+	inventory = inventory_controller as Inventory
