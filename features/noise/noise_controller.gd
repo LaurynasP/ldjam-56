@@ -6,6 +6,8 @@ enum NoiseTypes {
 	SPRINTING,
 	EATING,
 	LANDING,
+	DOOR_OPEN,
+	DRAWER_OPEN
 }
 
 var noise_level: float = 0
