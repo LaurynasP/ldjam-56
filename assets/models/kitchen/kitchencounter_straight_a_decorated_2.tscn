@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsfykjefc8dje"]
+
+[ext_resource type="PackedScene" uid="uid://ddl4ktwvlrm0x" path="res://imports/models/kitchen/kitchencounter_straight_A_decorated.gltf" id="1_p5xxh"]
+
+[node name="kitchencounter_straight_A_decorated2" instance=ExtResource("1_p5xxh")]

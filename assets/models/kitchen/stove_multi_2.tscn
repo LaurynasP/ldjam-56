@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://5hkiw21f7560"]
+
+[ext_resource type="PackedScene" uid="uid://ck7sjiyy8tvc6" path="res://imports/models/kitchen/stove_multi.gltf" id="1_kmfix"]
+
+[node name="stove_multi2" instance=ExtResource("1_kmfix")]

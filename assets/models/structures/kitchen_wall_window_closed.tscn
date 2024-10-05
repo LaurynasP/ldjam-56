@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c00wk1p04k8p4"]
+
+[ext_resource type="PackedScene" uid="uid://df3biprlp63r0" path="res://imports/models/kitchen/wall_window_closed.gltf" id="1_odotp"]
+
+[node name="kitchen_wall_window_closed" instance=ExtResource("1_odotp")]

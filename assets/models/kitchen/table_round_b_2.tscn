@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckpkjey2scfhh"]
+
+[ext_resource type="PackedScene" uid="uid://b245jhcwjuyv7" path="res://imports/models/kitchen/table_round_B.gltf" id="1_uvb5o"]
+
+[node name="table_round_B2" instance=ExtResource("1_uvb5o")]

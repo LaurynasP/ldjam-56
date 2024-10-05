@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cml61e2u2a42t"]
+
+[ext_resource type="PackedScene" uid="uid://cy3n57vbbv1py" path="res://imports/models/kitchen/floor_kitchen.gltf" id="1_fmdf7"]
+
+[node name="floor_kitchen2" instance=ExtResource("1_fmdf7")]
+
+[node name="floor_kitchen" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)

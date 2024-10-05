@@ -1,0 +1,751 @@
+[gd_scene load_steps=188 format=3 uid="uid://b1li8syfm0cn3"]
+
+[ext_resource type="PackedScene" uid="uid://cxlqujwi22eim" path="res://imports/models/kitchen/bowl.gltf" id="1_ggmt1"]
+[ext_resource type="PackedScene" uid="uid://d07bygexaee6h" path="res://imports/models/kitchen/bowl_dirty.gltf" id="2_uciui"]
+[ext_resource type="PackedScene" uid="uid://dckn4qikm2kyx" path="res://imports/models/kitchen/bowl_small.gltf" id="3_1ptll"]
+[ext_resource type="PackedScene" uid="uid://kpjjc43ct8rm" path="res://imports/models/kitchen/chair_A.gltf" id="4_mwvok"]
+[ext_resource type="PackedScene" uid="uid://8c512q7aqux3" path="res://imports/models/kitchen/chair_B.gltf" id="5_jwxdg"]
+[ext_resource type="PackedScene" uid="uid://ctal5sgrybkhi" path="res://imports/models/kitchen/chair_stool.gltf" id="6_fywf2"]
+[ext_resource type="PackedScene" uid="uid://dmw8qlxlaxm31" path="res://imports/models/kitchen/crate.gltf" id="7_0v20i"]
+[ext_resource type="PackedScene" uid="uid://cfd2cqucr5ts4" path="res://imports/models/kitchen/crate_buns.gltf" id="8_8cffn"]
+[ext_resource type="PackedScene" uid="uid://mvltp5mb4rb6" path="res://imports/models/kitchen/crate_carrots.gltf" id="9_ut4by"]
+[ext_resource type="PackedScene" uid="uid://ci0uxwv07vgbu" path="res://imports/models/kitchen/crate_cheese.gltf" id="10_81hh2"]
+[ext_resource type="PackedScene" uid="uid://buajfrl1mke3i" path="res://imports/models/kitchen/crate_ham.gltf" id="11_gfcfr"]
+[ext_resource type="PackedScene" uid="uid://djvxswo0ov0na" path="res://imports/models/kitchen/crate_lettuce.gltf" id="12_6tt1f"]
+[ext_resource type="PackedScene" uid="uid://bsd3qmoru3tho" path="res://imports/models/kitchen/crate_lid.gltf" id="13_b5t5w"]
+[ext_resource type="PackedScene" uid="uid://co3uo5cdx6uvh" path="res://imports/models/kitchen/crate_onions.gltf" id="14_car2o"]
+[ext_resource type="PackedScene" uid="uid://cebllyop1qg72" path="res://imports/models/kitchen/crate_potatoes.gltf" id="15_lil3d"]
+[ext_resource type="PackedScene" uid="uid://b87cj6nprgiwc" path="res://imports/models/kitchen/crate_steak.gltf" id="16_rmtn3"]
+[ext_resource type="PackedScene" uid="uid://fo6v8jg74uki" path="res://imports/models/kitchen/crate_tomatoes.gltf" id="17_i0kkw"]
+[ext_resource type="PackedScene" uid="uid://q1e68uc3k3ut" path="res://imports/models/kitchen/cuttingboard.gltf" id="18_qj248"]
+[ext_resource type="PackedScene" uid="uid://dw7gh5syaklow" path="res://imports/models/kitchen/dishrack.gltf" id="19_6logr"]
+[ext_resource type="PackedScene" uid="uid://b6jrymdpiphmm" path="res://imports/models/kitchen/dishrack_plates.gltf" id="20_7b4nb"]
+[ext_resource type="PackedScene" uid="uid://dstokmgh5iaa1" path="res://imports/models/kitchen/door_A.gltf" id="21_s05kx"]
+[ext_resource type="PackedScene" uid="uid://cyb6fc2unxxgn" path="res://imports/models/kitchen/door_B.gltf" id="22_svhnn"]
+[ext_resource type="PackedScene" uid="uid://bsu4ouvipeucg" path="res://imports/models/kitchen/extractorhood.gltf" id="23_s5qgw"]
+[ext_resource type="PackedScene" uid="uid://chhn1wxwc8w34" path="res://imports/models/kitchen/food_burger.gltf" id="24_kb4n0"]
+[ext_resource type="PackedScene" uid="uid://8bjmefafwky0" path="res://imports/models/kitchen/food_dinner.gltf" id="25_q1rec"]
+[ext_resource type="PackedScene" uid="uid://dub36v428ntta" path="res://imports/models/kitchen/food_ingredient_bun.gltf" id="26_fwihe"]
+[ext_resource type="PackedScene" uid="uid://da283kp852jo6" path="res://imports/models/kitchen/food_ingredient_bun_bottom.gltf" id="27_dj8hw"]
+[ext_resource type="PackedScene" uid="uid://bs07dtfceywng" path="res://imports/models/kitchen/food_ingredient_bun_top.gltf" id="28_3i7pj"]
+[ext_resource type="PackedScene" uid="uid://ugnlsnxamd2h" path="res://imports/models/kitchen/food_ingredient_burger_cooked.gltf" id="29_bt2ow"]
+[ext_resource type="PackedScene" uid="uid://dolyw1ghp7qrx" path="res://imports/models/kitchen/food_ingredient_burger_trash.gltf" id="30_3fbnc"]
+[ext_resource type="PackedScene" uid="uid://cfgj6asidlkjo" path="res://imports/models/kitchen/food_ingredient_burger_uncooked.gltf" id="31_kg5yy"]
+[ext_resource type="PackedScene" uid="uid://csi78wcg6jxyf" path="res://imports/models/kitchen/food_ingredient_carrot.gltf" id="32_x78xu"]
+[ext_resource type="PackedScene" uid="uid://be7js40i7q7uc" path="res://imports/models/kitchen/food_ingredient_carrot_chopped.gltf" id="33_mumel"]
+[ext_resource type="PackedScene" uid="uid://bfgcd36ubbhxc" path="res://imports/models/kitchen/food_ingredient_carrot_pieces.gltf" id="34_wfbni"]
+[ext_resource type="PackedScene" uid="uid://cp0op1rw5oqm" path="res://imports/models/kitchen/food_ingredient_cheese.gltf" id="35_0n03w"]
+[ext_resource type="PackedScene" uid="uid://c8samu0csjmri" path="res://imports/models/kitchen/food_ingredient_cheese_chopped.gltf" id="36_f37e2"]
+[ext_resource type="PackedScene" uid="uid://dwwosd8hgk7yj" path="res://imports/models/kitchen/food_ingredient_cheese_slice.gltf" id="37_iop15"]
+[ext_resource type="PackedScene" uid="uid://brxmcqvin4vce" path="res://imports/models/kitchen/food_ingredient_ham.gltf" id="38_e2wka"]
+[ext_resource type="PackedScene" uid="uid://cgffdipindxd" path="res://imports/models/kitchen/food_ingredient_ham_cooked.gltf" id="39_spob1"]
+[ext_resource type="PackedScene" uid="uid://7tpqomvs3lhy" path="res://imports/models/kitchen/food_ingredient_ham_trash.gltf" id="40_vhxdy"]
+[ext_resource type="PackedScene" uid="uid://dy7x6ubuytn4b" path="res://imports/models/kitchen/food_ingredient_lettuce.gltf" id="41_o2grp"]
+[ext_resource type="PackedScene" uid="uid://bcnpag5r18fu" path="res://imports/models/kitchen/food_ingredient_lettuce_chopped.gltf" id="42_hkosm"]
+[ext_resource type="PackedScene" uid="uid://bqxq5f113mdnm" path="res://imports/models/kitchen/food_ingredient_lettuce_slice.gltf" id="43_vocga"]
+[ext_resource type="PackedScene" uid="uid://dvlynvih4lxvh" path="res://imports/models/kitchen/food_ingredient_onion.gltf" id="44_hlskr"]
+[ext_resource type="PackedScene" uid="uid://dtc7052fjolhs" path="res://imports/models/kitchen/food_ingredient_onion_chopped.gltf" id="45_70kik"]
+[ext_resource type="PackedScene" uid="uid://cmfmiypgkpdsb" path="res://imports/models/kitchen/food_ingredient_onion_rings.gltf" id="46_oepul"]
+[ext_resource type="PackedScene" uid="uid://dxrguw8x3y0hg" path="res://imports/models/kitchen/food_ingredient_potato.gltf" id="47_rhq63"]
+[ext_resource type="PackedScene" uid="uid://cgkjmrs2mect3" path="res://imports/models/kitchen/food_ingredient_potato_chopped.gltf" id="48_mgtx2"]
+[ext_resource type="PackedScene" uid="uid://66ti37nxb0rk" path="res://imports/models/kitchen/food_ingredient_potato_mashed.gltf" id="49_8n1gv"]
+[ext_resource type="PackedScene" uid="uid://c457nk3ws7mhj" path="res://imports/models/kitchen/food_ingredient_steak.gltf" id="50_0jiat"]
+[ext_resource type="PackedScene" uid="uid://bp0akwysragag" path="res://imports/models/kitchen/food_ingredient_steak_pieces.gltf" id="51_7eblp"]
+[ext_resource type="PackedScene" uid="uid://cxjfl8d86jysh" path="res://imports/models/kitchen/food_ingredient_tomato.gltf" id="52_4kjvk"]
+[ext_resource type="PackedScene" uid="uid://daek22i726qbk" path="res://imports/models/kitchen/food_ingredient_tomato_slice.gltf" id="53_jgg50"]
+[ext_resource type="PackedScene" uid="uid://cxe11mve48ad5" path="res://imports/models/kitchen/food_ingredient_tomato_slices.gltf" id="54_stpe2"]
+[ext_resource type="PackedScene" uid="uid://bf64b4ui5biv0" path="res://imports/models/kitchen/food_ingredient_vegetableburger_cooked.gltf" id="55_wp64k"]
+[ext_resource type="PackedScene" uid="uid://bub7x3fdj4o3d" path="res://imports/models/kitchen/food_ingredient_vegetableburger_uncooked.gltf" id="56_morrk"]
+[ext_resource type="PackedScene" uid="uid://ya6u6aldqn51" path="res://imports/models/kitchen/food_stew.gltf" id="57_1or7n"]
+[ext_resource type="PackedScene" uid="uid://w7ol6vuf8utn" path="res://imports/models/kitchen/food_vegetableburger.gltf" id="58_j66ss"]
+[ext_resource type="PackedScene" uid="uid://jhm7yf8erjp5" path="res://imports/models/kitchen/fridge_A.gltf" id="59_av3h6"]
+[ext_resource type="PackedScene" uid="uid://cu85eq0ra43wl" path="res://imports/models/kitchen/fridge_A_decorated.gltf" id="60_6lyd8"]
+[ext_resource type="PackedScene" uid="uid://bgivr3feo3xwv" path="res://imports/models/kitchen/fridge_B.gltf" id="61_5t2w6"]
+[ext_resource type="PackedScene" uid="uid://4m463wfndjka" path="res://imports/models/kitchen/jar_A_large.gltf" id="62_86eev"]
+[ext_resource type="PackedScene" uid="uid://c8f17g72rdlcu" path="res://imports/models/kitchen/jar_A_medium.gltf" id="63_nbni5"]
+[ext_resource type="PackedScene" uid="uid://bffaf6e6srofk" path="res://imports/models/kitchen/jar_A_small.gltf" id="64_l6xow"]
+[ext_resource type="PackedScene" uid="uid://48hnc84wb4em" path="res://imports/models/kitchen/jar_B_large.gltf" id="65_qgevx"]
+[ext_resource type="PackedScene" uid="uid://06slmjt825so" path="res://imports/models/kitchen/jar_B_medium.gltf" id="66_3dqlw"]
+[ext_resource type="PackedScene" uid="uid://yd54qx61gwi1" path="res://imports/models/kitchen/jar_B_small.gltf" id="67_s0e6v"]
+[ext_resource type="PackedScene" uid="uid://ch3vp4kr5v3mi" path="res://imports/models/kitchen/jar_C_large.gltf" id="68_mrjr5"]
+[ext_resource type="PackedScene" uid="uid://clqxxbl8bm4gp" path="res://imports/models/kitchen/jar_C_medium.gltf" id="69_mv3yi"]
+[ext_resource type="PackedScene" uid="uid://cc6yfkc0hcljc" path="res://imports/models/kitchen/jar_C_small.gltf" id="70_wigmo"]
+[ext_resource type="PackedScene" uid="uid://64pwhyl8dj3a" path="res://imports/models/kitchen/jar_D_large.gltf" id="71_2w54o"]
+[ext_resource type="PackedScene" uid="uid://vw4targcv34q" path="res://imports/models/kitchen/jar_D_medium.gltf" id="72_nqlo5"]
+[ext_resource type="PackedScene" uid="uid://c85gkdssm1kw3" path="res://imports/models/kitchen/jar_D_small.gltf" id="73_1jhwa"]
+[ext_resource type="PackedScene" uid="uid://ce3s5mklhwle0" path="res://imports/models/kitchen/ketchup.gltf" id="74_lktdt"]
+[ext_resource type="PackedScene" uid="uid://crysd1l70w0p3" path="res://imports/models/kitchen/kitchencabinet.gltf" id="75_2ndpq"]
+[ext_resource type="PackedScene" uid="uid://1077n28u0lyt" path="res://imports/models/kitchen/kitchencabinet_corner.gltf" id="76_w4sv8"]
+[ext_resource type="PackedScene" uid="uid://6xl7rrdjfx3a" path="res://imports/models/kitchen/kitchencabinet_corner_half.gltf" id="77_gxb78"]
+[ext_resource type="PackedScene" uid="uid://c3ulimovl4e68" path="res://imports/models/kitchen/kitchencabinet_half.gltf" id="78_m3cgd"]
+[ext_resource type="PackedScene" uid="uid://cd2p8qduns2br" path="res://imports/models/kitchen/kitchencounter_innercorner.gltf" id="79_sbau5"]
+[ext_resource type="PackedScene" uid="uid://dk6wb3ylxmx7c" path="res://imports/models/kitchen/kitchencounter_innercorner_backsplash.gltf" id="80_j8quq"]
+[ext_resource type="PackedScene" uid="uid://caieqq4hol1or" path="res://imports/models/kitchen/kitchencounter_outercorner.gltf" id="81_d7uar"]
+[ext_resource type="PackedScene" uid="uid://becgikrfutjjk" path="res://imports/models/kitchen/kitchencounter_outercorner_backsplash.gltf" id="82_bqcsj"]
+[ext_resource type="PackedScene" uid="uid://bcj0b1t1fjkk5" path="res://imports/models/kitchen/kitchencounter_sink.gltf" id="83_688u5"]
+[ext_resource type="PackedScene" uid="uid://ckuydufmhkfgf" path="res://imports/models/kitchen/kitchencounter_sink_backsplash.gltf" id="84_083ve"]
+[ext_resource type="PackedScene" uid="uid://drmmdehxndtw7" path="res://imports/models/kitchen/kitchencounter_straight_A.gltf" id="85_1f6yw"]
+[ext_resource type="PackedScene" uid="uid://jk0vbdl70i8i" path="res://imports/models/kitchen/kitchencounter_straight_A_backsplash.gltf" id="86_qy3a2"]
+[ext_resource type="PackedScene" uid="uid://ddl4ktwvlrm0x" path="res://imports/models/kitchen/kitchencounter_straight_A_decorated.gltf" id="87_kxiuy"]
+[ext_resource type="PackedScene" uid="uid://b3l372d7f1w43" path="res://imports/models/kitchen/kitchencounter_straight_B.gltf" id="88_c0wri"]
+[ext_resource type="PackedScene" uid="uid://dne7wjk8al7pw" path="res://imports/models/kitchen/kitchencounter_straight_B_backsplash.gltf" id="89_ij8n0"]
+[ext_resource type="PackedScene" uid="uid://b5g727qdou4x6" path="res://imports/models/kitchen/kitchencounter_straight_decorated.gltf" id="90_71gi4"]
+[ext_resource type="PackedScene" uid="uid://cdvfm8iwjubwy" path="res://imports/models/kitchen/kitchentable_A.gltf" id="91_1dnrv"]
+[ext_resource type="PackedScene" uid="uid://oshevs7kyplo" path="res://imports/models/kitchen/kitchentable_A_large.gltf" id="92_bd1ua"]
+[ext_resource type="PackedScene" uid="uid://khk1lra2h0rl" path="res://imports/models/kitchen/kitchentable_A_large_decorated.gltf" id="93_75trq"]
+[ext_resource type="PackedScene" uid="uid://ce4t666pnu48u" path="res://imports/models/kitchen/kitchentable_B.gltf" id="94_f10et"]
+[ext_resource type="PackedScene" uid="uid://cjn0whot6dkl1" path="res://imports/models/kitchen/kitchentable_B_large.gltf" id="95_i4kay"]
+[ext_resource type="PackedScene" uid="uid://bdthqkttjbeno" path="res://imports/models/kitchen/kitchentable_sink.gltf" id="96_u7qo4"]
+[ext_resource type="PackedScene" uid="uid://bdni28ov08iuu" path="res://imports/models/kitchen/kitchentable_sink_large.gltf" id="97_f7avn"]
+[ext_resource type="PackedScene" uid="uid://dsg34pjhban8p" path="res://imports/models/kitchen/kitchentable_sink_large_decorated.gltf" id="98_4evuc"]
+[ext_resource type="PackedScene" uid="uid://cajvxokobpgj2" path="res://imports/models/kitchen/knife.gltf" id="99_k3khh"]
+[ext_resource type="PackedScene" uid="uid://bt8o7w0swjm2c" path="res://imports/models/kitchen/lid_A.gltf" id="100_ix208"]
+[ext_resource type="PackedScene" uid="uid://ce18yy14l3b7o" path="res://imports/models/kitchen/lid_B.gltf" id="101_4s35n"]
+[ext_resource type="PackedScene" uid="uid://b046okidsfn7" path="res://imports/models/kitchen/lid_large.gltf" id="102_1k7h3"]
+[ext_resource type="PackedScene" uid="uid://c5w2jg6w5kvwn" path="res://imports/models/kitchen/menu.gltf" id="103_6fow3"]
+[ext_resource type="PackedScene" uid="uid://bp82gfy5dku2w" path="res://imports/models/kitchen/mustard.gltf" id="104_ooe1r"]
+[ext_resource type="PackedScene" uid="uid://dgi77j0rmy8ce" path="res://imports/models/kitchen/oven.gltf" id="105_ctdcc"]
+[ext_resource type="PackedScene" uid="uid://cuto20w0vmci5" path="res://imports/models/kitchen/pan_006.gltf" id="106_o1tdl"]
+[ext_resource type="PackedScene" uid="uid://covwktqf2a7hu" path="res://imports/models/kitchen/pan_A.gltf" id="107_qulsv"]
+[ext_resource type="PackedScene" uid="uid://t1a2wtihager" path="res://imports/models/kitchen/pan_B.gltf" id="108_6x6tw"]
+[ext_resource type="PackedScene" uid="uid://dijb7hjiwoclv" path="res://imports/models/kitchen/papertowel.gltf" id="109_usho4"]
+[ext_resource type="PackedScene" uid="uid://bjfld086dn5oe" path="res://imports/models/kitchen/pillar_A.gltf" id="110_gkkuw"]
+[ext_resource type="PackedScene" uid="uid://bargsdtllrg8a" path="res://imports/models/kitchen/pillar_B.gltf" id="111_25tcy"]
+[ext_resource type="PackedScene" uid="uid://be3udtwa1c4ra" path="res://imports/models/kitchen/plate.gltf" id="112_feyy4"]
+[ext_resource type="PackedScene" uid="uid://bacrlobnf6aew" path="res://imports/models/kitchen/plate_dirty.gltf" id="113_cy56h"]
+[ext_resource type="PackedScene" uid="uid://bnrxr0sava8fh" path="res://imports/models/kitchen/plate_small.gltf" id="114_0t1r8"]
+[ext_resource type="PackedScene" uid="uid://bh7lguq31ckqs" path="res://imports/models/kitchen/pot_A.gltf" id="115_1pfq6"]
+[ext_resource type="PackedScene" uid="uid://nt1jhee6ji4u" path="res://imports/models/kitchen/pot_A_stew.gltf" id="116_nb03g"]
+[ext_resource type="PackedScene" uid="uid://ubq4fnjqfj0b" path="res://imports/models/kitchen/pot_B.gltf" id="117_11jj3"]
+[ext_resource type="PackedScene" uid="uid://dv3k3xd48wjxx" path="res://imports/models/kitchen/pot_B_stew.gltf" id="118_ykge7"]
+[ext_resource type="PackedScene" uid="uid://cn36etk5dw2ig" path="res://imports/models/kitchen/pot_large.gltf" id="119_2bgj1"]
+[ext_resource type="PackedScene" uid="uid://co0acwwbexgjm" path="res://imports/models/kitchen/shelf_papertowel.gltf" id="120_i8lpc"]
+[ext_resource type="PackedScene" uid="uid://de0nsenov2x8a" path="res://imports/models/kitchen/shelf_papertowel_decorated.gltf" id="121_et4v3"]
+[ext_resource type="PackedScene" uid="uid://baxpqyspnnlc8" path="res://imports/models/kitchen/stew_bowl.gltf" id="122_lflmq"]
+[ext_resource type="PackedScene" uid="uid://cpb61y4hr3d5t" path="res://imports/models/kitchen/stew_pot.gltf" id="123_4qsuk"]
+[ext_resource type="PackedScene" uid="uid://ck7sjiyy8tvc6" path="res://imports/models/kitchen/stove_multi.gltf" id="124_dy0t4"]
+[ext_resource type="PackedScene" uid="uid://drrv46uswutds" path="res://imports/models/kitchen/stove_multi_countertop.gltf" id="125_fiwn1"]
+[ext_resource type="PackedScene" uid="uid://hbfagjd2m78b" path="res://imports/models/kitchen/stove_multi_decorated.gltf" id="126_d1b3h"]
+[ext_resource type="PackedScene" uid="uid://bun8opq2m74gm" path="res://imports/models/kitchen/stove_single.gltf" id="127_8c6e1"]
+[ext_resource type="PackedScene" uid="uid://bty2kqhlmrpg5" path="res://imports/models/kitchen/stove_single_countertop.gltf" id="128_7lnxm"]
+[ext_resource type="PackedScene" uid="uid://bw8pke6qcq1lp" path="res://imports/models/kitchen/table_round_A.gltf" id="129_x0rg2"]
+[ext_resource type="PackedScene" uid="uid://b5shcwy1j13tk" path="res://imports/models/kitchen/table_round_A_decorated.gltf" id="130_5rvdm"]
+[ext_resource type="PackedScene" uid="uid://bp5ssoyprdni8" path="res://imports/models/kitchen/table_round_A_small.gltf" id="131_ylbqo"]
+[ext_resource type="PackedScene" uid="uid://bywa7g8jfbm0s" path="res://imports/models/kitchen/table_round_A_small_decorated.gltf" id="132_mr8gf"]
+[ext_resource type="PackedScene" uid="uid://b245jhcwjuyv7" path="res://imports/models/kitchen/table_round_B.gltf" id="133_q2h8f"]
+[ext_resource type="PackedScene" uid="uid://bbu3wq2ulkda4" path="res://imports/models/kitchen/towelrail.gltf" id="134_wnsk5"]
+[ext_resource type="PackedScene" uid="uid://13bpnnadeiog" path="res://imports/models/furniture/armchair.gltf" id="135_em4hg"]
+[ext_resource type="PackedScene" uid="uid://ba33grdxhgxho" path="res://imports/models/furniture/armchair_pillows.gltf" id="136_s7a3d"]
+[ext_resource type="PackedScene" uid="uid://cldmhav1kbula" path="res://imports/models/furniture/bed_double_A.gltf" id="137_fshww"]
+[ext_resource type="PackedScene" uid="uid://7u2157lthox6" path="res://imports/models/furniture/bed_double_B.gltf" id="138_3sxqm"]
+[ext_resource type="PackedScene" uid="uid://bbixpfnve7a7g" path="res://imports/models/furniture/bed_single_A.gltf" id="139_mjlyh"]
+[ext_resource type="PackedScene" uid="uid://bw0l1binwu3ru" path="res://imports/models/furniture/bed_single_B.gltf" id="140_3voqr"]
+[ext_resource type="PackedScene" uid="uid://pf4br8ahjke1" path="res://imports/models/furniture/book_set.gltf" id="141_13ki2"]
+[ext_resource type="PackedScene" uid="uid://bl017x1h7kyfu" path="res://imports/models/furniture/book_single.gltf" id="142_rxnnd"]
+[ext_resource type="PackedScene" uid="uid://8d2clctjifcu" path="res://imports/models/furniture/cabinet_medium.gltf" id="143_0lcoq"]
+[ext_resource type="PackedScene" uid="uid://bk5acp55aoghy" path="res://imports/models/furniture/cabinet_medium_decorated.gltf" id="144_x7mg2"]
+[ext_resource type="PackedScene" uid="uid://nvjdbel4d5w6" path="res://imports/models/furniture/cabinet_small.gltf" id="145_shcdg"]
+[ext_resource type="PackedScene" uid="uid://7htsomoue4c7" path="res://imports/models/furniture/cabinet_small_decorated.gltf" id="146_bn37x"]
+[ext_resource type="PackedScene" uid="uid://ccux21s1q44vb" path="res://imports/models/furniture/cactus_medium_A.gltf" id="147_yxeq8"]
+[ext_resource type="PackedScene" uid="uid://dyn8f2gl0f26i" path="res://imports/models/furniture/cactus_medium_B.gltf" id="148_rk686"]
+[ext_resource type="PackedScene" uid="uid://ccdyne0id211a" path="res://imports/models/furniture/cactus_small_A.gltf" id="149_85ybn"]
+[ext_resource type="PackedScene" uid="uid://bkdxr5xsq1fre" path="res://imports/models/furniture/cactus_small_B.gltf" id="150_ruuea"]
+[ext_resource type="PackedScene" uid="uid://b7woicqfgr5g4" path="res://imports/models/furniture/chair_A.gltf" id="151_5l15y"]
+[ext_resource type="PackedScene" uid="uid://c023p7fwkwvfx" path="res://imports/models/furniture/chair_A_wood.gltf" id="152_lldm8"]
+[ext_resource type="PackedScene" uid="uid://y6s5x8o64stq" path="res://imports/models/furniture/chair_B.gltf" id="153_ci5bx"]
+[ext_resource type="PackedScene" uid="uid://c4yj6if0bv8wv" path="res://imports/models/furniture/chair_B_wood.gltf" id="154_a5qk7"]
+[ext_resource type="PackedScene" uid="uid://b3fr2efchoc5x" path="res://imports/models/furniture/chair_C.gltf" id="155_pqd4n"]
+[ext_resource type="PackedScene" uid="uid://bvdgss85gafhv" path="res://imports/models/furniture/chair_stool.gltf" id="156_wakl3"]
+[ext_resource type="PackedScene" uid="uid://gneyay27f246" path="res://imports/models/furniture/chair_stool_wood.gltf" id="157_7xp6l"]
+[ext_resource type="PackedScene" uid="uid://bb3hmnrow5woj" path="res://imports/models/furniture/couch.gltf" id="158_q6s62"]
+[ext_resource type="PackedScene" uid="uid://vcikwrbqdac4" path="res://imports/models/furniture/couch_pillows.gltf" id="159_mob1x"]
+[ext_resource type="PackedScene" uid="uid://cub14vwjd6ivl" path="res://imports/models/furniture/lamp_standing.gltf" id="160_wct0a"]
+[ext_resource type="PackedScene" uid="uid://c1ur8yd0db67t" path="res://imports/models/furniture/lamp_table.gltf" id="161_sb6bd"]
+[ext_resource type="PackedScene" uid="uid://c1uwlm8xa0ed2" path="res://imports/models/furniture/pictureframe_large_A.gltf" id="162_hwrpk"]
+[ext_resource type="PackedScene" uid="uid://bftb41mxp76t3" path="res://imports/models/furniture/pictureframe_large_B.gltf" id="163_70hm8"]
+[ext_resource type="PackedScene" uid="uid://bsw2qg3r3a4r6" path="res://imports/models/furniture/pictureframe_medium.gltf" id="164_mui5u"]
+[ext_resource type="PackedScene" uid="uid://b5qcw7byhpqlm" path="res://imports/models/furniture/pictureframe_small_A.gltf" id="165_w1xhv"]
+[ext_resource type="PackedScene" uid="uid://cg2kyxfxi2gx" path="res://imports/models/furniture/pictureframe_small_B.gltf" id="166_bdc7c"]
+[ext_resource type="PackedScene" uid="uid://bjhdutv7fbnkg" path="res://imports/models/furniture/pictureframe_small_C.gltf" id="167_ikhmk"]
+[ext_resource type="PackedScene" uid="uid://b22d0aq4rk0o8" path="res://imports/models/furniture/pictureframe_standing_A.gltf" id="168_wju7b"]
+[ext_resource type="PackedScene" uid="uid://bku512teyh6o" path="res://imports/models/furniture/pictureframe_standing_B.gltf" id="169_1fl08"]
+[ext_resource type="PackedScene" uid="uid://cuun2gaxdexj5" path="res://imports/models/furniture/pillow_A.gltf" id="170_p1xlj"]
+[ext_resource type="PackedScene" uid="uid://ci7a8vxa8tjxh" path="res://imports/models/furniture/pillow_B.gltf" id="171_yoybm"]
+[ext_resource type="PackedScene" uid="uid://b3g6570lb6y7o" path="res://imports/models/furniture/rug_oval_A.gltf" id="172_2h1t4"]
+[ext_resource type="PackedScene" uid="uid://bwbivq0g2m6ed" path="res://imports/models/furniture/rug_oval_B.gltf" id="173_vjm7m"]
+[ext_resource type="PackedScene" uid="uid://bxufijjj6735i" path="res://imports/models/furniture/rug_rectangle_A.gltf" id="174_l33md"]
+[ext_resource type="PackedScene" uid="uid://wb6v83pxn345" path="res://imports/models/furniture/rug_rectangle_B.gltf" id="175_18tiv"]
+[ext_resource type="PackedScene" uid="uid://n40vuj3ynrqu" path="res://imports/models/furniture/rug_rectangle_stripes_A.gltf" id="176_hqfer"]
+[ext_resource type="PackedScene" uid="uid://cmmiv6qbeaa1p" path="res://imports/models/furniture/rug_rectangle_stripes_B.gltf" id="177_ho56l"]
+[ext_resource type="PackedScene" uid="uid://bapav8l2nfcmf" path="res://imports/models/furniture/shelf_A_big.gltf" id="178_nowmq"]
+[ext_resource type="PackedScene" uid="uid://c6dwmrf552ld1" path="res://imports/models/furniture/shelf_A_small.gltf" id="179_rbwq4"]
+[ext_resource type="PackedScene" uid="uid://c2n1jpng3j13o" path="res://imports/models/furniture/shelf_B_large.gltf" id="180_visfd"]
+[ext_resource type="PackedScene" uid="uid://r8i2cv7xg530" path="res://imports/models/furniture/shelf_B_large_decorated.gltf" id="181_5v6n3"]
+[ext_resource type="PackedScene" uid="uid://csa717p62s5ix" path="res://imports/models/furniture/shelf_B_small.gltf" id="182_k6jo6"]
+[ext_resource type="PackedScene" uid="uid://pqc4vm40xyit" path="res://imports/models/furniture/shelf_B_small_decorated.gltf" id="183_uwtx6"]
+[ext_resource type="PackedScene" uid="uid://bieobhxhgk366" path="res://imports/models/furniture/table_low.gltf" id="184_qmgme"]
+[ext_resource type="PackedScene" uid="uid://btn210vysn13n" path="res://imports/models/furniture/table_medium.gltf" id="185_07olu"]
+[ext_resource type="PackedScene" uid="uid://wjharpj2g6jq" path="res://imports/models/furniture/table_medium_long.gltf" id="186_bd7ch"]
+[ext_resource type="PackedScene" uid="uid://qr8pdpqc677o" path="res://imports/models/furniture/table_small.gltf" id="187_p5nwl"]
+
+[node name="ModelExamples" type="Node3D"]
+
+[node name="bowl2" parent="." instance=ExtResource("1_ggmt1")]
+
+[node name="bowl_dirty2" parent="." instance=ExtResource("2_uciui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="bowl_small2" parent="." instance=ExtResource("3_1ptll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="chair_A2" parent="." instance=ExtResource("4_mwvok")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="chair_B2" parent="." instance=ExtResource("5_jwxdg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="chair_stool2" parent="." instance=ExtResource("6_fywf2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="crate2" parent="." instance=ExtResource("7_0v20i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+
+[node name="crate_buns2" parent="." instance=ExtResource("8_8cffn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+
+[node name="crate_carrots2" parent="." instance=ExtResource("9_ut4by")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+
+[node name="crate_cheese2" parent="." instance=ExtResource("10_81hh2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3)
+
+[node name="crate_ham2" parent="." instance=ExtResource("11_gfcfr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="crate_lettuce2" parent="." instance=ExtResource("12_6tt1f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
+
+[node name="crate_lid2" parent="." instance=ExtResource("13_b5t5w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+
+[node name="crate_onions2" parent="." instance=ExtResource("14_car2o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6)
+
+[node name="crate_potatoes2" parent="." instance=ExtResource("15_lil3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
+
+[node name="crate_steak2" parent="." instance=ExtResource("16_rmtn3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9)
+
+[node name="crate_tomatoes2" parent="." instance=ExtResource("17_i0kkw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9)
+
+[node name="cuttingboard2" parent="." instance=ExtResource("18_qj248")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 9)
+
+[node name="dishrack2" parent="." instance=ExtResource("19_6logr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+
+[node name="dishrack_plates2" parent="." instance=ExtResource("20_7b4nb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 12)
+
+[node name="door_A2" parent="." instance=ExtResource("21_s05kx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 12)
+
+[node name="door_B2" parent="." instance=ExtResource("22_svhnn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 12)
+
+[node name="extractorhood2" parent="." instance=ExtResource("23_s5qgw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+
+[node name="food_burger2" parent="." instance=ExtResource("24_kb4n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 3, 16)
+
+[node name="food_dinner2" parent="." instance=ExtResource("25_q1rec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 16)
+
+[node name="food_ingredient_bun2" parent="." instance=ExtResource("26_fwihe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 15)
+
+[node name="food_ingredient_bun_bottom2" parent="." instance=ExtResource("27_dj8hw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18)
+
+[node name="food_ingredient_bun_top2" parent="." instance=ExtResource("28_3i7pj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 18)
+
+[node name="food_ingredient_burger_cooked2" parent="." instance=ExtResource("29_bt2ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 18)
+
+[node name="food_ingredient_burger_trash2" parent="." instance=ExtResource("30_3fbnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18)
+
+[node name="food_ingredient_burger_uncooked2" parent="." instance=ExtResource("31_kg5yy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 18)
+
+[node name="food_ingredient_carrot2" parent="." instance=ExtResource("32_x78xu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="food_ingredient_carrot_chopped2" parent="." instance=ExtResource("33_mumel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 20)
+
+[node name="food_ingredient_carrot_pieces2" parent="." instance=ExtResource("34_wfbni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 20)
+
+[node name="food_ingredient_cheese2" parent="." instance=ExtResource("35_0n03w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 20)
+
+[node name="food_ingredient_cheese_chopped2" parent="." instance=ExtResource("36_f37e2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 20)
+
+[node name="food_ingredient_cheese_slice2" parent="." instance=ExtResource("37_iop15")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 22)
+
+[node name="food_ingredient_ham2" parent="." instance=ExtResource("38_e2wka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 22)
+
+[node name="food_ingredient_ham_cooked2" parent="." instance=ExtResource("39_spob1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 22)
+
+[node name="food_ingredient_ham_trash2" parent="." instance=ExtResource("40_vhxdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 22)
+
+[node name="food_ingredient_lettuce2" parent="." instance=ExtResource("41_o2grp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 22)
+
+[node name="food_ingredient_lettuce_chopped2" parent="." instance=ExtResource("42_hkosm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24)
+
+[node name="food_ingredient_lettuce_slice2" parent="." instance=ExtResource("43_vocga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 24)
+
+[node name="food_ingredient_onion2" parent="." instance=ExtResource("44_hlskr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 24)
+
+[node name="food_ingredient_onion_chopped2" parent="." instance=ExtResource("45_70kik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
+
+[node name="food_ingredient_onion_rings2" parent="." instance=ExtResource("46_oepul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 26)
+
+[node name="food_ingredient_potato2" parent="." instance=ExtResource("47_rhq63")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 26)
+
+[node name="food_ingredient_potato_chopped2" parent="." instance=ExtResource("48_mgtx2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 26)
+
+[node name="food_ingredient_potato_mashed2" parent="." instance=ExtResource("49_8n1gv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 26)
+
+[node name="food_ingredient_steak2" parent="." instance=ExtResource("50_0jiat")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28)
+
+[node name="food_ingredient_steak_pieces2" parent="." instance=ExtResource("51_7eblp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 28)
+
+[node name="food_ingredient_tomato2" parent="." instance=ExtResource("52_4kjvk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 28)
+
+[node name="food_ingredient_tomato_slice2" parent="." instance=ExtResource("53_jgg50")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 28)
+
+[node name="food_ingredient_tomato_slices2" parent="." instance=ExtResource("54_stpe2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30)
+
+[node name="food_ingredient_vegetableburger_cooked2" parent="." instance=ExtResource("55_wp64k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 30)
+
+[node name="food_ingredient_vegetableburger_uncooked2" parent="." instance=ExtResource("56_morrk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 30)
+
+[node name="food_stew2" parent="." instance=ExtResource("57_1or7n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 30)
+
+[node name="food_vegetableburger2" parent="." instance=ExtResource("58_j66ss")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 33)
+
+[node name="fridge_A2" parent="." instance=ExtResource("59_av3h6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 19)
+
+[node name="fridge_A_decorated2" parent="." instance=ExtResource("60_6lyd8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 19)
+
+[node name="fridge_B2" parent="." instance=ExtResource("61_5t2w6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 19)
+
+[node name="jar_A_large2" parent="." instance=ExtResource("62_86eev")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 36)
+
+[node name="jar_A_medium2" parent="." instance=ExtResource("63_nbni5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 36)
+
+[node name="jar_A_small2" parent="." instance=ExtResource("64_l6xow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 36)
+
+[node name="jar_B_large2" parent="." instance=ExtResource("65_qgevx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 36)
+
+[node name="jar_B_medium2" parent="." instance=ExtResource("66_3dqlw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 36)
+
+[node name="jar_B_small2" parent="." instance=ExtResource("67_s0e6v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 38)
+
+[node name="jar_C_large2" parent="." instance=ExtResource("68_mrjr5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 38)
+
+[node name="jar_C_medium2" parent="." instance=ExtResource("69_mv3yi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 38)
+
+[node name="jar_C_small2" parent="." instance=ExtResource("70_wigmo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 38)
+
+[node name="jar_D_large2" parent="." instance=ExtResource("71_2w54o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 38)
+
+[node name="jar_D_medium2" parent="." instance=ExtResource("72_nqlo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 40)
+
+[node name="jar_D_small2" parent="." instance=ExtResource("73_1jhwa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 40)
+
+[node name="ketchup2" parent="." instance=ExtResource("74_lktdt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 40)
+
+[node name="kitchencabinet2" parent="." instance=ExtResource("75_2ndpq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 27)
+
+[node name="kitchencabinet_corner2" parent="." instance=ExtResource("76_w4sv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 27)
+
+[node name="kitchencabinet_corner_half2" parent="." instance=ExtResource("77_gxb78")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 27)
+
+[node name="kitchencabinet_half2" parent="." instance=ExtResource("78_m3cgd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 27)
+
+[node name="kitchencounter_innercorner2" parent="." instance=ExtResource("79_sbau5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 31)
+
+[node name="kitchencounter_innercorner_backsplash2" parent="." instance=ExtResource("80_j8quq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 31)
+
+[node name="kitchencounter_outercorner2" parent="." instance=ExtResource("81_d7uar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 31)
+
+[node name="kitchencounter_outercorner_backsplash2" parent="." instance=ExtResource("82_bqcsj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 31)
+
+[node name="kitchencounter_sink2" parent="." instance=ExtResource("83_688u5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 35)
+
+[node name="kitchencounter_sink_backsplash2" parent="." instance=ExtResource("84_083ve")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 35)
+
+[node name="kitchencounter_straight_A2" parent="." instance=ExtResource("85_1f6yw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 35)
+
+[node name="kitchencounter_straight_A_backsplash2" parent="." instance=ExtResource("86_qy3a2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 35)
+
+[node name="kitchencounter_straight_A_decorated2" parent="." instance=ExtResource("87_kxiuy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 38)
+
+[node name="kitchencounter_straight_B2" parent="." instance=ExtResource("88_c0wri")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 38)
+
+[node name="kitchencounter_straight_B_backsplash2" parent="." instance=ExtResource("89_ij8n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 38)
+
+[node name="kitchencounter_straight_decorated2" parent="." instance=ExtResource("90_71gi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 38)
+
+[node name="kitchentable_A2" parent="." instance=ExtResource("91_1dnrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 41)
+
+[node name="kitchentable_A_large2" parent="." instance=ExtResource("92_bd1ua")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 41)
+
+[node name="kitchentable_A_large_decorated2" parent="." instance=ExtResource("93_75trq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 41)
+
+[node name="kitchentable_B2" parent="." instance=ExtResource("94_f10et")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 44)
+
+[node name="kitchentable_B_large2" parent="." instance=ExtResource("95_i4kay")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 44)
+
+[node name="kitchentable_sink2" parent="." instance=ExtResource("96_u7qo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 44)
+
+[node name="kitchentable_sink_large2" parent="." instance=ExtResource("97_f7avn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 47)
+
+[node name="kitchentable_sink_large_decorated2" parent="." instance=ExtResource("98_4evuc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 47)
+
+[node name="knife2" parent="." instance=ExtResource("99_k3khh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 40)
+
+[node name="lid_A2" parent="." instance=ExtResource("100_ix208")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
+
+[node name="lid_B2" parent="." instance=ExtResource("101_4s35n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 42)
+
+[node name="lid_large2" parent="." instance=ExtResource("102_1k7h3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 42)
+
+[node name="menu2" parent="." instance=ExtResource("103_6fow3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 42)
+
+[node name="mustard2" parent="." instance=ExtResource("104_ooe1r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 42)
+
+[node name="oven2" parent="." instance=ExtResource("105_ctdcc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 47)
+
+[node name="pan_0062" parent="." instance=ExtResource("106_o1tdl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 42)
+
+[node name="pan_A2" parent="." instance=ExtResource("107_qulsv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 44)
+
+[node name="pan_B2" parent="." instance=ExtResource("108_6x6tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 44)
+
+[node name="papertowel2" parent="." instance=ExtResource("109_usho4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 44)
+
+[node name="pillar_A2" parent="." instance=ExtResource("110_gkkuw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 51)
+
+[node name="pillar_B2" parent="." instance=ExtResource("111_25tcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 51)
+
+[node name="plate2" parent="." instance=ExtResource("112_feyy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 44)
+
+[node name="plate_dirty2" parent="." instance=ExtResource("113_cy56h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 44)
+
+[node name="plate_small2" parent="." instance=ExtResource("114_0t1r8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 46)
+
+[node name="pot_A2" parent="." instance=ExtResource("115_1pfq6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 46)
+
+[node name="pot_A_stew2" parent="." instance=ExtResource("116_nb03g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 46)
+
+[node name="pot_B2" parent="." instance=ExtResource("117_11jj3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 46)
+
+[node name="pot_B_stew2" parent="." instance=ExtResource("118_ykge7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 46)
+
+[node name="pot_large2" parent="." instance=ExtResource("119_2bgj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48)
+
+[node name="shelf_papertowel2" parent="." instance=ExtResource("120_i8lpc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 50)
+
+[node name="shelf_papertowel_decorated2" parent="." instance=ExtResource("121_et4v3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 50)
+
+[node name="stew_bowl2" parent="." instance=ExtResource("122_lflmq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 48)
+
+[node name="stew_pot2" parent="." instance=ExtResource("123_4qsuk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 48)
+
+[node name="stove_multi2" parent="." instance=ExtResource("124_dy0t4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 50)
+
+[node name="stove_multi_countertop2" parent="." instance=ExtResource("125_fiwn1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 53)
+
+[node name="stove_multi_decorated2" parent="." instance=ExtResource("126_d1b3h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 53)
+
+[node name="stove_single2" parent="." instance=ExtResource("127_8c6e1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 53)
+
+[node name="stove_single_countertop2" parent="." instance=ExtResource("128_7lnxm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 56)
+
+[node name="table_round_A2" parent="." instance=ExtResource("129_x0rg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 57)
+
+[node name="table_round_A_decorated2" parent="." instance=ExtResource("130_5rvdm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 58)
+
+[node name="table_round_A_small2" parent="." instance=ExtResource("131_ylbqo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 59)
+
+[node name="table_round_A_small_decorated2" parent="." instance=ExtResource("132_mr8gf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 62)
+
+[node name="table_round_B2" parent="." instance=ExtResource("133_q2h8f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 62)
+
+[node name="towelrail2" parent="." instance=ExtResource("134_wnsk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 60)
+
+[node name="armchair2" parent="." instance=ExtResource("135_em4hg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 11)
+
+[node name="armchair_pillows2" parent="." instance=ExtResource("136_s7a3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 11)
+
+[node name="bed_double_A2" parent="." instance=ExtResource("137_fshww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 11)
+
+[node name="bed_double_B2" parent="." instance=ExtResource("138_3sxqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0, 11)
+
+[node name="bed_single_A2" parent="." instance=ExtResource("139_mjlyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 15)
+
+[node name="bed_single_B2" parent="." instance=ExtResource("140_3voqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 15)
+
+[node name="book_set2" parent="." instance=ExtResource("141_13ki2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 14)
+
+[node name="book_single2" parent="." instance=ExtResource("142_rxnnd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 14)
+
+[node name="cabinet_medium2" parent="." instance=ExtResource("143_0lcoq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 14)
+
+[node name="cabinet_medium_decorated2" parent="." instance=ExtResource("144_x7mg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 16)
+
+[node name="cabinet_small2" parent="." instance=ExtResource("145_shcdg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 0, 14)
+
+[node name="cabinet_small_decorated2" parent="." instance=ExtResource("146_bn37x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 0, 14)
+
+[node name="cactus_medium_A2" parent="." instance=ExtResource("147_yxeq8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 0, 16)
+
+[node name="cactus_medium_B2" parent="." instance=ExtResource("148_rk686")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 0, 16)
+
+[node name="cactus_small_A2" parent="." instance=ExtResource("149_85ybn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 0, 18)
+
+[node name="cactus_small_B2" parent="." instance=ExtResource("150_ruuea")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 0, 18)
+
+[node name="chair_A3" parent="." instance=ExtResource("151_5l15y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 0, 18)
+
+[node name="chair_A_wood2" parent="." instance=ExtResource("152_lldm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53, 0, 18)
+
+[node name="chair_B3" parent="." instance=ExtResource("153_ci5bx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 18)
+
+[node name="chair_B_wood2" parent="." instance=ExtResource("154_a5qk7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 18)
+
+[node name="chair_C2" parent="." instance=ExtResource("155_pqd4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 18)
+
+[node name="chair_stool3" parent="." instance=ExtResource("156_wakl3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 20)
+
+[node name="chair_stool_wood2" parent="." instance=ExtResource("157_7xp6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 20)
+
+[node name="couch2" parent="." instance=ExtResource("158_q6s62")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 20)
+
+[node name="couch_pillows2" parent="." instance=ExtResource("159_mob1x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 20)
+
+[node name="lamp_standing2" parent="." instance=ExtResource("160_wct0a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 23)
+
+[node name="lamp_table2" parent="." instance=ExtResource("161_sb6bd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 23)
+
+[node name="pictureframe_large_A2" parent="." instance=ExtResource("162_hwrpk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 22)
+
+[node name="pictureframe_large_B2" parent="." instance=ExtResource("163_70hm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, 22)
+
+[node name="pictureframe_medium2" parent="." instance=ExtResource("164_mui5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 22)
+
+[node name="pictureframe_small_A2" parent="." instance=ExtResource("165_w1xhv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 0, 22)
+
+[node name="pictureframe_small_B2" parent="." instance=ExtResource("166_bdc7c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 25)
+
+[node name="pictureframe_small_C2" parent="." instance=ExtResource("167_ikhmk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 25)
+
+[node name="pictureframe_standing_A2" parent="." instance=ExtResource("168_wju7b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 25)
+
+[node name="pictureframe_standing_B2" parent="." instance=ExtResource("169_1fl08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53, 0, 25)
+
+[node name="pillow_A2" parent="." instance=ExtResource("170_p1xlj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 0, 25)
+
+[node name="pillow_B2" parent="." instance=ExtResource("171_yoybm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 0, 25)
+
+[node name="rug_oval_A2" parent="." instance=ExtResource("172_2h1t4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 27)
+
+[node name="rug_oval_B2" parent="." instance=ExtResource("173_vjm7m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 27)
+
+[node name="rug_rectangle_A2" parent="." instance=ExtResource("174_l33md")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 0, 27)
+
+[node name="rug_rectangle_B2" parent="." instance=ExtResource("175_18tiv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 30)
+
+[node name="rug_rectangle_stripes_A2" parent="." instance=ExtResource("176_hqfer")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 30)
+
+[node name="rug_rectangle_stripes_B2" parent="." instance=ExtResource("177_ho56l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 0, 30)
+
+[node name="shelf_A_big2" parent="." instance=ExtResource("178_nowmq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 32)
+
+[node name="shelf_A_small2" parent="." instance=ExtResource("179_rbwq4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 32)
+
+[node name="shelf_B_large2" parent="." instance=ExtResource("180_visfd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53, 0, 32)
+
+[node name="shelf_B_large_decorated2" parent="." instance=ExtResource("181_5v6n3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 32)
+
+[node name="shelf_B_small2" parent="." instance=ExtResource("182_k6jo6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 34)
+
+[node name="shelf_B_small_decorated2" parent="." instance=ExtResource("183_uwtx6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 34)
+
+[node name="table_low2" parent="." instance=ExtResource("184_qmgme")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 35)
+
+[node name="table_medium2" parent="." instance=ExtResource("185_07olu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 0, 35)
+
+[node name="table_medium_long2" parent="." instance=ExtResource("186_bd7ch")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 0, 35)
+
+[node name="table_small2" parent="." instance=ExtResource("187_p5nwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 0, 32)

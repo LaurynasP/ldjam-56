@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6vws7x0de56o"]
+
+[ext_resource type="PackedScene" uid="uid://dk6wb3ylxmx7c" path="res://imports/models/kitchen/kitchencounter_innercorner_backsplash.gltf" id="1_773af"]
+
+[node name="kitchencounter_innercorner_backsplash2" instance=ExtResource("1_773af")]

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b18s3os3axxhc"]
+
+[ext_resource type="PackedScene" uid="uid://ckuydufmhkfgf" path="res://imports/models/kitchen/kitchencounter_sink_backsplash.gltf" id="1_2jilk"]
+
+[node name="kitchencounter_sink_backsplash2" instance=ExtResource("1_2jilk")]

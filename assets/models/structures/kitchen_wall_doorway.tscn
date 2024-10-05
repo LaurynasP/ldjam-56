@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://14s5yaimxnh3"]
+
+[ext_resource type="PackedScene" uid="uid://t3ts6r4ju8jc" path="res://imports/models/kitchen/wall_doorway.gltf" id="1_4n1vp"]
+
+[node name="kitchen_wall_doorway" instance=ExtResource("1_4n1vp")]

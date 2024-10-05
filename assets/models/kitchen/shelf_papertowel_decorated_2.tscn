@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://wwltwaqlj1yu"]
+
+[ext_resource type="PackedScene" uid="uid://de0nsenov2x8a" path="res://imports/models/kitchen/shelf_papertowel_decorated.gltf" id="1_16n6s"]
+
+[node name="shelf_papertowel_decorated2" instance=ExtResource("1_16n6s")]
