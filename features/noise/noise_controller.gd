@@ -3,7 +3,9 @@ extends Node
 
 enum NoiseTypes {
 	WALKING,
-	SPRINTING
+	SPRINTING,
+	DOOR_OPEN,
+	DRAWER_OPEN
 }
 
 var noise_level: float = 0

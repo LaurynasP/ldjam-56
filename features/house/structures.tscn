@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://pjnwm10qk341"]
+[gd_scene load_steps=17 format=3 uid="uid://pjnwm10qk341"]
 
 [ext_resource type="PackedScene" uid="uid://cmu4equvfautq" path="res://assets/models/structures/kitchen_wall.tscn" id="1_pjap7"]
 [ext_resource type="PackedScene" uid="uid://c00wk1p04k8p4" path="res://assets/models/structures/kitchen_wall_window_closed.tscn" id="2_v68s7"]
@@ -14,7 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://b1wokerg5b5dr" path="res://assets/models/doors/door_a_2.tscn" id="12_yxk0a"]
 [ext_resource type="PackedScene" uid="uid://bs8jcqwl5x7c7" path="res://assets/models/doors/door_b_2.tscn" id="13_s68i8"]
 [ext_resource type="PackedScene" uid="uid://c0gicxi0qdyx6" path="res://assets/models/structures/wall.tscn" id="14_ltuhw"]
-[ext_resource type="PackedScene" uid="uid://bdyg3rg6tvhjy" path="res://assets/models/furniture/televisionModern.tscn" id="15_rr256"]
+[ext_resource type="PackedScene" uid="uid://cxsf4vt3y07eo" path="res://assets/models/structures/wallDoorway.tscn" id="15_1bxuy"]
+[ext_resource type="PackedScene" uid="uid://dbngyarotg63a" path="res://assets/models/structures/wall_toilet.tscn" id="16_4oips"]
 
 [node name="Structures" type="Node3D"]
 
@@ -751,9 +752,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 
 [node name="kitchen_wall_window_closed2" parent="LivingSpace/LivingSpaceWalls" instance=ExtResource("2_v68s7")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, -3.8)
 
-[node name="kitchen_wall_window_closed3" parent="LivingSpace/LivingSpaceWalls" instance=ExtResource("2_v68s7")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 2.9)
-
 [node name="kitchen_wall_window_closed4" parent="LivingSpace/LivingSpaceWalls" instance=ExtResource("2_v68s7")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 11.5)
 
@@ -893,5 +891,62 @@ transform = Transform3D(7.11, 0, 0, 0, -2.75382e-07, -0.9, 0, 6.3, -3.93403e-08,
 [node name="Floor2" parent="Roof" instance=ExtResource("11_khhce")]
 transform = Transform3D(4.84, 0, 0, 0, 1, 0, 0, 0, 3.5055, 5.7, 4.4, -23.2)
 
-[node name="televisionModern" parent="." instance=ExtResource("15_rr256")]
-transform = Transform3D(-1.74846e-07, 0, 4, 0, 4, 0, -4, 0, -1.74846e-07, 16.4, 1.22647, -4.6)
+[node name="Toilet" type="Node3D" parent="."]
+
+[node name="Floor" type="Node3D" parent="Toilet"]
+
+[node name="floor_kitchen2" parent="Toilet/Floor" instance=ExtResource("4_dedsi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 7)
+
+[node name="floor_kitchen3" parent="Toilet/Floor" instance=ExtResource("4_dedsi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 3)
+
+[node name="floor_kitchen4" parent="Toilet/Floor" instance=ExtResource("4_dedsi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 7)
+
+[node name="floor_kitchen5" parent="Toilet/Floor" instance=ExtResource("4_dedsi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 3)
+
+[node name="Walls" type="Node3D" parent="Toilet"]
+
+[node name="kitchen_wall_doorway" parent="Toilet/Walls" instance=ExtResource("3_qgfwj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, 3)
+
+[node name="wallDoorway" parent="Toilet/Walls" instance=ExtResource("15_1bxuy")]
+transform = Transform3D(-1.35505e-07, 0, -3.1, 0, 3.1, 0, 3.1, 0, -1.35505e-07, 24.2, 0, 1.5)
+
+[node name="wall" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(-1.35505e-07, 0, -3.1, 0, 3.1, 0, 3.1, 0, -1.35505e-07, 24.2, 0, 4)
+
+[node name="wall2" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(-1.19209e-07, 0, -3.1, 0, 3.1, 0, 3.1, 0, -1.19209e-07, 24.2, 0, 5.8)
+
+[node name="wall3" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(-2.98023e-07, 0, -3.1, 0, 3.1, 0, 3.1, 0, -2.98023e-07, 24.2, 0, -1.5)
+
+[node name="wall4" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(-3.1, 0, 8.13032e-07, 0, 3.1, 0, -8.13032e-07, 0, -3.1, 31.8667, 0, 1)
+
+[node name="wall5" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(-3.1, 0, 8.13032e-07, 0, 3.1, 0, -8.13032e-07, 0, -3.1, 29.3667, 0, 1)
+
+[node name="wall6" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(-3.1, 0, 8.13032e-07, 0, 3.1, 0, -8.13032e-07, 0, -3.1, 27.1667, 0, 1)
+
+[node name="wall7" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(3.1, 0, -5.42021e-07, 0, 3.1, 0, 5.42021e-07, 0, 3.1, 24.3, 0, 9)
+
+[node name="wall8" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(3.1, 0, -5.42021e-07, 0, 3.1, 0, 5.42021e-07, 0, 3.1, 27.3, 0, 9)
+
+[node name="wall9" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(3.1, 0, -5.42021e-07, 0, 3.1, 0, 5.42021e-07, 0, 3.1, 28.9, 0, 9)
+
+[node name="wall10" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(6.55651e-07, 0, 3.1, 0, 3.1, 0, -3.1, 0, 6.55651e-07, 31.9333, 0, 9.13333)
+
+[node name="wall11" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(6.55651e-07, 0, 3.1, 0, 3.1, 0, -3.1, 0, 6.55651e-07, 31.9333, 0, 6.43333)
+
+[node name="wall12" parent="Toilet/Walls" instance=ExtResource("16_4oips")]
+transform = Transform3D(6.55651e-07, 0, 3.1, 0, 3.1, 0, -3.1, 0, 6.55651e-07, 31.9333, 0, 4.23333)
