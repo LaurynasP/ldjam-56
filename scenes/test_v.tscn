@@ -25,7 +25,7 @@ albedo_color = Color(0.145098, 0.290196, 0.0823529, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_w7usd"]
 radius = 0.25
-height = 1.0
+height = 0.5
 
 [node name="test_v" type="Node3D"]
 
@@ -47,7 +47,7 @@ camera_controller = NodePath("camera_controller")
 movement_controller = NodePath("movement_controller")
 
 [node name="camera_controller" type="Node3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10673, 0)
 script = ExtResource("1_kyodi")
 
 [node name="camera" type="Camera3D" parent="player/camera_controller"]
@@ -55,11 +55,7 @@ script = ExtResource("1_kyodi")
 [node name="model" type="Node3D" parent="player"]
 
 [node name="body" type="MeshInstance3D" parent="player/model"]
-mesh = SubResource("CapsuleMesh_w7usd")
-skeleton = NodePath("../..")
-
-[node name="body2" type="MeshInstance3D" parent="player/model"]
-transform = Transform3D(0.574421, 0, 0, 0, 0.247496, 0, 0, 0, 0.305032, 0.00527382, 0.182849, -0.233788)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.255676, 0)
 mesh = SubResource("CapsuleMesh_w7usd")
 skeleton = NodePath("../..")
 
