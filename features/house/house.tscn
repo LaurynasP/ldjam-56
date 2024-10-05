@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://y2ao6g0aklo3"]
+[gd_scene load_steps=50 format=3 uid="uid://y2ao6g0aklo3"]
 
 [ext_resource type="PackedScene" uid="uid://cml61e2u2a42t" path="res://assets/models/structures/kitchen_floor.tscn" id="1_wvf8y"]
 [ext_resource type="PackedScene" uid="uid://cmu4equvfautq" path="res://assets/models/structures/kitchen_wall.tscn" id="2_rvvft"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://c6hmsh785mrht" path="res://assets/models/kitchen/kitchencounter_straight_decorated_2.tscn" id="14_e4jyf"]
 [ext_resource type="PackedScene" uid="uid://c0gicxi0qdyx6" path="res://assets/models/structures/wall.tscn" id="14_xr4a0"]
 [ext_resource type="PackedScene" uid="uid://d2fupld4fw5p7" path="res://assets/models/kitchen/fridge_a_decorated_2.tscn" id="15_6dfww"]
+[ext_resource type="PackedScene" uid="uid://bdyg3rg6tvhjy" path="res://assets/models/furniture/televisionModern.tscn" id="15_kqoq2"]
 [ext_resource type="PackedScene" uid="uid://dcrgjhpq8yljp" path="res://assets/models/furniture/couch_pillows_2.tscn" id="17_3ee75"]
 [ext_resource type="PackedScene" uid="uid://d8k3v832xrcv" path="res://assets/models/furniture/armchair_pillows_2.tscn" id="18_yfi13"]
 [ext_resource type="PackedScene" uid="uid://cfleplsojmtfl" path="res://assets/models/furniture/table_low_2.tscn" id="19_kg6gi"]
@@ -46,6 +47,8 @@
 [ext_resource type="PackedScene" uid="uid://iqj4hil660m" path="res://assets/models/furniture/cactus_medium_a_2.tscn" id="41_7fjpk"]
 [ext_resource type="PackedScene" uid="uid://btjw1cltxpvdl" path="res://assets/models/furniture/shelf_b_large_decorated_2.tscn" id="42_okqqp"]
 [ext_resource type="PackedScene" uid="uid://b1wokerg5b5dr" path="res://assets/models/doors/door_a_2.tscn" id="44_65bxy"]
+[ext_resource type="PackedScene" uid="uid://clwxv34dqwtcv" path="res://assets/models/furniture/ceiling_fan.tscn" id="47_coajb"]
+[ext_resource type="PackedScene" uid="uid://bmrlca3onogvc" path="res://assets/models/furniture/cabinetTelevisionDoors.tscn" id="49_o7whq"]
 
 [node name="House" type="Node3D"]
 
@@ -917,12 +920,16 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0,
 script = null
 
 [node name="Roof" type="Node3D" parent="Structures"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 60)
 
 [node name="wall" parent="Structures/Roof" instance=ExtResource("14_xr4a0")]
 transform = Transform3D(7.11, 0, 0, 0, -2.75382e-07, -0.9, 0, 6.3, -3.93403e-08, -4.2, 4, -16.2)
 
 [node name="Floor2" parent="Structures/Roof" instance=ExtResource("11_rx84t")]
 transform = Transform3D(4.84, 0, 0, 0, 1, 0, 0, 0, 3.5055, 5.7, 4.4, -23.2)
+
+[node name="televisionModern" parent="Structures" instance=ExtResource("15_kqoq2")]
+transform = Transform3D(-1.74846e-07, 0, 4, 0, 4, 0, -4, 0, -1.74846e-07, 16.4, 1.22647, -4.6)
 
 [node name="Items" type="Node3D" parent="."]
 
@@ -1101,3 +1108,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -3.7)
 
 [node name="shelf_B_large_decorated3" parent="Items/Office" instance=ExtResource("42_okqqp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, -3.7)
+
+[node name="Lights" type="Node3D" parent="."]
+
+[node name="ceilingFan" parent="Lights" instance=ExtResource("47_coajb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 4, -4)
+
+[node name="ceilingFan2" parent="Lights" instance=ExtResource("47_coajb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7, 4, -4)
+
+[node name="ceilingFan3" parent="Lights" instance=ExtResource("47_coajb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7, 4, 10)
+
+[node name="cabinetTelevisionDoors" parent="." instance=ExtResource("49_o7whq")]
+transform = Transform3D(-1.74846e-07, 0, 4, 0, 4, 0, -4, 0, -1.74846e-07, 17, 0, -3)
