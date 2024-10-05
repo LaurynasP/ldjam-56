@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=4 uid="uid://bmrlca3onogvc"]
 
-[ext_resource type="Script" path="res://features/openable/openable.gd" id="1_60pvf"]
+[ext_resource type="Script" path="res://features/door/door.gd" id="1_0gmse"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rj5t1"]
 resource_name = "wood"
@@ -172,8 +172,9 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04, 0.08, -0.02)
 mesh = SubResource("ArrayMesh_n34m8")
 skeleton = NodePath("")
-script = ExtResource("1_60pvf")
-interactable_name = "Door left"
+script = ExtResource("1_0gmse")
+switch_open_direction = false
+interactable_name = "Cabinet Door Left"
 
 [node name="StaticBody3D" type="StaticBody3D" parent="cabinetTelevisionDoors(Clone)/doorLeft"]
 
@@ -184,9 +185,8 @@ shape = SubResource("ConcavePolygonShape3D_iys8n")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.08, -0.02)
 mesh = SubResource("ArrayMesh_tsfhw")
 skeleton = NodePath("")
-script = ExtResource("1_60pvf")
-open_inside = false
-interactable_name = "Door Right"
+script = ExtResource("1_0gmse")
+interactable_name = "Cabinet Door Right"
 
 [node name="StaticBody3D" type="StaticBody3D" parent="cabinetTelevisionDoors(Clone)/doorRight"]
 
