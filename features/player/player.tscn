@@ -10,8 +10,8 @@ radius = 0.25
 height = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ia2av"]
-radius = 0.0783843
-height = 0.462498
+radius = 0.2
+height = 0.556
 
 [node name="player" type="CharacterBody3D" node_paths=PackedStringArray("camera_controller", "movement_controller", "interactions_controller")]
 script = ExtResource("1_2kqo7")
