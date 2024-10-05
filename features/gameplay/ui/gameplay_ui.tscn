@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://lw76gxv4071l"]
+[gd_scene load_steps=4 format=3 uid="uid://lw76gxv4071l"]
 
 [ext_resource type="Script" path="res://features/gameplay/ui/gameplay_ui_controller.gd" id="1_t7h7g"]
 [ext_resource type="PackedScene" uid="uid://bympvy66qj25h" path="res://features/noise/noise_ui.tscn" id="2_pgjf1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgjhi"]
+bg_color = Color(1, 0.796078, 0, 1)
 
 [node name="gameplay_ui" type="Control"]
 layout_mode = 3
@@ -21,48 +24,54 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
 
-[node name="center" type="CenterContainer" parent="margin"]
+[node name="center2" type="CenterContainer" parent="margin"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 
-[node name="vertical" type="VBoxContainer" parent="margin/center"]
+[node name="vertical" type="VBoxContainer" parent="margin/center2"]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 50
 
-[node name="score" type="HBoxContainer" parent="margin/center/vertical"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="title" type="Label" parent="margin/center/vertical/score"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 1
-text = "Score"
-
-[node name="value" type="Label" parent="margin/center/vertical/score"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 1
-text = "444"
-
-[node name="noise" type="HBoxContainer" parent="margin/center/vertical"]
+[node name="level_progress" type="HBoxContainer" parent="margin/center2/vertical"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="title" type="Label" parent="margin/center/vertical/noise"]
+[node name="title" type="Label" parent="margin/center2/vertical/level_progress"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Completion"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="margin" type="MarginContainer" parent="margin/center2/vertical/level_progress"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="progress_bar" type="ProgressBar" parent="margin/center2/vertical/level_progress/margin"]
+custom_minimum_size = Vector2(200, 20)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/fill = SubResource("StyleBoxFlat_vgjhi")
+value = 50.0
+show_percentage = false
+
+[node name="noise" type="HBoxContainer" parent="margin/center2/vertical"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="title" type="Label" parent="margin/center2/vertical/noise"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 text = "Noise"
+horizontal_alignment = 2
+vertical_alignment = 1
 
-[node name="value" type="Label" parent="margin/center/vertical/noise"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 1
-text = "444"
-
-[node name="noise_ui" parent="margin/center/vertical" instance=ExtResource("2_pgjf1")]
-custom_minimum_size = Vector2(200, 50)
+[node name="noise_ui" parent="margin/center2/vertical/noise" instance=ExtResource("2_pgjf1")]
+custom_minimum_size = Vector2(200, 20)
 layout_mode = 2
