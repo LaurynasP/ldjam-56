@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://cc828sfpejeat"]
+
+[ext_resource type="PackedScene" uid="uid://y2ao6g0aklo3" path="res://features/house/house.tscn" id="1_25fta"]
+[ext_resource type="Script" path="res://features/level/level_controller.gd" id="1_pe5l7"]
+[ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="3_fluii"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_54ocs"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_3lhbi"]
+sky_material = SubResource("ProceduralSkyMaterial_54ocs")
+
+[sub_resource type="Environment" id="Environment_15etx"]
+background_mode = 2
+sky = SubResource("Sky_3lhbi")
+ambient_light_sky_contribution = 0.38
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="TestL" type="Node3D"]
+script = ExtResource("1_pe5l7")
+
+[node name="House" parent="." instance=ExtResource("1_25fta")]
+
+[node name="player" parent="." instance=ExtResource("3_fluii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3, 1.03561, -22)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_15etx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5.97856, 0)
+visible = false
+shadow_enabled = true
