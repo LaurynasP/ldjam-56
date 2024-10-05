@@ -36,7 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://bsvgpg45cp0j" path="res://assets/models/Garage/pallet_small_decorated_a_2.tscn" id="30_sg3ky"]
 [ext_resource type="PackedScene" uid="uid://cf7yvca16om3b" path="res://assets/models/Garage/pallet_small_decorated_b_2.tscn" id="31_qp5dj"]
 [ext_resource type="PackedScene" path="res://assets/models/furniture/bed_double_b_2.tscn" id="32_eekg0"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/cabinet_small_decorated_2.tscn" id="33_afsas"]
+[ext_resource type="PackedScene" uid="uid://bsmlhghcc4ydt" path="res://assets/models/furniture/cabinet_small_decorated_2.tscn" id="33_afsas"]
 [ext_resource type="PackedScene" path="res://assets/models/furniture/cabinet_small_2.tscn" id="34_p7cq1"]
 [ext_resource type="PackedScene" path="res://assets/models/furniture/cabinet_medium_2.tscn" id="35_xl4ki"]
 [ext_resource type="PackedScene" path="res://assets/models/furniture/lamp_table_2.tscn" id="37_4ifis"]
