@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://dagtoujv0ij0r"]
 
-[ext_resource type="Material" path="res://furniture_mat.tres" id="1_birmj"]
+[ext_resource type="Material" uid="uid://dqcwfg4r3pkkv" path="res://furniture_mat.tres" id="1_birmj"]
 [ext_resource type="Texture2D" uid="uid://deamr6yliv4lx" path="res://imports/models/furniture/furniturebits_texture.png" id="2_4h073"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dsaih"]

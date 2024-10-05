@@ -9,6 +9,12 @@ func add_item(name: String):
 	else:
 		items[name] = 1
 	
+func remove_item(name: String):
+	if items.has(name):
+		items[name] = items[name] - 1
+	else:
+		items[name] = 0
+	
 func has_item(name: String) -> bool:
 	return items.has(name)
 
