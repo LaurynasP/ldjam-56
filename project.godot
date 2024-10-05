@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameManager="*res://managers/game_manager.gd"
 InputManager="*res://managers/input_manager.gd"
+ItemsManager="*res://managers/items_manager.gd"
 
 [editor_plugins]
 
