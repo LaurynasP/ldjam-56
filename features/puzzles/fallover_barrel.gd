@@ -3,6 +3,9 @@ extends InteractableObject
 enum State { STANDING, FALLING_OVER, FALLEN_OVER, ROLLING, STOPPED }
 var state: State = State.STANDING
 
+var fall_noise_per_second = 10
+var rolling_noise_per_second = 5
+
 var barrelFallEffect: AudioStreamPlayer3D
 var barrelRollEffect: AudioStreamPlayer3D
 
@@ -69,3 +72,11 @@ func updateName():
 			self.interactable_name = ""
 		State.STOPPED:
 			self.interactable_name = ""
+			
+
+func _process(delta: float) -> void:
+	match state:
+		State.FALLING_OVER:
+			GameManager.current_gameplay.make_noise(fall_noise_per_second * delta, NoiseController.NoiseTypes.BARREL)
+		State.ROLLING:
+			GameManager.current_gameplay.make_noise(rolling_noise_per_second * delta, NoiseController.NoiseTypes.BARREL)

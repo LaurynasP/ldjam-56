@@ -4,6 +4,7 @@ var locked = true
 var drilling = false
 @onready var drill = $Drill
 var animation_duration = 3.77
+var drill_noise_per_second =  4
 
 
 var drillSoundEffect: AudioStreamPlayer3D
@@ -31,4 +32,9 @@ func unlock():
 	
 	await tween.finished
 	locked = false
+	drilling = false
 	drill.queue_free()
+
+func _process(delta: float) -> void:
+	if(drilling):
+		GameManager.current_gameplay.make_noise(drill_noise_per_second * delta, NoiseController.NoiseTypes.DRILL)
