@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://btro4suqqfjws"]
+
+[ext_resource type="AudioStream" uid="uid://glhe0j4xtigu" path="res://assets/sound_effects/barrel_fall.mp3" id="1_3y55m"]
+
+[node name="BarrelFall" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_3y55m")
