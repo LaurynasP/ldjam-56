@@ -42,6 +42,18 @@ func handle_animation():
 func current_anim() -> String:
 	return animator.current_animation.get_basename()
 
+func _on_front_area_3d_body_entered(body: Node3D):
+	var door: Door = body.get_parent_node_3d().get_parent_node_3d() as Door
+	if door and !door.is_open:
+		if door.opening_tween:
+			print(str(door.opening_tween.is_running()))
+		
+		door.toggle_open_noiseless()
 
-func _on_area_3d_area_entered(area):
-	print("YEEET")
+
+func _on_back_area_3d_body_exited(body):
+	var door: Door = body.get_parent_node_3d().get_parent_node_3d() as Door
+	if door and door.is_open:
+		if door.closing_tween:
+			print(str(door.closing_tween.is_running()))
+		door.toggle_open_noiseless()
