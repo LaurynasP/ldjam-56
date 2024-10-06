@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://drlw3k4lampnh"]
+[gd_scene load_steps=9 format=3 uid="uid://drlw3k4lampnh"]
 
 [ext_resource type="Script" path="res://features/player/player.gd" id="1_2kqo7"]
 [ext_resource type="Script" path="res://features/camera_free_look/camera_free_look.gd" id="2_qc2vy"]
 [ext_resource type="Script" path="res://features/movement/basic_movement.gd" id="3_rj1s6"]
 [ext_resource type="Script" path="res://features/object_interacting/interaction_source_controller.gd" id="4_ru8gi"]
 [ext_resource type="Script" path="res://features/noise/player_noise_source.gd" id="5_1ebu4"]
+[ext_resource type="AudioStream" uid="uid://c2s3rovrfefl0" path="res://assets/sound_effects/running.mp3" id="6_bnnqj"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_w7usd"]
 radius = 0.25
@@ -57,6 +58,12 @@ script = ExtResource("4_ru8gi")
 
 [node name="noise_controller" type="Node" parent="."]
 script = ExtResource("5_1ebu4")
+
+[node name="Running" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_bnnqj")
+
+[node name="RunningSoundEffect" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_bnnqj")
 
 [connection signal="on_interactable_hovered" from="interaction_controller" to="." method="_on_interaction_controller_on_interactable_hovered"]
 [connection signal="on_interactable_unhovered" from="interaction_controller" to="." method="_on_interaction_controller_on_interactable_unhovered"]

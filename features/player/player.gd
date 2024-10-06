@@ -7,15 +7,25 @@ extends CharacterBody3D
 @export var noise_controller: PlayerNoiseSource
 
 var sprinting: bool = false
+var is_moving: bool = false
+
+@onready var runningSoundEffect: AudioStreamPlayer3D = $RunningSoundEffect
 
 func _ready():
 	camera_controller.initialize(true)
 	camera_controller.on_rotation_changed(true)
 	noise_controller.set_process(true)
 	pass
+	
 
 func _process(delta):
-	pass
+	var currently_is_moving = is_on_floor() and velocity.length() > 0;
+	if(currently_is_moving != is_moving):
+		if(currently_is_moving):
+			runningSoundEffect.play()
+		else:
+			runningSoundEffect.stop()
+		is_moving = currently_is_moving
 	
 func toggle_sprinting(sprinting: bool):
 	self.sprinting = sprinting
