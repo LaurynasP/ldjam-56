@@ -47,6 +47,8 @@ data = PackedVector3Array(0, 0, 0, 0.0485, 0.0047, -0.1172, 0, 0.0047, -0.1268, 
 
 [node name="food_ingredient_tomato2" type="Node3D"]
 script = ExtResource("1_ov8iu")
+score = 1
+interactable_name = "Eat Tomato"
 
 [node name="food_ingredient_tomato" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)

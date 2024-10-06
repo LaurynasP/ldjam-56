@@ -48,6 +48,8 @@ data = PackedVector3Array(-0.2691, 0.05, -0.4027, -0.0945, 0.1, -0.475, -0.2691,
 [node name="food_burger2" type="Node3D"]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 script = ExtResource("2_4e5s6")
+score = 5
+interactable_name = "Eat Burger"
 
 [node name="food_burger" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_d77sq")

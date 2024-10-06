@@ -48,6 +48,8 @@ data = PackedVector3Array(0.3505, 0, -0.1812, 0.2462, 0.0663, -0.2093, 0.2462, 0
 [node name="food_ingredient_carrot_chopped2" type="Node3D"]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 script = ExtResource("1_jloy6")
+score = 1
+interactable_name = "Eat Carrot"
 
 [node name="food_ingredient_carrot_chopped" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_7m5pk")

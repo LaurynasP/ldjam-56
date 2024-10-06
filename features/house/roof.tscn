@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c71hckp2nsq76"]
+
+[ext_resource type="PackedScene" uid="uid://c0gicxi0qdyx6" path="res://assets/models/structures/wall.tscn" id="1_7y3w4"]
+[ext_resource type="PackedScene" uid="uid://bf8jb8736ac8m" path="res://assets/models/structures/floor_2.tscn" id="2_d60fg"]
+
+[node name="Roof" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18.6)
+
+[node name="wall" parent="." instance=ExtResource("1_7y3w4")]
+transform = Transform3D(54.3915, 0, 0, 0, -1.25492e-06, -0.9, 0, 28.7091, -3.93403e-08, -4.88056, 4, -34.5483)
+
+[node name="Floor2" parent="." instance=ExtResource("2_d60fg")]
+transform = Transform3D(5.324, 0, 0, 0, 1, 0, 0, 0, 3.5055, 5.7, 4.4, -41.4286)
