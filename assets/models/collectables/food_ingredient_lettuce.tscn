@@ -48,6 +48,8 @@ data = PackedVector3Array(0, -0.0102, 0, -0.0425, 0.0478, -0.1998, -0.2031, 0.04
 [node name="food_ingredient_lettuce2" type="Node3D"]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 script = ExtResource("1_fbu80")
+score = 2
+interactable_name = "Eat lettuce"
 
 [node name="food_ingredient_lettuce" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999997, 0, 0, 0)

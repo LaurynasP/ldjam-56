@@ -48,6 +48,8 @@ data = PackedVector3Array(0.4552, -0.1591, -0.0005, 0.3203, -0.2935, -0.079, 0.3
 [node name="food_ingredient_ham_cooked2" type="Node3D"]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 script = ExtResource("1_awu56")
+score = 3
+interactable_name = "Eat Ham"
 
 [node name="food_ingredient_ham_cooked" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_nrbd4")

@@ -1,4 +1,6 @@
-[gd_scene load_steps=9 format=4 uid="uid://c7qdedcmh3vty"]
+[gd_scene load_steps=10 format=4 uid="uid://c7qdedcmh3vty"]
+
+[ext_resource type="Script" path="res://features/door/door.gd" id="1_ufcyt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wd6pv"]
 resource_name = "carpetWhite"
@@ -113,6 +115,10 @@ skeleton = NodePath("")
 transform = Transform3D(5.96046e-08, 0, 1, 0, 1, 0, -1, 0, 5.96046e-08, 0.15181, 0.227715, -0.266235)
 mesh = SubResource("ArrayMesh_om1c8")
 skeleton = NodePath("")
+script = ExtResource("1_ufcyt")
+open_direction = Vector3(0, 0, 1)
+switch_open_direction = false
+interactable_name = "ToiletLid"
 
 [node name="StaticBody3D" type="StaticBody3D" parent="toiletSquare(Clone)/Group"]
 
