@@ -16,10 +16,11 @@ func _ready() -> void:
 	drill.hide()
 
 func interact():
-	if(locked && !drilling):
-		unlock()
-	if(!locked):
-		toggle_open()
+	if(GameManager.current_gameplay.has_item(ItemsManager.Items.DRILL)):	
+		if(locked && !drilling):
+			unlock()
+		if(!locked):
+			toggle_open()
 
 func unlock():
 	drilling = true
@@ -28,8 +29,6 @@ func unlock():
 	var tween = create_tween()
 	tween.tween_property(drill, "rotation_degrees", drill. rotation_degrees + Vector3(4000, 0, 0), animation_duration)
 	
-	
 	await tween.finished
 	locked = false
 	drill.queue_free()
-	print("Unlocking")

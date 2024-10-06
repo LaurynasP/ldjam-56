@@ -9,7 +9,6 @@ var barrelRollEffect: AudioStreamPlayer3D
 func interact():
 	match state:
 		State.STANDING:
-			push_over()
 			if(GameManager.current_gameplay.has_item(ItemsManager.Items.SHOVEL)):
 				push_over()
 			pass

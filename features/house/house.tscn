@@ -2427,7 +2427,7 @@ transform = Transform3D(-0.104189, 0, 0.590885, 0, 0.6, 0, -0.590885, 0, -0.1041
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 1, -9.4)
 
 [node name="food_ingredient_steak5" parent="Items/Collectibles/Food" instance=ExtResource("74_0y6ih")]
-transform = Transform3D(-0.282843, 0, -0.282843, 0, 0.4, 0, 0.282843, 0, -0.282843, 17.1131, 2.2, -15.1697)
+transform = Transform3D(-0.282843, 0, -0.282843, 0, 0.4, 0, 0.282843, 0, -0.282843, 17.1131, 2.12504, -15.1697)
 
 [node name="food_ingredient_ham_cooked5" parent="Items/Collectibles/Food" instance=ExtResource("78_do43i")]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 5.6, 2.44, -15.36)
