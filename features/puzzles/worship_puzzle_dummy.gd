@@ -36,7 +36,6 @@ func lock():
 	tween.tween_property(self, "rotation_degrees",self.rotation_degrees + Vector3(20, 0, 0), 1.6)
 
 func validate_direction():
-	print(correct_rotation_degrees, rotation_degrees.y)
 	if(correct_rotation_degrees == rotation_degrees.y):
 		is_correct_direction = true
 		on_correct.emit()
