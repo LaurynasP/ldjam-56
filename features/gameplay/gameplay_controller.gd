@@ -91,11 +91,13 @@ func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 		
 	if noise.noise_level > 55 and amount > 1.5:
 		knight.target = player.position
-		
+		knight.current_speed = knight.speed
+		knight.current_acceleration = knight.acceleration
+
 func reduce_noise(amount: float,  noise_type: NoiseController.NoiseTypes):
 	noise.noise_level -= amount
-	
-	
+
+
 func add_noise_controller():
 	var noise_controller = new()
 	noise_controller.name = "noise_controller"

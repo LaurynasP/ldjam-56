@@ -84,6 +84,7 @@ interactable_name = "Big 'Ol Cheese"
 
 [node name="Knight" parent="." instance=ExtResource("6_p3ib6")]
 transform = Transform3D(-0.402411, 0, 0.915459, 0, 1, 0, -0.915459, 0, -0.402411, -0.0663191, 0.615266, 6.68901)
+turn_speed = 10.0
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.520927, 5.39736, 11.1474)
