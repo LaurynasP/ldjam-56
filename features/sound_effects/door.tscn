@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bacafufw4invu"]
+
+[ext_resource type="AudioStream" uid="uid://bufa7gs5pix0e" path="res://assets/sound_effects/door.wav" id="1_mjahl"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7ihm3"]
+streams_count = 1
+stream_0/stream = ExtResource("1_mjahl")
+
+[node name="Door" type="AudioStreamPlayer3D"]
+stream = SubResource("AudioStreamRandomizer_7ihm3")

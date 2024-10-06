@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://75bqynu5l746"]
+
+[ext_resource type="AudioStream" uid="uid://dqri3rebkejki" path="res://assets/music/sneaky1.mp3" id="1_7b1pg"]
+[ext_resource type="AudioStream" uid="uid://328o6ixr7vap" path="res://assets/music/sneaky2.mp3" id="2_hbq6n"]
+[ext_resource type="AudioStream" uid="uid://1r4tkgo5pmrb" path="res://assets/music/sneaky3.mp3" id="3_qktup"]
+[ext_resource type="AudioStream" uid="uid://bglfc33wh7kb8" path="res://assets/music/sneaky4.mp3" id="4_qsfs3"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7wluw"]
+streams_count = 4
+stream_0/stream = ExtResource("1_7b1pg")
+stream_1/stream = ExtResource("2_hbq6n")
+stream_2/stream = ExtResource("3_qktup")
+stream_3/stream = ExtResource("4_qsfs3")
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamRandomizer_7wluw")
+volume_db = -20.0
+autoplay = true
