@@ -41,7 +41,6 @@ environment = SubResource("Environment_6l5c6")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5.97856, 0)
-visible = false
 shadow_enabled = true
 
 [node name="ground" type="MeshInstance3D" parent="."]
@@ -89,6 +88,3 @@ transform = Transform3D(-0.402411, 0, 0.915459, 0, 1, 0, -0.915459, 0, -0.402411
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.520927, 5.39736, 11.1474)
 navigation_mesh = SubResource("NavigationMesh_bleev")
-
-[node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4122, 0.586523, -4.99167)

@@ -86,8 +86,6 @@ func add_uis():
 func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 	noise.noise_level += amount
 	
-	print("Noise added:" + str(amount))
-	
 	if level_failed():
 		handle_level_failed()
 		

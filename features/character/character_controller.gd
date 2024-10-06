@@ -8,6 +8,7 @@ extends CharacterBody3D
 
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 @onready var animator: AnimationPlayer = $AnimationPlayer
+@onready var visibility_ray: RayCast3D = $RayCast3D
 
 var idle_anim = "Idle"
 var running_anim = "Running_A"
@@ -22,12 +23,20 @@ func _process(delta):
 	
 	handle_animation()
 	
+	var player_target = GameManager.current_gameplay.player.global_position
+	
+	var distance_to_player_breached = player_target.distance_to(global_position) < 5
+	
+	
 	if target == Vector3.ZERO and position.distance_to(starting_position) > 0.5:
 		if current_idle_timer > idle_timeout:
 			target = starting_position
 			current_idle_timer = 0
 		else:
 			current_idle_timer += delta
+			
+			if distance_to_player_breached:
+				target_player()
 	
 	if position.distance_to(target) < stopping_distance:
 		velocity = Vector3.ZERO
@@ -36,6 +45,9 @@ func _process(delta):
 	
 	if target == Vector3.ZERO:
 		return
+	
+	if distance_to_player_breached:
+		target_player()
 	
 	current_idle_timer = 0
 	
@@ -65,3 +77,13 @@ func current_anim() -> String:
 
 func _on_area_3d_area_entered(area):
 	print("YEEET")
+
+func target_player():
+	var player_target = GameManager.current_gameplay.player.global_position
+	
+	var query = PhysicsRayQueryParameters3D.create(visibility_ray.global_position, player_target) 
+
+	var collision = get_world_3d().direct_space_state.intersect_ray(query)
+	
+	if collision:
+		target = collision.get("position")
