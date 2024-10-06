@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://bglfc33wh7kb8" path="res://assets/music/sneaky4.mp3" id="4_qsfs3"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7wluw"]
+playback_mode = 1
 streams_count = 4
 stream_0/stream = ExtResource("1_7b1pg")
 stream_1/stream = ExtResource("2_hbq6n")
