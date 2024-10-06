@@ -3,60 +3,60 @@
 [ext_resource type="PackedScene" uid="uid://cmu4equvfautq" path="res://assets/models/structures/kitchen_wall.tscn" id="1_sxks5"]
 [ext_resource type="PackedScene" uid="uid://c00wk1p04k8p4" path="res://assets/models/structures/kitchen_wall_window_closed.tscn" id="2_cdjv7"]
 [ext_resource type="PackedScene" uid="uid://14s5yaimxnh3" path="res://assets/models/structures/kitchen_wall_doorway.tscn" id="3_vw3mp"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/kitchencounter_straight_a_backsplash_2.tscn" id="4_0su6f"]
+[ext_resource type="PackedScene" uid="uid://dggta4wso3rtq" path="res://assets/models/kitchen/kitchencounter_straight_a_backsplash_2.tscn" id="4_0su6f"]
 [ext_resource type="PackedScene" uid="uid://cml61e2u2a42t" path="res://assets/models/structures/kitchen_floor.tscn" id="4_01kax"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/kitchencounter_outercorner_2.tscn" id="4_8xtd6"]
+[ext_resource type="PackedScene" uid="uid://c4n554viegx0c" path="res://assets/models/kitchen/kitchencounter_outercorner_2.tscn" id="4_8xtd6"]
 [ext_resource type="PackedScene" uid="uid://b6vws7x0de56o" path="res://assets/models/kitchen/kitchencounter_innercorner_backsplash_2.tscn" id="4_jevwr"]
 [ext_resource type="PackedScene" uid="uid://dp0qpskh4fsbj" path="res://assets/models/structures/wooden_floor.tscn" id="5_g8h5c"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/kitchencounter_sink_backsplash_2.tscn" id="5_qv7rp"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/chair_b_2.tscn" id="6_8f0r2"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/wall_doorway_2.tscn" id="6_b4463"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/kitchencounter_straight_a_decorated_2.tscn" id="6_twrtw"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/stove_multi_2.tscn" id="7_0rytm"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/garage_door_wall.tscn" id="7_i446b"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/wall_2.tscn" id="8_pekhp"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/table_round_b_2.tscn" id="9_o766j"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/wall_target_2.tscn" id="9_qkha6"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/wall_decorated_2.tscn" id="10_jjn1a"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/shelf_papertowel_decorated_2.tscn" id="10_m8q6u"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/extractorhood_2.tscn" id="11_afjkm"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/floor_2.tscn" id="11_tr105"]
+[ext_resource type="PackedScene" uid="uid://b18s3os3axxhc" path="res://assets/models/kitchen/kitchencounter_sink_backsplash_2.tscn" id="5_qv7rp"]
+[ext_resource type="PackedScene" uid="uid://x7d72x1ocg4i" path="res://assets/models/kitchen/chair_b_2.tscn" id="6_8f0r2"]
+[ext_resource type="PackedScene" uid="uid://dfa2o3skji2np" path="res://assets/models/structures/wall_doorway_2.tscn" id="6_b4463"]
+[ext_resource type="PackedScene" uid="uid://bsfykjefc8dje" path="res://assets/models/kitchen/kitchencounter_straight_a_decorated_2.tscn" id="6_twrtw"]
+[ext_resource type="PackedScene" uid="uid://5hkiw21f7560" path="res://assets/models/kitchen/stove_multi_2.tscn" id="7_0rytm"]
+[ext_resource type="PackedScene" uid="uid://dvdenn0qsvovi" path="res://assets/models/structures/garage_door_wall.tscn" id="7_i446b"]
+[ext_resource type="PackedScene" uid="uid://caxos24xghlx6" path="res://assets/models/structures/wall_2.tscn" id="8_pekhp"]
+[ext_resource type="PackedScene" uid="uid://ckpkjey2scfhh" path="res://assets/models/kitchen/table_round_b_2.tscn" id="9_o766j"]
+[ext_resource type="PackedScene" uid="uid://b68i5hqs1kmjm" path="res://assets/models/structures/wall_target_2.tscn" id="9_qkha6"]
+[ext_resource type="PackedScene" uid="uid://2wjsvgrfsxo5" path="res://assets/models/structures/wall_decorated_2.tscn" id="10_jjn1a"]
+[ext_resource type="PackedScene" uid="uid://wwltwaqlj1yu" path="res://assets/models/kitchen/shelf_papertowel_decorated_2.tscn" id="10_m8q6u"]
+[ext_resource type="PackedScene" uid="uid://phiu3q23plkt" path="res://assets/models/kitchen/extractorhood_2.tscn" id="11_afjkm"]
+[ext_resource type="PackedScene" uid="uid://bf8jb8736ac8m" path="res://assets/models/structures/floor_2.tscn" id="11_tr105"]
 [ext_resource type="PackedScene" uid="uid://b1wokerg5b5dr" path="res://assets/models/doors/door_a_2.tscn" id="12_4k2kh"]
-[ext_resource type="PackedScene" uid="uid://4e2w040lcce1" path="res://assets/models/doors/door_b_2.tscn" id="13_6hqny"]
+[ext_resource type="PackedScene" uid="uid://bs8jcqwl5x7c7" path="res://assets/models/doors/door_b_2.tscn" id="13_6hqny"]
 [ext_resource type="PackedScene" uid="uid://c6hmsh785mrht" path="res://assets/models/kitchen/kitchencounter_straight_decorated_2.tscn" id="14_e4jyf"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/book_set_2.tscn" id="14_smiv0"]
-[ext_resource type="PackedScene" uid="uid://ctvtfot6pfs8s" path="res://assets/models/doors/drill_door.tscn" id="14_sullh"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/wallDoorway.tscn" id="15_wuck8"]
-[ext_resource type="PackedScene" path="res://assets/models/structures/wall_toilet.tscn" id="16_y002a"]
+[ext_resource type="PackedScene" uid="uid://dj761k2cv27jy" path="res://assets/models/furniture/book_set_2.tscn" id="14_smiv0"]
+[ext_resource type="PackedScene" uid="uid://ddxbnnlpycn87" path="res://assets/models/doors/drill_door.tscn" id="14_sullh"]
+[ext_resource type="PackedScene" uid="uid://cxsf4vt3y07eo" path="res://assets/models/structures/wallDoorway.tscn" id="15_wuck8"]
+[ext_resource type="PackedScene" uid="uid://dbngyarotg63a" path="res://assets/models/structures/wall_toilet.tscn" id="16_y002a"]
 [ext_resource type="PackedScene" uid="uid://dcrgjhpq8yljp" path="res://assets/models/furniture/couch_pillows_2.tscn" id="17_3ee75"]
-[ext_resource type="PackedScene" path="res://features/house/roof.tscn" id="17_dsabr"]
+[ext_resource type="PackedScene" uid="uid://c71hckp2nsq76" path="res://features/house/roof.tscn" id="17_dsabr"]
 [ext_resource type="PackedScene" uid="uid://d8k3v832xrcv" path="res://assets/models/furniture/armchair_pillows_2.tscn" id="18_yfi13"]
 [ext_resource type="PackedScene" uid="uid://cfleplsojmtfl" path="res://assets/models/furniture/table_low_2.tscn" id="19_kg6gi"]
 [ext_resource type="PackedScene" uid="uid://bg58iqwatolim" path="res://assets/models/furniture/lamp_standing_2.tscn" id="20_crl4a"]
 [ext_resource type="PackedScene" uid="uid://c7i0gylmnfo3p" path="res://assets/models/furniture/rug_rectangle_stripes_b_2.tscn" id="28_2byqn"]
 [ext_resource type="PackedScene" uid="uid://da6khqbdpohg" path="res://assets/models/Garage/car_stationwagon_2.tscn" id="28_c58gv"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/kitchentable_a_large_2.tscn" id="29_5gwxa"]
-[ext_resource type="PackedScene" path="res://assets/models/kitchen/fridge_A.tscn" id="29_vcmlc"]
+[ext_resource type="PackedScene" uid="uid://cefrvqj1m1aqy" path="res://assets/models/kitchen/kitchentable_a_large_2.tscn" id="29_5gwxa"]
+[ext_resource type="PackedScene" uid="uid://dsaf6m4f0r74x" path="res://assets/models/kitchen/fridge_A.tscn" id="29_vcmlc"]
 [ext_resource type="PackedScene" uid="uid://ckoejoqesb31y" path="res://assets/models/Garage/Box_C.tscn" id="30_76t0r"]
 [ext_resource type="PackedScene" uid="uid://bsvgpg45cp0j" path="res://assets/models/Garage/pallet_small_decorated_a_2.tscn" id="30_sg3ky"]
 [ext_resource type="PackedScene" uid="uid://bf4gg2xuln01s" path="res://assets/models/Garage/barrel_c_2.tscn" id="31_2v1t1"]
 [ext_resource type="PackedScene" uid="uid://cf7yvca16om3b" path="res://assets/models/Garage/pallet_small_decorated_b_2.tscn" id="31_qp5dj"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/bed_double_b_2.tscn" id="32_eekg0"]
+[ext_resource type="PackedScene" uid="uid://chuld0ja4qlye" path="res://assets/models/furniture/bed_double_b_2.tscn" id="32_eekg0"]
 [ext_resource type="Script" path="res://features/puzzles/fallover_barrel.gd" id="32_tcpsh"]
 [ext_resource type="PackedScene" uid="uid://bsmlhghcc4ydt" path="res://assets/models/furniture/cabinet_small_decorated_2.tscn" id="33_afsas"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/cabinet_small_2.tscn" id="34_p7cq1"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/cabinet_medium_2.tscn" id="35_xl4ki"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/lamp_table_2.tscn" id="37_4ifis"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/pictureframe_large_b_2.tscn" id="37_7apph"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/rug_rectangle_stripes_a_2.tscn" id="38_6buqw"]
+[ext_resource type="PackedScene" uid="uid://cchcgk2dqxqgt" path="res://assets/models/furniture/cabinet_small_2.tscn" id="34_p7cq1"]
+[ext_resource type="PackedScene" uid="uid://da4rimx8e0s8j" path="res://assets/models/furniture/cabinet_medium_2.tscn" id="35_xl4ki"]
+[ext_resource type="PackedScene" uid="uid://dyenc8cigwysq" path="res://assets/models/furniture/lamp_table_2.tscn" id="37_4ifis"]
+[ext_resource type="PackedScene" uid="uid://ba80812mnlsix" path="res://assets/models/furniture/pictureframe_large_b_2.tscn" id="37_7apph"]
+[ext_resource type="PackedScene" uid="uid://dqjm32pincoay" path="res://assets/models/furniture/rug_rectangle_stripes_a_2.tscn" id="38_6buqw"]
 [ext_resource type="PackedScene" uid="uid://dagtoujv0ij0r" path="res://assets/models/furniture/cabinet_medium_decorated.tscn" id="38_ibs6e"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/table_medium_long_2.tscn" id="39_0ns7u"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/shelf_b_large_2.tscn" id="39_evug4"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/televisionModern.tscn" id="40_4ik2k"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/pictureframe_standing_b_2.tscn" id="40_yulyx"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/cactus_medium_a_2.tscn" id="41_7fjpk"]
+[ext_resource type="PackedScene" uid="uid://belg75vtot44v" path="res://assets/models/furniture/table_medium_long_2.tscn" id="39_0ns7u"]
+[ext_resource type="PackedScene" uid="uid://b8fmc0foj7df8" path="res://assets/models/furniture/shelf_b_large_2.tscn" id="39_evug4"]
+[ext_resource type="PackedScene" uid="uid://bdyg3rg6tvhjy" path="res://assets/models/furniture/televisionModern.tscn" id="40_4ik2k"]
+[ext_resource type="PackedScene" uid="uid://rse0p6tldaxm" path="res://assets/models/furniture/pictureframe_standing_b_2.tscn" id="40_yulyx"]
+[ext_resource type="PackedScene" uid="uid://iqj4hil660m" path="res://assets/models/furniture/cactus_medium_a_2.tscn" id="41_7fjpk"]
 [ext_resource type="PackedScene" uid="uid://bfm0mlsxv6nb6" path="res://assets/models/furniture/chair_B.tscn" id="41_tgdax"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/shelf_b_large_decorated_2.tscn" id="42_okqqp"]
+[ext_resource type="PackedScene" uid="uid://btjw1cltxpvdl" path="res://assets/models/furniture/shelf_b_large_decorated_2.tscn" id="42_okqqp"]
 [ext_resource type="PackedScene" uid="uid://cgd5mhasi0d7h" path="res://assets/models/furniture/bookcaseClosedDoors.tscn" id="45_53kl1"]
 [ext_resource type="PackedScene" uid="uid://clwxv34dqwtcv" path="res://assets/models/furniture/ceiling_fan.tscn" id="47_coajb"]
 [ext_resource type="PackedScene" uid="uid://bmrlca3onogvc" path="res://assets/models/furniture/cabinetTelevisionDoors.tscn" id="49_o7whq"]
@@ -66,22 +66,22 @@
 [ext_resource type="PackedScene" uid="uid://1rl0b0m4pk67" path="res://assets/models/toilet/shower.tscn" id="61_a61aw"]
 [ext_resource type="PackedScene" uid="uid://efl18f3tydux" path="res://assets/models/toilet/washerDryerStacked.tscn" id="62_sieb6"]
 [ext_resource type="PackedScene" uid="uid://b7s6kgq5eoe0w" path="res://assets/models/toilet/kitchenCabinetDrawer.tscn" id="63_lm2mh"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/pot_B_stew.tscn" id="64_r38ut"]
+[ext_resource type="PackedScene" uid="uid://cnlksaooo3u75" path="res://assets/models/collectables/pot_B_stew.tscn" id="64_r38ut"]
 [ext_resource type="PackedScene" uid="uid://dchjooape3faj" path="res://assets/models/toilet/trashcan.tscn" id="64_wgjjq"]
 [ext_resource type="PackedScene" uid="uid://bsyfh0h44sfrm" path="res://assets/models/tools/sm_electric_drill.tscn" id="65_cw7py"]
 [ext_resource type="PackedScene" uid="uid://b1bp4fdoe7aef" path="res://assets/models/tools/sm_shovel.tscn" id="65_dh0vl"]
-[ext_resource type="PackedScene" path="res://assets/models/toilet/kitchenSink.tscn" id="65_qs0rr"]
-[ext_resource type="PackedScene" path="res://assets/models/toilet/pottedPlant.tscn" id="67_q1wg1"]
-[ext_resource type="PackedScene" path="res://assets/models/furniture/lampWall.tscn" id="70_ormq8"]
+[ext_resource type="PackedScene" uid="uid://cqb04f16fy3cq" path="res://assets/models/toilet/kitchenSink.tscn" id="65_qs0rr"]
+[ext_resource type="PackedScene" uid="uid://2u1sqwkkmkqo" path="res://assets/models/toilet/pottedPlant.tscn" id="67_q1wg1"]
+[ext_resource type="PackedScene" uid="uid://b8tyjp8tf86gx" path="res://assets/models/furniture/lampWall.tscn" id="70_ormq8"]
 [ext_resource type="PackedScene" uid="uid://c7qdedcmh3vty" path="res://assets/models/toilet/toiletSquare.tscn" id="70_otdxd"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/food_ingredient_tomato.tscn" id="72_6obdp"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/food_ingredient_steak.tscn" id="74_0y6ih"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/food_ingredient_lettuce.tscn" id="76_jso3i"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/food_ingredient_carrot_chopped.tscn" id="77_oa73q"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/food_ingredient_ham_cooked.tscn" id="78_do43i"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/food_burger.tscn" id="79_qp32j"]
+[ext_resource type="PackedScene" uid="uid://m5cgtxesnw1u" path="res://assets/models/collectables/food_ingredient_tomato.tscn" id="72_6obdp"]
+[ext_resource type="PackedScene" uid="uid://c5bfxkppckkkj" path="res://assets/models/collectables/food_ingredient_steak.tscn" id="74_0y6ih"]
+[ext_resource type="PackedScene" uid="uid://dimxxe2acpts7" path="res://assets/models/collectables/food_ingredient_lettuce.tscn" id="76_jso3i"]
+[ext_resource type="PackedScene" uid="uid://bncrmoxa4ptop" path="res://assets/models/collectables/food_ingredient_carrot_chopped.tscn" id="77_oa73q"]
+[ext_resource type="PackedScene" uid="uid://bojri5wbbbfmm" path="res://assets/models/collectables/food_ingredient_ham_cooked.tscn" id="78_do43i"]
+[ext_resource type="PackedScene" uid="uid://cgohocnom36ad" path="res://assets/models/collectables/food_burger.tscn" id="79_qp32j"]
 [ext_resource type="PackedScene" uid="uid://bqdo58wy3ucb" path="res://assets/models/collectables/food_ingredient_cheese.tscn" id="80_2i4ox"]
-[ext_resource type="PackedScene" path="res://assets/models/collectables/food_stew.tscn" id="81_mj4ka"]
+[ext_resource type="PackedScene" uid="uid://s1rmjq1ssdc3" path="res://assets/models/collectables/food_stew.tscn" id="81_mj4ka"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_8k2vi"]
 vertices = PackedVector3Array(-4.448, 4.62, -29.3396, -4.448, 4.62, -16.0896, 16.052, 4.62, -16.0896, 16.052, 4.62, -29.3396, 1.302, 0.14, -16.0896, 1.552, 0.14, -16.0896, 1.802, 0.14, -16.8396, 1.052, 0.14, -16.8396, -3.198, 0.14, -24.0896, -3.698, 0.14, -23.8396, -3.198, 0.14, -16.8396, -3.198, 0.14, -27.0896, 13.302, 0.14, -16.8396, 13.302, 0.14, -27.0896, 1.802, 0.14, -15.0896, 1.052, 0.14, -15.0896, -3.198, 0.14, -13.0896, -3.198, 0.14, -15.0896, -3.698, 0.14, -13.8396, 12.302, 0.14, -13.0896, 12.302, 0.14, -15.0896, 49.052, 4.3, -15.5896, 17.052, 4.3, -15.8396, 16.802, 4.3, -15.0896, -4.448, 4.3, -15.0896, -4.448, 4.3, 20.6604, 49.052, 4.3, 20.6604, 12.802, 0.14, -3.3396, 12.052, 0.14, -3.0896, 12.052, 0.14, -2.8396, 12.802, 0.14, -2.5896, 23.052, 0.14, 2.4104, 23.052, 0.14, -15.0896, 12.802, 0.14, -12.8396, 12.802, 0.14, 5.6604, 12.052, 0.14, 5.9104, 12.052, 0.14, 6.1604, 12.802, 0.14, 6.4104, 17.552, 0.14, 7.1604, 18.302, 0.14, 7.1604, 23.052, 0.14, 7.1604, 23.052, 0.14, 3.6604, 17.802, 0.14, 7.9104, 18.052, 0.14, 7.9104, 24.052, 0.14, 3.1604, 24.052, 0.14, 2.9104, 12.802, 0.14, 7.1604, 11.052, 0.14, -2.3396, 11.052, 0.14, -3.5896, -3.198, 0.14, 3.4104, 11.052, 0.14, -11.3396, -3.198, 0.14, -11.3396, 11.052, 0.14, 3.4104, 25.052, 0.14, 2.6604, 25.052, 0.14, 3.4104, 31.052, 0.14, 1.6604, 25.052, 0.14, 8.1604, 31.052, 0.14, 8.1604, 25.052, 0.14, 1.6604, 11.052, 0.14, 6.6604, 11.052, 0.14, 5.1604, -3.198, 0.14, 5.1604, -3.198, 0.14, 15.4104, 11.052, 0.14, 15.4104, 17.302, 0.14, 8.9104, 18.552, 0.14, 8.9104, 12.802, 0.14, 15.4104, 23.052, 0.14, 15.4104, 12.802, 0.14, 8.9104, 23.052, 0.14, 8.9104)
@@ -1751,6 +1751,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.6, 0, -28)
 [node name="Wall13" parent="NavigationRegion3D/Structures/Garage/GarageWalls" instance=ExtResource("8_pekhp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4, 0, -28)
 
+[node name="crate_lid2" parent="NavigationRegion3D/Structures/Garage/GarageWalls" instance=ExtResource("5_g8h5c")]
+transform = Transform3D(2.26494e-07, 3, 0, -3, 2.26494e-07, 0, 0, 0, 3, -4.16075, 6.33618e-08, -22.4)
+
 [node name="GarageFloor" type="Node3D" parent="NavigationRegion3D/Structures/Garage"]
 
 [node name="Floor2" parent="NavigationRegion3D/Structures/Garage/GarageFloor" instance=ExtResource("11_tr105")]
@@ -1935,11 +1938,20 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1, 0, 
 [node name="kitchencounter_straight_A_backsplash4" parent="Items/Kitchen/KitchenCounters" instance=ExtResource("4_0su6f")]
 transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, -1, 0, 3)
 
+[node name="lampWall" parent="Items/Kitchen" instance=ExtResource("70_ormq8")]
+transform = Transform3D(4.76837e-07, 0, -3, 0, 3, 0, 3, 0, 4.76837e-07, 11.75, 2.61116, 1.01231)
+
 [node name="fridge_A2" parent="Items/Kitchen" instance=ExtResource("29_vcmlc")]
 transform = Transform3D(0.0325795, 0, 0.999469, 0, 1, 0, -0.999469, 0, 0.0325795, -3.03371, 0.0843852, -1.01614)
 
-[node name="lampWall" parent="Items/Kitchen" instance=ExtResource("70_ormq8")]
-transform = Transform3D(4.76837e-07, 0, -3, 0, 3, 0, 3, 0, 4.76837e-07, 11.75, 2.61116, 1.01231)
+[node name="lampWall2" parent="Items/Kitchen" instance=ExtResource("70_ormq8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.98532, 2.86575, -11.95)
+
+[node name="lampWall3" parent="Items/Kitchen" instance=ExtResource("70_ormq8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.23917, 2.96577, -11.95)
+
+[node name="lampWall4" parent="Items/Kitchen" instance=ExtResource("70_ormq8")]
+transform = Transform3D(-3, 0, -1.19209e-07, 0, 3, 0, 1.19209e-07, 0, -3, -0.999574, 2.73232, 3.95065)
 
 [node name="LivingRoom" type="Node3D" parent="Items"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -5)
@@ -2012,6 +2024,9 @@ transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, -12, 2
 
 [node name="lampWall" parent="Items/LivingRoom" instance=ExtResource("70_ormq8")]
 transform = Transform3D(-0.0936566, 0, 2.99854, 0, 3, 0, -2.99854, 0, -0.0936566, -6.75591, 2.92437, 7.92315)
+
+[node name="lampWall4" parent="Items/LivingRoom" instance=ExtResource("70_ormq8")]
+transform = Transform3D(-3, 0, 2.62268e-07, 0, 3, 0, -2.62268e-07, 0, -3, 2, 3, 12.7712)
 
 [node name="Garage" type="Node3D" parent="Items"]
 
@@ -2210,6 +2225,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -7)
 [node name="cabinet_medium3" parent="Items/Bedroom" instance=ExtResource("35_xl4ki")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.8, 0, -7)
 
+[node name="lamp_table3" parent="Items/Bedroom" instance=ExtResource("37_4ifis")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3, 1, -6.8)
+
 [node name="lamp_table2" parent="Items/Bedroom" instance=ExtResource("37_4ifis")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, 1.5)
 
@@ -2227,6 +2245,9 @@ transform = Transform3D(-1.74846e-07, 0, -4, 0, 4, 0, 4, 0, -1.74846e-07, 10.6, 
 
 [node name="cabinet_medium4" parent="Items/Bedroom" instance=ExtResource("35_xl4ki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6, 0, -7)
+
+[node name="lampWall" parent="Items/Bedroom" instance=ExtResource("70_ormq8")]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 11.8, 2.9, 2.2)
 
 [node name="Office" type="Node3D" parent="Items"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 12)
@@ -2266,6 +2287,12 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.2, 0
 
 [node name="chair_B2" parent="Items/Office" instance=ExtResource("41_tgdax")]
 transform = Transform3D(-0.0871558, 0, -0.996195, 0, 1, 0, 0.996195, 0, -0.0871558, -2.4, 0, -0.4)
+
+[node name="armchair_pillows2" parent="Items/Office" instance=ExtResource("18_yfi13")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 5.13748, 8.11637e-08, 2.70799)
+
+[node name="cabinet_medium2" parent="Items/Office" instance=ExtResource("35_xl4ki")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.6, 0, 3.5)
 
 [node name="Toilet" type="Node3D" parent="Items"]
 
@@ -2425,6 +2452,69 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.6, -0.7)
 
 [node name="food_ingredient_lettuce7" parent="Items/Collectibles/Food" instance=ExtResource("76_jso3i")]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 25.2, 2.8, 8.3)
+
+[node name="food_ingredient_lettuce8" parent="Items/Collectibles/Food" instance=ExtResource("76_jso3i")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 18.1, 1, 15.5)
+
+[node name="food_ingredient_tomato10" parent="Items/Collectibles/Food" instance=ExtResource("72_6obdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 0.5, 14.5)
+
+[node name="food_ingredient_carrot_chopped4" parent="Items/Collectibles/Food" instance=ExtResource("77_oa73q")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 13, 5.96046e-08, 13.5)
+
+[node name="food_ingredient_cheese5" parent="Items/Collectibles/Food" instance=ExtResource("80_2i4ox")]
+transform = Transform3D(0.344146, 0, -0.491491, 0, 0.6, 0, 0.491491, 0, 0.344146, 23.0474, 1.24, 11.1768)
+
+[node name="food_ingredient_tomato11" parent="Items/Collectibles/Food" instance=ExtResource("72_6obdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4, 2.6, 8.6)
+
+[node name="food_ingredient_carrot_chopped5" parent="Items/Collectibles/Food" instance=ExtResource("77_oa73q")]
+transform = Transform3D(0.519615, 0, 0.3, 0, 0.6, 0, -0.3, 0, 0.519615, 13, 5.96046e-08, 14)
+
+[node name="food_burger5" parent="Items/Collectibles/Food" instance=ExtResource("79_qp32j")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 13.6754, 1, 10.6076)
+
+[node name="food_ingredient_carrot_chopped6" parent="Items/Collectibles/Food" instance=ExtResource("77_oa73q")]
+transform = Transform3D(0.155291, 0, -0.579555, 0, 0.6, 0, 0.579555, 0, 0.155291, 13, 5.96046e-08, 13)
+
+[node name="food_ingredient_tomato14" parent="Items/Collectibles/Food" instance=ExtResource("72_6obdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6, 1.3, 7.6)
+
+[node name="food_ingredient_tomato13" parent="Items/Collectibles/Food" instance=ExtResource("72_6obdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2, 2.4, 4.7)
+
+[node name="food_burger6" parent="Items/Collectibles/Food" instance=ExtResource("79_qp32j")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 11.1, 1.5, 11.5)
+
+[node name="food_ingredient_ham_cooked6" parent="Items/Collectibles/Food" instance=ExtResource("78_do43i")]
+transform = Transform3D(0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, 0.424264, -1.64243, 0.8, 11.9879)
+
+[node name="food_ingredient_cheese6" parent="Items/Collectibles/Food" instance=ExtResource("80_2i4ox")]
+transform = Transform3D(0.155291, 0, 0.579556, 0, 0.6, 0, -0.579556, 0, 0.155291, 11.1739, 0.495445, 10.0466)
+
+[node name="food_ingredient_cheese7" parent="Items/Collectibles/Food" instance=ExtResource("80_2i4ox")]
+transform = Transform3D(0.3, 0, 0.519615, 0, 0.6, 0, -0.519615, 0, 0.3, 16.7, 1.2, -3.4)
+
+[node name="pot_B_stew6" parent="Items/Collectibles/Food" instance=ExtResource("64_r38ut")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9, 1.5, 5.1)
+
+[node name="food_ingredient_tomato12" parent="Items/Collectibles/Food" instance=ExtResource("72_6obdp")]
+transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, -2.1, 1.1, 11.5)
+
+[node name="food_ingredient_ham_cooked8" parent="Items/Collectibles/Food" instance=ExtResource("78_do43i")]
+transform = Transform3D(0.563816, 0, 0.205212, 0, 0.6, 0, -0.205212, 0, 0.563816, -0.573867, 0.82, 11.2466)
+
+[node name="food_ingredient_ham_cooked9" parent="Items/Collectibles/Food" instance=ExtResource("78_do43i")]
+transform = Transform3D(0.385673, 0, 0.459627, 0, 0.6, 0, -0.459627, 0, 0.385673, -1.55472, 0.8, 11.0002)
+
+[node name="food_ingredient_lettuce10" parent="Items/Collectibles/Food" instance=ExtResource("76_jso3i")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -1, 0.8, 11.5)
+
+[node name="food_ingredient_ham_cooked7" parent="Items/Collectibles/Food" instance=ExtResource("78_do43i")]
+transform = Transform3D(0.519615, 0, -0.3, 0, 0.6, 0, 0.3, 0, 0.519615, -0.703923, 0.88, 11.94)
+
+[node name="food_ingredient_lettuce9" parent="Items/Collectibles/Food" instance=ExtResource("76_jso3i")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -1.6, 0.8, 11.5)
 
 [node name="Lights" type="Node3D" parent="."]
 
