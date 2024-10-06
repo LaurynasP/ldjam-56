@@ -118,6 +118,8 @@ func level_failed() -> bool:
 func handle_level_completed(): 
 	player.toggle_input(false)
 	noise.set_process(false)
+	knight.set_process(false)
+	knight.set_physics_process(false)
 	InputManager.set_process_input(false)
 	for child in get_children():
 		remove_child(child)
@@ -127,6 +129,8 @@ func handle_level_completed():
 func handle_level_failed():
 	player.toggle_input(false)
 	noise.set_process(false)
+	knight.set_process(false)
+	knight.set_physics_process(false)
 	InputManager.set_process_input(false)
 	for child in get_children():
 		remove_child(child)

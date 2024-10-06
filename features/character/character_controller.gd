@@ -3,6 +3,8 @@ extends CharacterBody3D
 
 @export var target: Vector3
 @export var stopping_distance: float = 0.4
+@export var starting_position: Vector3
+@export var idle_timeout: float = 3
 
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 @onready var animator: AnimationPlayer = $AnimationPlayer
@@ -10,10 +12,22 @@ extends CharacterBody3D
 var idle_anim = "Idle"
 var running_anim = "Running_A"
 
+var current_idle_timer = 0
+
+func _ready():
+	starting_position = position
+
 func _process(delta):
 	var direction = Vector3()
 	
 	handle_animation()
+	
+	if target == Vector3.ZERO and position.distance_to(starting_position) > 0.5:
+		if current_idle_timer > idle_timeout:
+			target = starting_position
+			current_idle_timer = 0
+		else:
+			current_idle_timer += delta
 	
 	if position.distance_to(target) < stopping_distance:
 		velocity = Vector3.ZERO
@@ -22,6 +36,8 @@ func _process(delta):
 	
 	if target == Vector3.ZERO:
 		return
+	
+	current_idle_timer = 0
 	
 	nav_agent.target_position = target
 	
@@ -40,7 +56,7 @@ func handle_animation():
 	if velocity == Vector3.ZERO && current_anim() != idle_anim:
 		animator.play(idle_anim)
 	
-	if velocity.x > 0.1:
+	if velocity.x > 0.05 or velocity.z > 0.05:
 		animator.play(running_anim)
 		
 func current_anim() -> String:
