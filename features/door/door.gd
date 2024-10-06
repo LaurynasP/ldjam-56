@@ -12,6 +12,9 @@ var tween_duration = 0.5
 
 var doorSoundEffect: AudioStreamPlayer3D
 
+var opening_tween: Tween
+var closing_tween: Tween
+
 func _ready() -> void:
 	doorSoundEffect = load("res://features/sound_effects/door.tscn").instantiate() as AudioStreamPlayer3D
 
@@ -35,14 +38,21 @@ func toggle_open():
 	else:
 		open()
 
+func toggle_open_noiseless():
+	play_door_sound_effect()
+	if is_open:
+		close()
+	else:
+		open()
+
 func open():
-	var tween = create_tween()
-	tween.tween_property(self, "rotation_degrees", open_rotation, tween_duration)
+	opening_tween = create_tween()
+	opening_tween.tween_property(self, "rotation_degrees", open_rotation, tween_duration)
 	is_open = true 
 
 func close():
-	var tween = create_tween()
-	tween.tween_property(self, "rotation_degrees", closed_rotation, tween_duration)
+	closing_tween = create_tween()
+	closing_tween.tween_property(self, "rotation_degrees", closed_rotation, tween_duration)
 	
 	is_open = false 
 
