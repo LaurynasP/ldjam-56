@@ -22,6 +22,8 @@ func interact():
 			unlock()
 		if(!locked):
 			toggle_open()
+	else:
+		SoundEffectManager.voiceover.door_locked.play()
 
 func unlock():
 	drilling = true

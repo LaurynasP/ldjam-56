@@ -9,6 +9,7 @@ func interact():
 		spin()
 
 func spin():
+	SoundEffectManager.voiceover.goodnight.play()
 	is_spinning = true
 	var tween = create_tween()
 	tween.tween_property(self, "rotation_degrees", self.rotation_degrees + Vector3(0, spin_duration * 180, 0), spin_duration)

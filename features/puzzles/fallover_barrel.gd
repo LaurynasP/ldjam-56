@@ -14,6 +14,8 @@ func interact():
 		State.STANDING:
 			if(GameManager.current_gameplay.has_item(ItemsManager.Items.SHOVEL)):
 				push_over()
+			else:
+				SoundEffectManager.voiceover.barrel_too_heavy.play()
 			pass
 		State.FALLING_OVER:
 			pass

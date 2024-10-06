@@ -27,6 +27,8 @@ signal on_item_added(item: String)
 
 signal on_item_removed(item: String)
 
+var said_hide = false;
+
 func _enter_tree():
 	add_uis()	
 	add_inventory_controller()
@@ -66,6 +68,14 @@ func eat_food(food: Food):
 func add_item(item: String):
 	inventory.add_item(item)
 	on_item_added.emit(item)
+	play_item_sound(item)
+	
+func play_item_sound(item: String):
+	match item:
+		ItemsManager.Items.DRILL:
+			SoundEffectManager.voiceover.nice_drill.play()
+		ItemsManager.Items.SHOVEL:
+			SoundEffectManager.voiceover.shovel.play()
 	
 func remove_item(item: String):
 	inventory.remove_item(item)
@@ -90,6 +100,7 @@ func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 		handle_level_failed()
 		
 	if noise.noise_level > 55 and amount > 1.5:
+		SoundEffectManager.voiceover.hide.play()
 		knight.target = player.position
 		
 func reduce_noise(amount: float,  noise_type: NoiseController.NoiseTypes):

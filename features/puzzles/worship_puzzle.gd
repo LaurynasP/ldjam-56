@@ -33,6 +33,7 @@ func handle_puzzle_solved():
 	handle_reward()
 	
 func handle_reward():
+	SoundEffectManager.voiceover.praise_cheeseburger.play()
 	reward.visible = true
 	var size_tween = create_tween()
 	var height_tween = create_tween()

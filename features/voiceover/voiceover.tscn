@@ -1,0 +1,39 @@
+[gd_scene load_steps=10 format=3 uid="uid://buvq1bvocnlro"]
+
+[ext_resource type="Script" path="res://features/voiceover/voiceover.gd" id="1_1ibh3"]
+[ext_resource type="AudioStream" uid="uid://ba5nodoht2kwf" path="res://assets/voiceover/barrel_too_heavy.wav" id="2_p5qdv"]
+[ext_resource type="AudioStream" uid="uid://bcpd05pvaao3t" path="res://assets/voiceover/door_locked.wav" id="3_75k6q"]
+[ext_resource type="AudioStream" uid="uid://cwrylf23vioou" path="res://assets/voiceover/goodnight.wav" id="4_k8y3c"]
+[ext_resource type="AudioStream" uid="uid://dksjn5ynpu16l" path="res://assets/voiceover/hide.wav" id="5_qp0gs"]
+[ext_resource type="AudioStream" uid="uid://d1sfibbegl0l" path="res://assets/voiceover/nice_drill.wav" id="6_syysm"]
+[ext_resource type="AudioStream" uid="uid://6ucmt70rxam2" path="res://assets/voiceover/praise_the_cheeseburger.wav" id="7_7m17e"]
+[ext_resource type="AudioStream" uid="uid://c87aqmd55opoc" path="res://assets/voiceover/shovel.wav" id="8_ce25n"]
+[ext_resource type="AudioStream" uid="uid://d24gu12jiqeg2" path="res://assets/voiceover/stay_quiet.wav" id="9_atxj3"]
+
+[node name="Voiceover" type="Node"]
+script = ExtResource("1_1ibh3")
+
+[node name="BarrelTooHeavy" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_p5qdv")
+
+[node name="DoorLocked" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_75k6q")
+volume_db = -15.0
+
+[node name="Goodnight" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_k8y3c")
+
+[node name="Hide" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qp0gs")
+
+[node name="NiceDrill" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_syysm")
+
+[node name="PraiseTheCheeseburger" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_7m17e")
+
+[node name="Shovel" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_ce25n")
+
+[node name="StayQuiet" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_atxj3")
