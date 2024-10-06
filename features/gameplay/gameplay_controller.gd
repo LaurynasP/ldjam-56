@@ -103,7 +103,9 @@ func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 		handle_level_failed()
 		
 	if noise.noise_level > 45 and amount > 1.5:
-		SoundEffectManager.voiceover.hide.play()
+		if(!said_hide):
+			SoundEffectManager.voiceover.hide.play()
+			said_hide = true
 		knight.target = player.position
 		knight.current_speed = knight.speed
 		knight.current_acceleration = knight.acceleration
