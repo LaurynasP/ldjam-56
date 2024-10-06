@@ -3,6 +3,8 @@ extends Node
 
 var player: Player
 
+var knight: CharacterController
+
 var hovered_interactable: InteractableObject
 
 var game_paused: bool = false
@@ -34,6 +36,7 @@ func _enter_tree():
 
 func _ready():
 	player = $"../player"
+	knight = $"../Knight"
 
 func interact():
 	if hovered_interactable:
@@ -83,8 +86,13 @@ func add_uis():
 func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 	noise.noise_level += amount
 	
+	print("Noise added:" + str(amount))
+	
 	if level_failed():
 		handle_level_failed()
+		
+	if noise.noise_level > 55 and amount > 1.5:
+		knight.target = player.position
 	
 func add_noise_controller():
 	var noise_controller = new()

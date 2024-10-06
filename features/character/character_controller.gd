@@ -1,7 +1,7 @@
 class_name CharacterController
 extends CharacterBody3D
 
-@export var target: Node3D
+@export var target: Vector3
 @export var stopping_distance: float = 0.4
 
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
@@ -15,11 +15,15 @@ func _process(delta):
 	
 	handle_animation()
 	
-	if position.distance_to(target.position) < stopping_distance:
+	if position.distance_to(target) < stopping_distance:
 		velocity = Vector3.ZERO
+		target = Vector3.ZERO
 		return
 	
-	nav_agent.target_position = target.position
+	if target == Vector3.ZERO:
+		return
+	
+	nav_agent.target_position = target
 	
 	direction = nav_agent.get_next_path_position() - global_position
 	direction = direction.normalized()
