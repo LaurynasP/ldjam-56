@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpab5y6mpoofv"]
+
+[ext_resource type="AudioStream" uid="uid://bjnwtrpno0gsj" path="res://assets/sound_effects/drill.wav" id="1_2wgmt"]
+
+[node name="Drill" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_2wgmt")
+volume_db = -17.231

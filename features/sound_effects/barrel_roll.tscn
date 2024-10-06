@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnhxstnpiiouj"]
+
+[ext_resource type="AudioStream" uid="uid://cm585p8slogp8" path="res://assets/sound_effects/barrel_roll.mp3" id="1_1ufgg"]
+
+[node name="BarrelRoll" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_1ufgg")
