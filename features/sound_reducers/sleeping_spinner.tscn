@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://ecfdfjifclkc"]
+
+[ext_resource type="Script" path="res://features/sound_reducers/sleeping_spinner.gd" id="1_nptg5"]
+[ext_resource type="PackedScene" uid="uid://rpedxg8i0xn5" path="res://assets/models/etc/Coin_A.tscn" id="2_q46w2"]
+[ext_resource type="PackedScene" uid="uid://bojri5wbbbfmm" path="res://assets/models/collectables/food_ingredient_ham_cooked.tscn" id="3_eo4yq"]
+
+[node name="SleepingSpinner" type="Node3D"]
+script = ExtResource("1_nptg5")
+interactable_name = "Spin"
+
+[node name="Coin_A2" parent="." instance=ExtResource("2_q46w2")]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -0.1, 0, 2, -4.37114e-09, 0, 1.4, 0)
+
+[node name="food_ingredient_ham_cooked2" parent="." instance=ExtResource("3_eo4yq")]
+transform = Transform3D(-2.62268e-08, -0.6, 0, 0.6, -2.62268e-08, 0, 0, 0, 0.6, 0.7, 0.850919, 0)
+script = null
+
+[node name="food_ingredient_ham_cooked3" parent="." instance=ExtResource("3_eo4yq")]
+transform = Transform3D(-2.62268e-08, -0.6, 0, 0.6, -2.62268e-08, 0, 0, 0, 0.6, -0.821826, 0.856781, 0)
+script = null
+
+[node name="food_ingredient_ham_cooked4" parent="." instance=ExtResource("3_eo4yq")]
+transform = Transform3D(9.43207e-10, 0.0215781, -0.599612, 0.6, -2.62268e-08, 0, -2.62099e-08, -0.599612, -0.0215781, -0.0882778, 0.850919, 0.760421)
+script = null
+
+[node name="food_ingredient_ham_cooked5" parent="." instance=ExtResource("3_eo4yq")]
+transform = Transform3D(9.43207e-10, 0.0215781, -0.599612, 0.6, -2.62268e-08, 0, -2.62099e-08, -0.599612, -0.0215781, -0.0335477, 0.856781, -0.760421)
+script = null
+
+[node name="Coin_A3" parent="." instance=ExtResource("2_q46w2")]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, -25, 0, 0.1, -1.09278e-06, 0, 4.94792, 0)

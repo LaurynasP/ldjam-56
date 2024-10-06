@@ -7,7 +7,11 @@ enum NoiseTypes {
 	EATING,
 	LANDING,
 	DOOR_OPEN,
-	DRAWER_OPEN
+	DRAWER_OPEN,
+	LULLABY,
+	DRILL,
+	BARREL,
+	SLEEPING_SPINNER
 }
 
 var noise_level: float = 0
