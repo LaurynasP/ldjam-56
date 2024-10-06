@@ -1,7 +1,9 @@
 extends Node
 
 func _input(event):
-	if Input.is_action_just_pressed("ui_cancel"):
+	if !GameManager.current_gameplay: return
+	
+	if Input.is_action_just_pressed("pause"):
 		GameManager.current_gameplay.pause_game_toggle()
 		
 	if Input.is_action_just_pressed("interact"):

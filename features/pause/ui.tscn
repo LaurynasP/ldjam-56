@@ -27,8 +27,20 @@ size_flags_vertical = 0
 layout_mode = 2
 theme_override_constants/margin_top = 100
 
-[node name="Label" type="Label" parent="PanelContainer/CenterContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/CenterContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.537541, 0.831954, 0.219735, 1)
 theme_override_font_sizes/font_size = 40
-text = "Game Paused"
+text = "Game Paused
+"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer/CenterContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.537541, 0.831954, 0.219735, 1)
+theme_override_font_sizes/font_size = 40
+text = "Press P to Resume"
+vertical_alignment = 1
