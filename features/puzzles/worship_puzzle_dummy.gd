@@ -6,6 +6,7 @@ var locked = false
 @export var correct_rotation_degrees = 0
 var is_correct_direction = false
 @onready var sound_effect = $StoneEffect
+@onready var ingredient = $Ingredient
 
 signal on_correct()
 signal on_incorrect()
@@ -30,6 +31,7 @@ func rotate90():
 	rotating = false
 
 func lock():
+	ingredient.visible = false
 	locked = true
 	var tween = create_tween()
 	sound_effect.play()
@@ -41,3 +43,11 @@ func validate_direction():
 		on_correct.emit()
 	else:
 		is_correct_direction = false
+	move_ingredient()
+		
+func move_ingredient():
+	var tween = create_tween()
+	if(is_correct_direction):
+		tween.tween_property(ingredient, "position", Vector3(ingredient.position.x , ingredient.position.y, 2), 0.4)
+	else:
+		tween.tween_property(ingredient, "position", Vector3(ingredient.position.x, ingredient.position.y, 0), 0.4)

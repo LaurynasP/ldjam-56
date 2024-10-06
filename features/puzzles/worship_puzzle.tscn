@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cd7nag5qa5e1t"]
+[gd_scene load_steps=12 format=3 uid="uid://cd7nag5qa5e1t"]
 
 [ext_resource type="Script" path="res://features/puzzles/worship_puzzle.gd" id="1_8xskh"]
 [ext_resource type="PackedScene" uid="uid://rpedxg8i0xn5" path="res://assets/models/etc/Coin_A.tscn" id="1_cx78f"]
@@ -7,13 +7,17 @@
 [ext_resource type="AudioStream" uid="uid://7j08hxgdte7f" path="res://assets/sound_effects/stone_push.wav" id="5_ogdm5"]
 [ext_resource type="PackedScene" uid="uid://cgohocnom36ad" path="res://assets/models/collectables/food_burger.tscn" id="5_ya27y"]
 [ext_resource type="AudioStream" uid="uid://d3jrbvm6a4n8g" path="res://assets/sound_effects/holy_choir.mp3" id="6_scjq4"]
+[ext_resource type="PackedScene" uid="uid://ugnlsnxamd2h" path="res://imports/models/kitchen/food_ingredient_burger_cooked.gltf" id="6_xosds"]
+[ext_resource type="PackedScene" uid="uid://da283kp852jo6" path="res://imports/models/kitchen/food_ingredient_bun_bottom.gltf" id="7_o5dkf"]
+[ext_resource type="PackedScene" uid="uid://bs07dtfceywng" path="res://imports/models/kitchen/food_ingredient_bun_top.gltf" id="8_uamy2"]
+[ext_resource type="PackedScene" uid="uid://bqxq5f113mdnm" path="res://imports/models/kitchen/food_ingredient_lettuce_slice.gltf" id="9_ovwbs"]
 
 [node name="WorshipPuzzle" type="Node3D"]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 script = ExtResource("1_8xskh")
 
 [node name="platform" parent="." instance=ExtResource("1_cx78f")]
-transform = Transform3D(5, 0, 0, 0, -2.18557e-07, -0.1, 0, 5, -4.37114e-09, 0, 0, 0)
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, -0.1, 0, 5, -4.37114e-09, -0.0134464, 0, 0)
 
 [node name="D1" parent="." instance=ExtResource("2_wcyad")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0515929, 0.0150004, 1.98842)
@@ -25,11 +29,17 @@ interactable_name = "Worshiper"
 stream = ExtResource("5_ogdm5")
 volume_db = -30.0
 
+[node name="Ingredient" parent="D1" instance=ExtResource("6_xosds")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.42, 0)
+
 [node name="D2" parent="." instance=ExtResource("2_wcyad")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.01443, 0.0150002, -0.079056)
 script = ExtResource("4_xcj2h")
 correct_rotation_degrees = 90
 interactable_name = "Worshiper"
+
+[node name="Ingredient" parent="D2" instance=ExtResource("7_o5dkf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.341, 0)
 
 [node name="StoneEffect" type="AudioStreamPlayer3D" parent="D2"]
 stream = ExtResource("5_ogdm5")
@@ -39,6 +49,9 @@ volume_db = -30.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00213608, 0.0150002, -2.08991)
 script = ExtResource("4_xcj2h")
 interactable_name = "Worshiper"
+
+[node name="Ingredient" parent="D3" instance=ExtResource("8_uamy2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.76, 0)
 
 [node name="StoneEffect" type="AudioStreamPlayer3D" parent="D3"]
 stream = ExtResource("5_ogdm5")
@@ -53,6 +66,9 @@ interactable_name = "Worshiper"
 [node name="StoneEffect" type="AudioStreamPlayer3D" parent="D4"]
 stream = ExtResource("5_ogdm5")
 volume_db = -30.0
+
+[node name="Ingredient" parent="D4" instance=ExtResource("9_ovwbs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.611, 0)
 
 [node name="reward" parent="." instance=ExtResource("5_ya27y")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 5.54056, 0)
