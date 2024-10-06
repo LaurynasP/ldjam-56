@@ -1,4 +1,4 @@
-[gd_scene load_steps=135 format=4 uid="uid://y2ao6g0aklo3"]
+[gd_scene load_steps=136 format=4 uid="uid://y2ao6g0aklo3"]
 
 [ext_resource type="PackedScene" uid="uid://cmu4equvfautq" path="res://assets/models/structures/kitchen_wall.tscn" id="1_sxks5"]
 [ext_resource type="PackedScene" uid="uid://c00wk1p04k8p4" path="res://assets/models/structures/kitchen_wall_window_closed.tscn" id="2_cdjv7"]
@@ -82,6 +82,7 @@
 [ext_resource type="PackedScene" uid="uid://cgohocnom36ad" path="res://assets/models/collectables/food_burger.tscn" id="79_qp32j"]
 [ext_resource type="PackedScene" uid="uid://bqdo58wy3ucb" path="res://assets/models/collectables/food_ingredient_cheese.tscn" id="80_2i4ox"]
 [ext_resource type="PackedScene" uid="uid://s1rmjq1ssdc3" path="res://assets/models/collectables/food_stew.tscn" id="81_mj4ka"]
+[ext_resource type="PackedScene" uid="uid://cd7nag5qa5e1t" path="res://features/puzzles/worship_puzzle.tscn" id="83_ojiyw"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_8k2vi"]
 vertices = PackedVector3Array(-4.448, 4.62, -29.3396, -4.448, 4.62, -16.0896, 16.052, 4.62, -16.0896, 16.052, 4.62, -29.3396, 1.302, 0.14, -16.0896, 1.552, 0.14, -16.0896, 1.802, 0.14, -16.8396, 1.052, 0.14, -16.8396, -3.198, 0.14, -24.0896, -3.698, 0.14, -23.8396, -3.198, 0.14, -16.8396, -3.198, 0.14, -27.0896, 13.302, 0.14, -16.8396, 13.302, 0.14, -27.0896, 1.802, 0.14, -15.0896, 1.052, 0.14, -15.0896, -3.198, 0.14, -13.0896, -3.198, 0.14, -15.0896, -3.698, 0.14, -13.8396, 12.302, 0.14, -13.0896, 12.302, 0.14, -15.0896, 49.052, 4.3, -15.5896, 17.052, 4.3, -15.8396, 16.802, 4.3, -15.0896, -4.448, 4.3, -15.0896, -4.448, 4.3, 20.6604, 49.052, 4.3, 20.6604, 12.802, 0.14, -3.3396, 12.052, 0.14, -3.0896, 12.052, 0.14, -2.8396, 12.802, 0.14, -2.5896, 23.052, 0.14, 2.4104, 23.052, 0.14, -15.0896, 12.802, 0.14, -12.8396, 12.802, 0.14, 5.6604, 12.052, 0.14, 5.9104, 12.052, 0.14, 6.1604, 12.802, 0.14, 6.4104, 17.552, 0.14, 7.1604, 18.302, 0.14, 7.1604, 23.052, 0.14, 7.1604, 23.052, 0.14, 3.6604, 17.802, 0.14, 7.9104, 18.052, 0.14, 7.9104, 24.052, 0.14, 3.1604, 24.052, 0.14, 2.9104, 12.802, 0.14, 7.1604, 11.052, 0.14, -2.3396, 11.052, 0.14, -3.5896, -3.198, 0.14, 3.4104, 11.052, 0.14, -11.3396, -3.198, 0.14, -11.3396, 11.052, 0.14, 3.4104, 25.052, 0.14, 2.6604, 25.052, 0.14, 3.4104, 31.052, 0.14, 1.6604, 25.052, 0.14, 8.1604, 31.052, 0.14, 8.1604, 25.052, 0.14, 1.6604, 11.052, 0.14, 6.6604, 11.052, 0.14, 5.1604, -3.198, 0.14, 5.1604, -3.198, 0.14, 15.4104, 11.052, 0.14, 15.4104, 17.302, 0.14, 8.9104, 18.552, 0.14, 8.9104, 12.802, 0.14, 15.4104, 23.052, 0.14, 15.4104, 12.802, 0.14, 8.9104, 23.052, 0.14, 8.9104)
@@ -2526,3 +2527,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7, 4, -4)
 
 [node name="ceilingFan3" parent="Lights" instance=ExtResource("47_coajb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7, 4, 10)
+
+[node name="WorshipPuzzle" parent="." instance=ExtResource("83_ojiyw")]
+transform = Transform3D(-0.6, 0, 4.47035e-08, 0, 0.6, 0, -4.47035e-08, 0, -0.6, 18.0917, 0.1, 11.9262)
