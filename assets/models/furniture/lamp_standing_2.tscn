@@ -18,3 +18,4 @@ light_color = Color(0.971242, 0.95137, 1.54018e-06, 1)
 light_energy = 2.016
 light_indirect_energy = 1.155
 shadow_enabled = true
+shadow_blur = 3.52

@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://s5sb4ethfdr3"]
+
+[ext_resource type="Script" path="res://features/level/level_controller.gd" id="1_7ymwo"]
+[ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="2_yjx3g"]
+[ext_resource type="PackedScene" uid="uid://djywrhononxgf" path="res://assets/characters/knight.tscn" id="3_747je"]
+[ext_resource type="PackedScene" uid="uid://y2ao6g0aklo3" path="res://features/house/house.tscn" id="4_pcypc"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fhgom"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+sky_energy_multiplier = 0.5
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_b5v58"]
+sky_material = SubResource("ProceduralSkyMaterial_fhgom")
+
+[sub_resource type="Environment" id="Environment_4ltn1"]
+background_mode = 2
+background_color = Color(0.000115022, 0.000126135, 2.43317e-05, 1)
+background_energy_multiplier = 0.45
+sky = SubResource("Sky_b5v58")
+ssr_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+fog_enabled = true
+volumetric_fog_enabled = true
+
+[node name="MainLevel" type="Node3D"]
+script = ExtResource("1_7ymwo")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4ltn1")
+
+[node name="player" parent="." instance=ExtResource("2_yjx3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00972134, 0)
+
+[node name="Knight" parent="." instance=ExtResource("3_747je")]
+transform = Transform3D(0.987234, 0, -0.159278, 0, 1, 0, 0.159278, 0, 0.987234, -1.42533, 0.122544, 6.50696)
+
+[node name="House" parent="." instance=ExtResource("4_pcypc")]

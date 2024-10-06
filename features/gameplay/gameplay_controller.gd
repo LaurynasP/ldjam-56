@@ -53,6 +53,9 @@ func pause_game_toggle():
 	game_paused = !game_paused
 	
 	player.toggle_input(!game_paused)
+	knight.set_physics_process(!game_paused)
+	knight.set_process(!game_paused)
+	noise.set_process(!game_paused)
 	
 	on_game_paused.emit(game_paused)
 
@@ -99,14 +102,20 @@ func make_noise(amount: float, noise_type: NoiseController.NoiseTypes):
 	if level_failed():
 		handle_level_failed()
 		
-	if noise.noise_level > 55 and amount > 1.5:
+	if noise.noise_level > 45 and amount > 1.5:
 		SoundEffectManager.voiceover.hide.play()
 		knight.target = player.position
+		knight.current_speed = knight.speed
+		knight.current_acceleration = knight.acceleration
 		
+		if noise.noise_level > 65:
+			knight.current_speed = knight.running_speed
+			knight.current_acceleration = knight.running_acceleration
+
 func reduce_noise(amount: float,  noise_type: NoiseController.NoiseTypes):
 	noise.noise_level -= amount
-	
-	
+
+
 func add_noise_controller():
 	var noise_controller = new()
 	noise_controller.name = "noise_controller"
@@ -133,6 +142,7 @@ func handle_level_completed():
 	noise.set_process(false)
 	knight.set_process(false)
 	knight.set_physics_process(false)
+	knight.animation_player.pause()
 	InputManager.set_process_input(false)
 	for child in get_children():
 		remove_child(child)
@@ -144,6 +154,7 @@ func handle_level_failed():
 	noise.set_process(false)
 	knight.set_process(false)
 	knight.set_physics_process(false)
+	knight.animation_player.pause()
 	InputManager.set_process_input(false)
 	for child in get_children():
 		remove_child(child)
