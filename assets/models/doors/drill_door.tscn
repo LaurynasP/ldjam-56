@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://ddxbnnlpycn87"]
+[gd_scene load_steps=6 format=3 uid="uid://ctvtfot6pfs8s"]
 
 [ext_resource type="PackedScene" uid="uid://drwavefmahsun" path="res://imports/models/prototype/Door_A.gltf" id="1_1oq22"]
 [ext_resource type="Script" path="res://features/puzzles/drill_door.gd" id="2_0cnir"]
@@ -17,6 +17,7 @@ interactable_name = "Door"
 material_override = ExtResource("3_5s1u6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Door_A" index="0"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door_A/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_u2pa7")

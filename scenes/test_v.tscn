@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://dqfml1busilvy"]
+[gd_scene load_steps=15 format=3 uid="uid://dqfml1busilvy"]
 
 [ext_resource type="Script" path="res://features/level/level_controller.gd" id="1_5jv3p"]
 [ext_resource type="PackedScene" uid="uid://y2ao6g0aklo3" path="res://features/house/house.tscn" id="1_rn0et"]
 [ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="2_k3518"]
 [ext_resource type="Script" path="res://features/object_interacting/interactable_object_controller.gd" id="3_5you7"]
 [ext_resource type="PackedScene" uid="uid://bqdo58wy3ucb" path="res://assets/models/collectables/food_ingredient_cheese.tscn" id="5_s8g1d"]
+[ext_resource type="PackedScene" uid="uid://djywrhononxgf" path="res://assets/characters/knight.tscn" id="6_p3ib6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jjb7d"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -30,6 +31,8 @@ albedo_color = Color(0.145098, 0.290196, 0.0823529, 1)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tfycf"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_bleev"]
+
 [node name="test_v" type="Node3D"]
 script = ExtResource("1_5jv3p")
 
@@ -49,7 +52,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_o6gbd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="player" parent="." instance=ExtResource("2_k3518")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.57543, 0)
+transform = Transform3D(0.257116, 0, 0.966381, 0, 1, 0, -0.966381, 0, 0.257116, 8.53883, 2.57543, 11.0058)
 
 [node name="test_interactable" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30906, 0.533986, -3.12677)
@@ -79,3 +82,14 @@ interactable_name = "Big 'Ol Cheese"
 transform = Transform3D(-0.0624068, 0, 0.998051, 0, 1, 0, -0.998051, 0, -0.0624068, 4.9938, 1.49773, -2.45266)
 score = 5
 interactable_name = "Big 'Ol Cheese"
+
+[node name="Knight" parent="." node_paths=PackedStringArray("target") instance=ExtResource("6_p3ib6")]
+transform = Transform3D(-0.402411, 0, 0.915459, 0, 1, 0, -0.915459, 0, -0.402411, -0.0663191, 0.505272, 6.68901)
+target = NodePath("../Node3D")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.520927, 5.39736, 11.1474)
+navigation_mesh = SubResource("NavigationMesh_bleev")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4122, 0.586523, -4.99167)

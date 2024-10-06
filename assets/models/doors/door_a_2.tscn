@@ -12,9 +12,11 @@ script = ExtResource("2_dm1jj")
 interactable_name = "Door"
 
 [node name="Door_A" parent="." index="0"]
+layers = 2
 material_override = ExtResource("3_7bf5t")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Door_A" index="0"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door_A/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_u2pa7")

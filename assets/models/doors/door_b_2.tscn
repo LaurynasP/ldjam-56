@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bs8jcqwl5x7c7"]
+[gd_scene load_steps=4 format=3 uid="uid://4e2w040lcce1"]
 
 [ext_resource type="PackedScene" uid="uid://cdq74hkp083wf" path="res://imports/models/prototype/Door_B.gltf" id="1_4pmbe"]
 [ext_resource type="Script" path="res://features/door/door.gd" id="2_pewbn"]
@@ -8,6 +8,9 @@ data = PackedVector3Array(0, 0, 0.1, 0, 2.8, -0.1, 0, 2.8, 0.1, 0, 0, 0.1, 0, 0,
 
 [node name="Door_B2" instance=ExtResource("1_4pmbe")]
 script = ExtResource("2_pewbn")
+
+[node name="Door_B" parent="." index="0"]
+layers = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Door_B" index="0"]
 
