@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://s5sb4ethfdr3"]
+[gd_scene load_steps=8 format=3 uid="uid://dufcqq8eyyuqv"]
 
 [ext_resource type="Script" path="res://features/level/level_controller.gd" id="1_7ymwo"]
 [ext_resource type="PackedScene" uid="uid://drlw3k4lampnh" path="res://features/player/player.tscn" id="2_yjx3g"]
@@ -16,7 +16,7 @@ sky_material = SubResource("ProceduralSkyMaterial_fhgom")
 [sub_resource type="Environment" id="Environment_4ltn1"]
 background_mode = 2
 background_color = Color(0.000115022, 0.000126135, 2.43317e-05, 1)
-background_energy_multiplier = 0.45
+background_energy_multiplier = 0.55
 sky = SubResource("Sky_b5v58")
 fog_enabled = true
 fog_density = 0.0025

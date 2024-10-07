@@ -8,6 +8,8 @@ func _input(event):
 		
 	if Input.is_action_just_pressed("interact"):
 		GameManager.current_gameplay.interact()
+	if Input.is_action_just_pressed("flashlight"):
+		GameManager.current_gameplay.player.toggle_flashlight()
 		
 	if Input.is_action_pressed("sprint"):
 		GameManager.current_gameplay.player.toggle_sprinting(true)

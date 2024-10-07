@@ -10,6 +10,7 @@ var sprinting: bool = false
 var is_moving: bool = false
 
 @onready var runningSoundEffect: AudioStreamPlayer3D = $RunningSoundEffect
+@onready var flashlight: SpotLight3D = $camera_controller/camera/flashlight
 
 func _ready():
 	camera_controller.initialize(true)
@@ -41,3 +42,6 @@ func _on_interaction_controller_on_interactable_hovered(interactable):
 
 func _on_interaction_controller_on_interactable_unhovered():
 	GameManager.current_gameplay.set_hovered_interactable(null)
+	
+func toggle_flashlight():
+	flashlight.visible = !flashlight.visible
